@@ -1,0 +1,454 @@
+ScienceDirect
+Available online at wwwsciencedirectcom
+Procedia Engineering 212 2018 1054–1061
+18777058 © 2018 The Authors Published by Elsevier Ltd
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience
+101016jproeng201801136
+© 2018 The Authors Published by Elsevier Ltd
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience 
+ 
+Available online at wwwsciencedirectcom 
+ScienceDirect 
+Procedia Engineering 00 2017 000–000 
+ 
+  wwwelseviercomlocateprocedia 
+ 
+18777058 © 2017 The Authors Published by Elsevier Ltd 
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience  
+7th International Conference on Building Resilience Using scientific knowledge to inform policy 
+and practice in disaster risk reduction ICBR2017 27 – 29 November 2017 Bangkok Thailand 
+Evaluation of the Impacts of Oil Spill Disaster on Communities and 
+Its Influence on Restiveness in Niger Delta Nigeria 
+Oshienemen N Alberta Dilanthi Amaratungaa and Richard P Haigha 
+aUniversity of Huddersfield Queensgate Huddersfield HD1 3D H abc 
+Abstract 
+ 
+Nigeria is the sixthlargest exporter of oil and correspondingly the sixth largest nation among the Organisation of the Petroleum 
+Exporting Countries OPEC The petroleum product account for more than 90 foreign exchange for the Federation of Nigeria 
+while the immediate environment suffers more than 90 environment and socioeconomic degeneration The incidences of oil 
+spills however negatively impacted the Niger Delta communities and the environment described as one among the worst impacted 
+zones globally Whilst the affected communities struggle for attention and justice for the environmental damages through protest 
+agitations and violence the Nigerian state and the oil and gas industries continue with their operations The paper investigates 
+impact of the oil spills on community’s livelihood structures and its influence on restiveness in selected Niger delta affected 
+communities The paper adopts a qualitative research through interviews and group discussions with social activist chiefs experts 
+in the field youths and community leaders to identify oil spill impacts on community socioeconomic conditions Data collected 
+were analysed using thematic templet analytic techniques The study shows a high impact on the entire communities with different 
+factors that have contributed to the increase on social aspects of the affected The paper makes a recommendation to all stakeholders 
+within oil related and the multinationals to improve their strategies and or contingency planning in tackling oil spillrelated issues 
+and adhere to community’s plight when appropriate 
+ 
+© 2017 The Authors Published by Elsevier Ltd 
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience 
+Keywords Technological Disaster Oil Spill Socioeconomic Niger DeltaNigeria Restiveness Community 
+ Corresponding author Tel +447400561730 +447404874726 
+Email address oshienemenalberthudacuk 
+ 
+ 
+Available online at wwwsciencedirectcom 
+ScienceDirect 
+Procedia Engineering 00 2017 000–000 
+ 
+  wwwelseviercomlocateprocedia 
+ 
+18777058 © 2017 The Authors Published by Elsevier Ltd 
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience  
+7th International Conference on Building Resilience Using scientific knowledge to inform policy 
+and practice in disaster risk reduction ICBR2017 27 – 29 November 2017 Bangkok Thailand 
+Evaluation of the Impacts of Oil Spill Disaster on Communities and 
+Its Influence on Restiveness in Niger Delta Nigeria 
+Oshienemen N Alberta Dilanthi Amaratungaa and Richard P Haigha 
+aUniversity of Huddersfield Queensgate Huddersfield HD1 3D H abc 
+Abstract 
+ 
+Nigeria is the sixthlargest exporter of oil and correspondingly the sixth largest nation among the Organisation of the Petroleum 
+Exporting Countries OPEC The petroleum product account for more than 90 foreign exchange for the Federation of Nigeria 
+while the immediate environment suffers more than 90 environment and socioeconomic degeneration The incidences of oil 
+spills however negatively impacted the Niger Delta communities and the environment described as one among the worst impacted 
+zones globally Whilst the affected communities struggle for attention and justice for the environmental damages through protest 
+agitations and violence the Nigerian state and the oil and gas industries continue with their operations The paper investigates 
+impact of the oil spills on community’s livelihood structures and its influence on restiveness in selected Niger delta affected 
+communities The paper adopts a qualitative research through interviews and group discussions with social activist chiefs experts 
+in the field youths and community leaders to identify oil spill impacts on community socioeconomic conditions Data collected 
+were analysed using thematic templet analytic techniques The study shows a high impact on the entire communities with different 
+factors that have contributed to the increase on social aspects of the affected The paper makes a recommendation to all stakeholders 
+within oil related and the multinationals to improve their strategies and or contingency planning in tackling oil spillrelated issues 
+and adhere to community’s plight when appropriate 
+ 
+© 2017 The Authors Published by Elsevier Ltd 
+Peerreview under responsibility of the scientific committee of the 7th International Conference on Building Resilience 
+Keywords Technological Disaster Oil Spill Socioeconomic Niger DeltaNigeria Restiveness Community 
+ Corresponding author Tel +447400561730 +447404874726 
+Email address oshienemenalberthudacuk 
+ 
+ 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061 
+1055
+2 
+Albert et al Procedia Engineering 00 2017 000–000 
+1 Introduction  
+While most countries of the world faced natural hazards Nigeria is faced with numerous technological and or 
+human induced hazards among which oil spills are leading with severe short and long term cumulative impacts on 
+affected populace For instance European nation experienced 10 incidences of oil spills in 40 years while Nigeria 
+experienced 9343 incidences in 10 years 1 2 Studies have also shown that the quantity of oil spilled in the Nigerian 
+environment in five decades was at least 913million barrels equivalent to 50 Exxon Valdez oil spills of 1989 
+260000 barrels 3 4 This positioned the region as one among five most ruthlessly petroleum damaged environment 
+in the world 5 6 Consequently these disasters have affected the environment arable lands water resources and 
+livelihood structures of the immediate oil producing communities of Nigeria 5 The impact further degenerates to 
+increase in poverty crisis and unrest within the crude oil producing environment 7 Leading to formulations of 
+different agitation groups in call for environmental justice and livelihood support mechanisms This paper stresses 
+that oil spills have not just caused environmental ecological water and air pollution but have negative stark socio
+economic breakdown which includes loss of job and restiveness through the nonpayment of monetary and 
+infrastructural compensations to affected host and transit oil communities This calls for the need to investigate the 
+socioeconomic impacts specifically as large number of studies have looked at the environmental and health impacts 
+812 Importantly how the impact influence restiveness using statistical analytical tools for the analysis  
+2 Literature Review 
+21 Disasters and Disaster Impacts 
+ 
+The term ‘Disaster’ has undergone a number of efforts at redefining with some more effective than others 
+depending on the purpose and interest what individuals consider as a disaster the situation disciplines and context 
+Quarantelli and Dynes 13 described disaster as an entrance into a state of uncertainty duplication of war catastrophe 
+and an expression of social vulnerabilities Mohamed Shaluf 14 described disasters as an emergency occurring due 
+to humaninduced or natural hazards that result in noteworthy changes in circumstances over a period However this 
+definition doesn’t reflect the harshness of the incidents Parker and Handmer 15 define disaster as “unusual natural 
+or manmade event including an event caused by failure of technological systems which temporarily crushes the 
+response capacity of human communities groups of individuals or natural environment and which causes massive 
+damage economic loss disruption injury and or loss of life” However United Nations International Strategy for 
+Disaster Reduction 16 describe disaster “as a serious disruption of the functioning of a community or society 
+involving widespread human material economic or environmental losses and impacts which exceeding the ability 
+of the affected community or society to cope using its own resource” p9 This definition embodies the same as 
+Parker and Handmer 15 emphasis on the economic and human ability to withstand the harshness of the effects From 
+the definition above disaster can be defined as an unprevented incident that forcefully placed vulnerable people in 
+the quest for external assistance and this study adopts the definition of the United Nations  
+ 
+22 Disaster Impacts 
+ 
+ The strictness of any incident is not the volume and magnitude but the effects 17 The most necessary factor in 
+determining the seriousness of an incident such as oil spill is where the oil ends The extent of the effect weather 
+condition socioeconomic characteristic of the location and the communities therein These in a way can be influenced 
+by the ‘developed or developing’ nations and the response techniques cleanup measures adopted the effectiveness 
+and the environmental benefit Hence both developed and developing nations suffers oil spill incidents 18 For 
+example the 2010 Gulf of Mexico oil spill and Exxon Valdez oil spill of 1989 affected thousands of sea birds fishes 
+fishing industries and waterways with continuous impact on communities 19 20 On the contrary developing 
+countries such as Angola and Nigeria are faced with similar and or worst scenarios of incidents of oil spills with 
+degenerating impacts due to lack of management measures response strategies and policy enforcement Hence it’s 
+evident that disaster can occur anywhere but frequently the poor and underdeveloped countries who suffers the most 
+severe and longterm impacts For instance there are growing anxieties regarding threats on loss of biodiversity 
+1056 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061
+ 
+Albert et al Procedia Engineering 00 2017 000–000 
+3 
+deforestation and environmental pollution21 in the Nigerian context Different habitats have trailed their 
+biodiversity at an unexpected proportion 2123 aquatic species and wildlife have been reported depleting and threat 
+on plant species extinction 6 The impacts on the environment remains disheartening as the environment is a man’s 
+first right and foundation for other rights 24 These also increase the concerns for environmental justices and 
+pollution control campaign for drawing the world attention towards the reduction means of the degenerating impacts 
+of oil spills on the societies Nwilo and Badejo 25 mentioned specifically on the degenerating situations of the 
+Nigerian oilproducing environment with emphasis on mismanagement and lack of environmental regulation 
+enforcement as a key drawback for proper environmental management systems Kadafa 5 further argued that oil spill 
+impacts on the environment and ecosystem services have increased poverty rate and displacement of people 
+physically mentally and job wise The arguments of Kadafa 5 and Nwilo and Badejo 25 demonstrate 
+significantly how oil spill have impacted on the environment and the ecology with the degenerated negative impacts 
+on the social aspect of the communities which cut across local economic growth and restiveness “These issues have 
+received little attention so far”  
+221 Social and Economic impacts of oil spill disaster 
+Social impacts are the changes made by an organisation or company through their activities which affects the 
+economic and wellbeing of the populace Hence Pegg and Zabbey 22 Fentiman and Zabbey 24 and Celestine 26 
+in their different studies emphasise the severity of oil spills not just on the environment but also on culture traditions 
+local economic norms values and ways of life among communities However Ebegbulem Ekpe 7 points that oil 
+spillages in the unique Niger Delta states have caused extensive social underdevelopment which engrosses lack of 
+social amenities physical infrastructure piped water schools hospitals and employment opportunities despite the 
+huge benefit of the crude oil product with or without oil spills on the Nigerian national economy 7 The above 
+argument demonstrates that instead of an increase in social and economic conditions through contributions from the 
+endproduct of the crude oil  The reverse is the case as loss of sources of livelihood from the disaster has caused 
+great unemployment Further Okonkwo 27 points that most social impacts of oil spill covers violence and 
+frustrations reduction in tourism and hospitality industries Okonkwo’s points are similar to Gill Picou 28 who 
+revealed how the British Petroleum BP oil spill and Exxon Valdez oil spill caused several social impacts threatening 
+several ‘at risk’ including industries commercial and recreational fishing tourism and other enterprises tied to their 
+natural resources The arguments draw the importance to establish that oil spill disaster directly and indirectly affects 
+societies and communities in various dimensions 
+212 Table Showing commonly faced impacts  
+ 
+The table below highlights some impacts commonly faced as a results of petroleum production within affected 
+Niger Delta communities These impacts on the environment have led to dissatisfaction on the communities hence 
+leading to degradation of human development Chukwuemeka and Aghara 29 adds that the dissatisfaction of 
+affected communities is on the level of damages to the ecology by several oil spills marginalisation and neglects 
+regarding the development of the region However Chukwuemeka and Aghara 29 study did not employ any 
+statistical and or content analytical tool for analysis Hence emphases the severity of the impacts 
+Table 1 The Direct and Indirect Impacts of oil spills 
+Direct impacts of oil spills 
+Indirect impacts of oil spills  
+Environment air water pollution 
+loss of biodiversity deforestation 
+displacement loss of jobs acid rain 
+skin irritation ecological damages  
+Ingestion of contaminated food 
+violent conflicts frustration 
+prostitution agitations depletion of 
+wildlife aquatic and plants species 
+extinction economic stagnation and 
+poverty  
+ 
+ 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061 
+1057
+4 
+Albert et al Procedia Engineering 00 2017 000–000 
+3 Study Methodology 
+The study assesses oil spill impacts on livelihood structures and how it influenced restiveness within affected Niger 
+Delta communities of Nigeria Qualitative research design is adopted using different techniques such as focus group 
+discussion interviews documents and secondary data Eleven 11 key members of communities were purposively 
+selected for an indepth interview discussion in their various communities Focus group discussion were conducted 
+within the selected areas of the study The participants include youth leaders members of periwinkle company 
+association chiefs members of community representatives and members of social activists group The rationale for 
+selecting them was that these key people are indigenous and have lived all their lives within the communities The 
+participants also possess the relevant experiences for the research question under investigation having lived and 
+experienced different kinds of oil spills and operations of the oil and gas industries within the boundaries and shores 
+of the region 
+4 Table showing emerging themes 
+The table below shows the themes as they emerged from participants’ frequent emphasis on the severity of the 
+impacts of oil spills and its related waves on the communities Special emphasis was placed on the discussed themes 
+from participants The researchers grouped these themes according to the frequencies from the raw data with the 
+support of an NVivo software program to aid analysis of the data and discussions 
+Table 2 Emerging themes for coding template  
+Coding  
+Themes 
+ 
+Community Impacts CI 
+Tradition and 
+culture water  
+Health 
+Agricultural lands 
+environment 
+Livelihood Support LS 
+Parental values
+youth impacts  
+Increased living 
+cost  
+Jobs and Tourism JT 
+Restiveness and Migration RM                                
+WayOut Compensation WC 
+Lost of Jobs 
+Marginalisation  
+Infrastructural and 
+monetary   
+ 
+ 
+4 Preliminary Research Findings 
+The preliminary findings from the interviews and group discussions was analysed using thematic template 
+techniques and with the aid of NVivo 11 software package The rationale for using a thematic template was that the 
+researcher during the transcription of the raw data into word documents identified important sets of themes This helps 
+to better organise the themes in a meaningful and useful way to aid the coding process Upon the outcome of the data 
+from NVivo 11 programmed as shown in Figure 1 The theme community impacts were the most coded from the 
+eleven participants and the focus group discussion This theme represents the overall impacts such as environment 
+agriculture ecosystem health social and economic activities as it affects the communities Participants in both 
+categories emphasised the fact that oil spills have deeply affected the entire community directly and indirectly Also 
+lack of livelihood support and loss of jobs were identified as what constitutes the longterm effects of the disaster on 
+the community 
+1058 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061
+ 
+Albert et al Procedia Engineering 00 2017 000–000 
+5 
+ 
+Fig 1 a Focus Group b Individual Interview 
+Theme 1 Community Impacts  
+Theme 1 examines the impacts of oil spills on selected communities affected by oil spill disaster to understand the 
+degree of the impacts and how better it could be reduced This specific theme relates to agricultural land environment 
+socioculture and socioeconomic aspect of the spill on the communities and how they have coped with the impacts 
+The result from the top down and bottom up within the community context show significant impact on the entire 
+structure The factors that also contributes to the high impact on the community as shown in figure 2 emerged during 
+the coding process Hence economic and social impacts showed above 33 in both key individual interviewee and 
+group discussions This shows that the socioeconomic conditions are highly affected by the incidents of oil spill with 
+little attention as most studies have focused on environment and lands issues within 
+Yes the spills have gravely impacted on the community’s such that there is loss of parental values due to the 
+inabilities of full responsibilities for school children preschool children and the adolescents aged The rise of living 
+cost and energy to transport to a very longdistance zone for fishing has contributed to the inabilities of parenting 
+Communities are floundering in frustrations and neglect as the sources of water which are the most important aspect 
+of life is contaminated and neglected for several years ‘we would have preferred to stay without the oil itself than 
+‘having but not having’ we are slaves to our community society and environment’ Focus Group Discussion 
+ 
+ 
+Fig 2 Nvivo Analysis of factors on community Impact  
+ 
+000
+1000
+2000
+3000
+4000
+Lost of Parental Values 
+Health  Water
+Economic  Social
+Culture Tradition  Lifestyle
+Agriculture  Environment
+ 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061 
+1059
+6 
+Albert et al Procedia Engineering 00 2017 000–000 
+Theme 2  Livelihood Support Structures 
+Theme 2 explores community’s livelihood structures and support mechanisms from NGOs government and the oil 
+multinational bodies The result from figure 1 shows above 21  13 on the coverage from participants which 
+implies lower support structures from the concern bodies The participant emphases the fact that environment and 
+sources of livelihood are forcefully detached from their culture and social wellbeing The lack of livelihood support 
+has to some extent influenced restiveness and migration  
+Lack of livelihood support has essentially contributed to youth restiveness cultism thief and social tension We 
+are handicapped in the midst of plenty we live on ‘survival of the fittest theory’ which has contributed positively and 
+negatively to the societal aspects This is because most people benefit while some others lost their lives or become 
+disabling in course for struggle with little or no recognition We are left with no choice than agitations protest and 
+bunkering for livelihood support The cassavas yam cocoyam plantations periwinkles bloodycoco species of fish 
+which contributed more than 80 of our livelihood has been shortened and as such left us with no livelihood support 
+alternative means Focus Group Discussion 
+Theme 3 Jobs and Tourism  
+Theme three considered how oil spills affects Jobs and tourism within the affected communities of the study The 
+theme emerged as participants frequently mentioned their social activities which were partly influenced by the tourists 
+through their local feasting swimming and fishing festivals Drawing upon the NVivo result in Fig1 the theme ‘Job 
+and tourism’ where the least coded showing 12  10 However participants believed that despite out of fishing 
+for several years the most impacts are on the water local economy and social aspects  
+The rate of social tension is on the raise because people are handicapped rooming the streets and therefore 
+increasing the risk of killings thief and kidnap The tourist that partly contributed to the increase of the local economy 
+and social aspects of the society are forcefully driven away and thereby left the communities in stagnant economy 
+Focus Group Discussion  
+41 Theme 4 Influences on Restiveness  
+Theme four explores how oil spills influenced restiveness within communities and how it relates to migration 
+This theme is crucial as it sets to understand the factors that linked restiveness and migration within the oil spill 
+context This will induce the importance to which measures be applied towards restiveness reduction Drawing from 
+the software program NVivo 11 shows significant influence on community’s restiveness with key influential factors 
+such as delays in cleanup double standard games divide and rule and frustration 
+The People are physically mentally and emotionally frustrated and there are segregations enmity and lack of 
+trust and transparency between communities and oil multinational cooperation within which has hugely influenced 
+restiveness Also the divide and rule and double standard theory by the oil multinational cooperation where they 
+engage youths and some compromised elders to protect them and their facilities by equipping them with weapons has 
+contributed to restiveness Focus Group Discussion 
+42 Theme 5 Wayout Standard strategy 
+Theme five emerged as participants emphasised on the ‘wayout’ from various oil spill impacts having identified 
+key effects on communities such as socioculture loss of jobs restiveness and socioeconomic impacts The construct 
+under the theme if adopted is a substantial avenue for livelihood support and restiveness reduction measures There 
+should be a monthly allowance for aged people within the oil transit and host affected communities Also 
+infrastructural compensations such as centres for youth training and development good roads and good hospitals 
+for healthcare services youth participations in decision making and community involvement in the oil exploration 
+services These will practically curtail the impacts of the spill disasters on communities and its connected waves 
+1060 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061
+ 
+Albert et al Procedia Engineering 00 2017 000–000 
+7 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                           
+Fig 3 Impacts Flow and Solution 
+5 Discussion  
+The study inferred that the information collected from the community representatives social activist members the 
+periwinkle picking company associates members and the youth leaders will enable the oil and gas industries to 
+improve or change their strategies The findings from the study show significant impacts of oil spills on the entire 
+sources of community livelihood structure The finding is supported in the literature 7 The study illustrates that 
+there is a defeat of parental values an increase of living cost due to damages to the environment waterways livelihood 
+structures See Fig 2 loss of traditional learning lifestyles due to restive situations migration and socioeconomic 
+format devastation 22 24 The identified effects on the communities have existed for decades hence the 
+communities have coped with more agitations and protest as some ways of looking for standard mitigation strategy 
+The oil spills to an extent have increased living standards of the communities and thereby instigating kidnap killings 
+and social tension 
+The study shows high level of impact on the community and influences on restiveness The various factors that 
+contributed to restiveness where delays in cleanup neglect frustrations divide and rule policy none payment of 
+compensations and lack of community participation in decision making 29 These problems were further investigated 
+to find the solutions Hence it was discovered that infrastructure and monthly allowances for the aged population 
+within affected transit and oil producing communities will reduce the numerous impacts on the communities The 
+study discovered several specific observations such as the sudden increase of deformity in newborn babies and skin 
+irritations However there is no empirical study to confirms the recent increase and deformity in newborn babies as 
+observed during the data collection within communities of study which the study recommends   
+6 Conclusion and Recommendations 
+The emerging themes from this study are the researchers’ theoretical contributions in exploring the impacts of oil 
+spills on communities and its influences on restiveness within affected communities of the Niger Delta The study 
+concludes by stressing that oil spill impacts on communities are numerous and thereby needs the government and or 
+the oil related companies to involve the community members in decision making Involving the community will give 
+an insight to vital needs of the community which will be imbibed in the structure of the infrastructural compensation 
+While this study was limited to a small sample within oil spill affected communities there are potentials that other 
+none oil spill affected communities might be suffering the same issues The qualitative research design appears 
+appropriate for researching oil spill impacts at the community and the study could be expanded into further research 
+ 
+Oshienemen N Albert  et al  Procedia Engineering 212 2018 1054–1061 
+1061
+8 
+Albert et al Procedia Engineering 00 2017 000–000 
+by involving the oil multinationals and government agencies to draw their output towards a standard strategy for 
+tackling oil spillrelated issues Studies should also be conducted to find the connection between oil spills blindness 
+and deformities in new born babies within oil spill affected communities The study recommends that the stakeholders 
+within oil related and the multinationals should improve their strategies and or contingency planning in tackling oil 
+spillrelated issues and adhere to community’s plight appropriately  
+References 
+1 Kalejaye 
+K 
+Nigeria 
+records 
+9343 
+oil 
+spill 
+incidents 
+in 
+10 
+years 
+2015 
+ 
+26 
+June 
+2017 
+Available 
+from 
+httpsweetcrudereportscom20150902nigeriarecords9343oilspillincidentsin10years 
+2 International Amenesty Nigeria Hundreds of oil spills continue to blight Niger Delta 2015  26 June 2017 Available from 
+httpswwwamnestyorgenlatestnews201503hundredsofoilspillscontinuetoblightnigerdelta 
+3 Wolfe DA et al The fate of the oil spilled from the Exxon Valdez Environmental Science  Technology 1994 2813 p 560A568A 
+4 Piatt JF et al Immediate impact of theExxon Valdezoil spill on marine birds The Auk 1990 p 387397 
+5 Kadafa AA Environmental impacts of oil exploration and exploitation in the Niger Delta of Nigeria Global Journal of Science Frontier 
+Research Environment  Earth Sciences 2012 123 p 1928 
+6 Anejionu OC PAN Ahiarammunnah and CJ Nriezedi Hydrocarbon pollution in the Niger Delta Geographies of impacts and appraisal 
+of lapses in extant legal framework Resources Policy 2015 45 p 6577 
+7 Ebegbulem J D Ekpe and TO Adejumo Oil exploration and poverty in the Niger delta region of Nigeria A critical analysis International 
+Journal of Business and Social Science 2013 43 p 279287 
+8 Adekola J et al Health risks from environmental degradation in the Niger Delta Nigeria Environment and Planning C Politics and Space 
+2017 352 p 334354 
+9 Obida C et al Spatial Analysis along a Network Human and Environmental Exposure to Pipeline Hydrocarbon Pollution in the Niger Delta 
+2017 
+10 Palinkas LA A conceptual framework for understanding the mental health impacts of oil spills lessons from the Exxon Valdez oil spill 
+Psychiatry Interpersonal  Biological Processes 2012 753 p 203222 
+11 Kingston PF Longterm environmental impact of oil spills Spill Science  Technology Bulletin 2002 71 p 5361 
+12 Chang S et al Consequences of oil spills a review and framework for informing planning Ecology and Society 2014 192 
+13 Quarantelli EL and RR Dynes Response to social crisis and disaster Annual review of sociology 1977 p 2349 
+14 Mohamed Shaluf I Disaster types Disaster Prevention and Management An International Journal 2007 165 p 704717 
+15 Parker D and J Handmer Hazard management and emergency planning perspectives in Britain 2013 Routledge 
+16 UNISDR Terminology on disaster risk reduction United Nations International Strategy Geneva 2009 
+17 White IC and JM Baker The Sea Empress oil spill in context in International conference on the sea empress oil spill 1998 
+18 Smith K Environmental hazards assessing risk and reducing disaster 2013 Routledge 
+19 Lindeberg MR et al Conditions of persistent oil on beaches in Prince William Sound 26 years after the Exxon Valdez spill Deep Sea 
+Research Part II Topical Studies in Oceanography 2017 
+20 Peterson CT RD Grubbs and A Mickle An Investigation of Effects of the Deepwater Horizon Oil Spill on Coastal Fishes in the Florida 
+Big Bend Using FisheryIndependent Surveys and Stable Isotope Analysis Southeastern Naturalist 2017 161 p G93G108 
+21 Iheriohanma VI  Environmental Impact Assessment of Oil and Gas Industry in Niger delta Nigeria A Critical Environmental and Legal 
+Framework Assessment 2016 
+22 Pegg S and N Zabbey Oil and water the Bodo spills and the destruction of traditional livelihood structures in the Niger Delta Community 
+Development Journal 2013 483 p 391405 
+23 Zabbey N and H Uyi Community responses of intertidal softbottom macrozoobenthos to oil pollution in a tropical mangrove ecosystem 
+Niger Delta Nigeria Marine pollution bulletin 2014 821 p 167174 
+24 Fentiman A and N Zabbey Environmental degradation and cultural erosion in Ogoniland A case study of the oil spills in Bodo The Extractive 
+Industries and Society 2015 24 p 615624 
+25 Nwilo and Badejo Impacts and management of oil spill pollution along the Nigerian coastal areas Administering Marine Spaces International 
+Issues 2006 119 p 115 
+26 Celestine A Hydrocarbon exploitation environmental degradation and poverty the Niger Delta experience in Diffuse Pollution Conference 
+Dublin 2003 
+27 Okonkwo EC Oil spills in Nigeria are there social and economic impacts in International Oil Spill Conference Proceedings 2014 American 
+Petroleum Institute 
+28 Gill DA JS Picou and LA Ritchie The Exxon Valdez and BP oil spills A comparison of initial social and psychological impacts 
+American Behavioral Scientist 2011 p 0002764211408585 
+29 Chukwuemeka EE and V Aghara Niger Delta youth restiveness and socioeconomic development of Nigeria Educational Research and 
+Reviews 2010 57 p 400 
+ 

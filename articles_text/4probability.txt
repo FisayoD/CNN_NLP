@@ -1,0 +1,1113 @@
+2202024
+1
+Discrete Probability
+1
+• By the pigeonhole principle we know that it takes 366 students to 
+guarantee that at least two of them have the same birthday
+• But how many does it take to guarantee that the probability that at 
+least two of them have the same birthday is at least 90 
+Note 90 of 365 is ൎ328 days
+• What is the probability that in a class of 70 students at least two of 
+them share the same birthday
+Note 70 is 19 of 365 the number of days in a year
+• Not just a toy problem but a useful model to study practical CS 
+scenarios eg collisions in a hash table
+2
+Warmup
+1
+2
+2202024
+2
+• Probability is used in most areas of science including computer science
+One of the most broadly useful part of math
+• In algorithmics it is used to design randomized algorithms and data 
+structures that are often simpler and faster than deterministic ones
+• In machine learning it is used in the design of effective learning 
+algorithms
+• In signal processing randomness is used for filtering out noise and 
+compressing data
+• In cryptography and digital rights management probability is used for 
+improving security
+3
+Why Study Probability Theory
+• How will 𝑛 balls distribute in the following board
+4
+Example 1
+3
+4
+2202024
+3
+• A ball reaching a peg goes left or right with equal probability
+5
+Solution
+12
+12
+14
+14
+24
+18
+38
+38
+18
+116
+416
+416
+116
+616
+• Medical tests are never 100 accurate
+• The standard test for tuberculosis attempts to identify carriers 
+people that have been infected by the tuberculin bacteria
+• Out of 10000 people 100 are carriers and 92 of these test positive
+• Out of the remaining 9900 people 396 test positive
+• Furthermore one out of one hundred people are tuberculosis 
+carriers
+• If you test positive what is the probability that you are indeed a 
+carrier
+6
+Example 2
+5
+6
+2202024
+4
+•
+Random process or experiment ℰ
+•
+A discrete sample space 𝑆 is a nonempty countable set whose members are 
+the possible outcomes of ℰ
+•
+𝑆 must include exactly all possible outcomes of ℰ
+
+Each outcome of rolling 2 dice can be encoded as a pair  𝑎 𝑏  1 ൑ 𝑎 𝑏 ൑ 6
+
+The number of comparisons performed by a sorting algorithm on a random 
+permutation of ሼ1 …  𝑛ሽ For insertion sort 𝑆 ൌ 𝑛 െ 1 𝑛 െ 2 …  𝑛ሺ𝑛 െ 1ሻ2 
+
+Number of coin flips until first ‘head’
+•
+An event is a subset 𝐴 of 𝑆
+ Rolling a 6 = ሼሺ15ሻ ሺ24ሻ ሺ33ሻ ሺ42ሻ ሺ51ሻሽ
+ Rolling doubles ൌ
+11  22  33  44  55  ሺ66ሻ
+ Outcomes of 𝑆 are also called atomic or elementary events
+•
+We want to estimate the likelihood of particular events under specific 
+assumptions about ℰ
+7
+Probability Theory Formalities
+• Consider the experiment of rolling two dice
+• There are often different ways of encoding the sample space 
+List as many ways as you can think of
+What are the advantagesdisadvantages of each if your goal is 
+understand how the sum of the dice is distributed
+• How about for these other events of interest
+At least one of the dice shows exactly two dots
+One dice shows at least twice as many dots as the other
+8
+Exercise
+7
+8
+2202024
+5
+9
+Discrete probability Distribution
+• A probability distribution or probability measure over a discrete sample space 
+𝑆 is a total function Pr 2ௌ → ℝ that satisfies
+1
+Pr ሼ𝑠ሽ ൒ 0 for any 𝑠 ∈ 𝑆
+2
+∑
+௦∈ௌ Prሺሼ𝑠ሽሻ ൌ 1
+3
+For  any event 𝐴 ⊂ 𝑆 Pr 𝐴 ൌ ∑
+௦∈஺ Prሺሼ𝑠ሽሻ
+• A sample space together with a probability measure is called a probability 
+space
+• It follows that if 𝐴 and 𝐵 are events with 𝐴 ∩ 𝐵 ൌ ∅ then
+Pr ራ 𝐴௡
+௡∈ℕ
+ൌ ෍ Pr ሾ𝐴௡ሿ
+௡∈ℕ
+•
+For any countable finite or not collection of disjoint events 𝐴ଵ 𝐴ଶ 𝐴ଷ …
+Pr 𝐴 ∪ 𝐵 ൌ Pr 𝐴 ൅ Prሾ𝐵ሿ
+• Using the axioms of probability prove the following
+10
+Exercise
+Theorem Pr 𝐴 ∪ 𝐵 ൌ Pr 𝐴 ൅ Pr 𝐵 െ Pr 𝐴 ∩ 𝐵  
+Lemma Pr ∅ ൌ 0
+• Suppose that you flip a fair coin repeatedly until you get tails What is 
+the probability that the number of flips is odd What is the 
+probability that it is even
+Hint Start by suggesting a suitable encoding of the sample space
+9
+10
+2202024
+6
+• Sum Rule If 𝐴ଵ 𝐴ଶ …  are disjoint then Pr ⋃
+௡∈ℕ 𝐴௡
+ൌ ∑
+Pr ሾ𝐴௡ሿ
+௡∈ℕ
+• Complement Rule  Pr 𝐴̅ ൌ 1 െ Prሾ𝐴ሿ
+Note 𝐴̅ ൌ 𝑆 െ 𝐴
+• Difference Rule  Pr 𝐵 െ 𝐴 ൌ Pr 𝐵 െ Prሾ𝐴 ∩ 𝐵ሿ
+• Inclusion‐Exclusion Pr ሾ𝐴 ∪ 𝐵ሿ ൌ Pr ሾ𝐴ሿ ൅ Pr ሾ𝐵ሿ െ Pr ሾ𝐴 ∩ 𝐵ሿ
+• Boole’s Inequality Pr 𝐴 ∪ 𝐵 ൑ Pr 𝐴 ൅ Prሾ𝐵ሿ 
+• Monotonicity If 𝐴 ⊆ 𝐵 then Pr 𝐴 ൑ Prሾ𝐵ሿ
+• Total Probability Pr 𝐴 ൌ Pr 𝐴 ∩ 𝐵 ൅ Prሾ𝐴 ∩ 𝐵തሿ
+11
+Identities and Inequalities
+Exercise What is Prሾ𝐴 ∪ 𝐵 ∪ 𝐶ሿ
+• A probability distribution is uniform if Prሾ𝑠ሿ is the same for all 
+outcomes atomic events 𝑠 ∈ 𝑆
+12
+Uniform Probability Distribution
+Example Recall our dice experiment with sample space and 𝑆 ൌ
+𝑎 𝑏 ∶ 1 ൑ 𝑎 𝑏 ൑ 6 for a pair of dice If the dice are fair for any 
+𝐴 ⊆ 𝑆 Pr 𝐴 ൌ 𝐴 36
+Example What is the probability of getting a full house if you select 
+five cards at random from a standard deck of 52 cards
+𝑆 ൌ 52
+5
+Pr full ൌ
+13 ⋅ 12 ⋅ 4
+3 ⋅ 4
+2
+52
+5
+ൌ
+3744
+2598960 ൌ 000144
+11
+12
+2202024
+7
+• Consider again the experiment of rolling two fair dice
+What is the probability of rolling a 4 or doubles
+What is the probability that one of the dice shows at least twice as 
+many dots as the other
+Justify your choice of sample space 
+13
+Exercise
+• You wish to choose a value in ሼ01234567ሽ uniformly at 
+random To this end you flip a fair coin 7 times and report the 
+number of heads Does this solve your problem Explain
+• Given 𝑛 people and 𝑑 days in a year there are 𝑑௡ sequences of 𝑛
+birthdays 𝑛‐permutations of ሼ∞ ⋅ 1 …  ∞ ⋅ 365ሽ 
+• Of these 𝑑 𝑑 െ 1
+𝑑 െ 2 ⋯ ሺ𝑑 െ 𝑛 ൅ 1ሻ contain different birthdays  
+𝑛‐permutations of ሼ1 …  365ሽ 
+• Under a uniform probability distribution the probability of no 
+duplicates is
+14
+Birthday Problem Revisited
+𝑑 𝑑 െ 1
+𝑑 െ 2 ⋯ ሺ𝑑 െ 𝑛 ൅ 1ሻ
+𝑑௡
+ൌ 𝑑
+𝑑 ⋅ 𝑑 െ 1
+𝑑
+⋅ 𝑑 െ 2
+𝑑
+⋯ 𝑑 െ 𝑛 ൅ 1
+𝑑
+ൌ
+1 െ 0
+𝑑
+1 െ 1
+𝑑
+1 െ 2
+𝑑 ⋯ 1 െ 𝑛 െ 1
+𝑑
+൏ 𝑒଴ ⋅ 𝑒ିଵௗ ⋅ 𝑒ିଶௗ ⋯ 𝑒ିሺ௡ିଵሻௗ ൌ 𝑒ି ௡ሺ௡ିଵሻ
+ଶௗ
+• For 𝑛 ൌ 70 this is ൎ
+ଵ
+ଵଶ଴଴
+13
+14
+2202024
+8
+• Suppose that an urn contains 2 black balls 1 red ball and 4 green 
+balls Two balls are chosen without replacement from the urn 
+That is the first ball is chosen its color is recorded but the ball is 
+not returned to the urn Then the second ball is chosen 
+• Assume that all remaining balls are equally likely to be chosen
+• What is the probability of choosing two balls of the same color
+15
+Exercise
+16
+Tree Diagram
+B
+R
+G
+B
+R
+G
+B
+R
+G
+B
+G
+27
+17
+47
+16
+16
+46
+26
+16
+36
+26
+46
+𝟐
+𝟒𝟐
+2
+42
+8
+42
+2
+42
+4
+42
+8
+42
+4
+42
+𝟏𝟐
+𝟒𝟐
+• Initially urn contains 2 black 1 red 4 green
+• Pr 𝐸 ൌ
+ଶ
+ସଶ ൅
+ଵଶ
+ସଶ ൌ
+ଵ
+ଷ where 𝐸 ൌ draw two balls of same color
+15
+16
+2202024
+9
+1 Define the sample space ie all possible outcomes
+ May involve several random choices
+ Model 𝑆 using a tree diagram
+ The sample space is 𝑆 ൌ 𝐵𝐵 𝐵𝑅 𝐵𝐺 𝑅𝐵 𝑅𝐺 𝐺𝐵 𝐺𝑅 𝐺𝐺
+2 Define the event of interest
+
+𝐸 ൌ ሼ𝐵𝐵 𝐺𝐺ሽ
+3 Determine the outcome probabilities
+
+Label each branch with a probability and for each leaf multiply the 
+probabilities on path from leaf to root
+4 Compute the event probabilities
+
+Add up the probabilities of outcome nodes in 𝐸
+17
+Methodology
+• Infinite but countable sample spaces are common in discrete probability
+Example Two people take turns flipping a fair coin Whoever flips heads 
+first wins What is the probability that the first player wins
+ Both the sample space 𝑆 and the event 𝑊 that the first player wins contain an 
+infinite number of outcomes
+18
+An infinite sample space
+Pr 𝑊 ൌ 1
+2 ෍ 1
+4௜ ൌ 2
+3
+ஶ
+௜ୀ଴
+𝑆 ൌ 𝐻 𝑇𝐻 𝑇𝑇𝐻 𝑇𝑇𝑇𝐻 …
+𝑊 ൌ 𝐻 𝑇𝑇𝐻 𝑇𝑇𝑇𝑇𝐻 …
+17
+18
+2202024
+10
+• In a 1990 issue of Parade magazine writer Marilyn von Savant 
+answered the following from a reader
+19
+Ask Marilyn
+You’re given the choice of three doors labeled A B C Behind 
+one door is a car behind the others goats You pick a door say 
+door A The host who knows what’s behind the doors opens 
+another door say C which has a goat He asks you “Do you 
+want to pick door B” Is it to your advantage to switch your 
+choice of doors
+• What would you recommend What is the probability that a player 
+who switches wins the car
+𝐴
+𝐵
+20
+1 Find the Sample Space
+Car door
+Initial guess
+Door opened
+𝑆 ൌ ሼ𝐴𝐴𝐵 𝐴𝐴𝐶 𝐴𝐵𝐶 𝐴𝐶𝐵 𝐵𝐴𝐶 𝐵𝐵𝐴
+    𝐵𝐵𝐶 𝐵𝐶𝐴 𝐶𝐴𝐵 𝐶𝐵𝐴 𝐶𝐶𝐴 𝐶𝐶𝐵 ሽ
+Each outcome is a tuple of three 
+random values 
+1 Door hiding the car 
+2 Door initially guessed by the player 
+3 Door opened by the host
+19
+20
+2202024
+11
+• The event 𝑊 we are interested in 
+is “winning by switching”
+• When does this happen
+21
+2 Find the Relevant Events
+𝑊 ൌ ሼ𝐴𝐵𝐶 𝐴𝐶𝐵 𝐵𝐴𝐶 𝐵𝐶𝐴 𝐶𝐴𝐵 𝐶𝐵𝐴ሽ
+• Based on model assumptions assign 
+a probability to each outcome
+1 Assign edge probabilities
+2 Compute outcome probabilities by 
+multiplying edge  probabilities on path 
+from root to leaves
+22
+3 Determine Outcome Probabilities
+𝑊 ൌ ሼ𝐴𝐵𝐶 𝐴𝐶𝐵 𝐵𝐴𝐶 𝐵𝐶𝐴 𝐶𝐴𝐵 𝐶𝐵𝐴ሽ
+21
+22
+2202024
+12
+• To compute the probability of an event 𝐴 we add up the probabilities 
+of all outcomes in 𝐴
+23
+4 Compute Event Probabilities
+• Since 𝑊 ൌ 𝐴𝐵𝐶 𝐴𝐶𝐵 𝐵𝐴𝐶 𝐵𝐶𝐴 𝐶𝐴𝐵 𝐶𝐵𝐴  
+Pr 𝑊 ൌ Pr 𝐴𝐵𝐶 ൅ Pr ሾ𝐴𝐶𝐵ሿ
+൅ Pr 𝐵𝐴𝐶 ൅ Pr ሾ𝐵𝐶𝐴ሿ
+൅ Pr 𝐶𝐴𝐵 ൅ Pr ሾ𝐶𝐵𝐴ሿ
+ൌ 6 19 ൌ 23
+• Consider a set of keys 𝐾 ⊂ 𝑈 of 𝑘 keys to be stored in a hash table of 
+size 𝑚
+• A hash function ℎ is chosen at random from the set ℋ of all possible 
+functions 𝐾 ↦ ሼ0 …  𝑚 െ 1ሽ
+1 How big is ℋ
+2 What is the probability that 2 given keys collide
+3 What is the probability that all keys hash to the same slot
+4 What is the probability that the hash function is “perfectly 
+balanced” to simplify assume 𝑘 ൌ 𝑐 ⋅ 𝑚
+Maybe try 𝑘 ൌ 4 𝑚 ൌ 2 first
+24
+Exercise
+23
+24
+2202024
+13
+• Who is willing to play the following game
+1 First you choose one of the three dice below
+2 Second I choose one of the remaining two dice
+3 We each roll our die
+4 Higher value wins
+25
+A Dicey Game
+𝐴
+𝐵
+𝐶
+26
+Die 𝐴 vs Die 𝐵
+Die 𝐴 
+Die B       Wins  Probability
+If you choose 𝐵 you lose
+25
+26
+2202024
+14
+27
+Die 𝐶 vs Die 𝐴
+Die 𝐶 
+Die A       Wins  Probability
+If you choose A you lose
+28
+Die 𝐵 vs Die 𝐶
+Die 𝐵 
+Die C       Wins  Probability
+If you choose 𝐶 you lose
+27
+28
+2202024
+15
+• You are a prisoner sentenced to death The king offers you a chance 
+to live by playing a simple game He gives you 15 black balls 15 white 
+balls and 2 empty boxes
+• You can distribute the balls between the boxes as you like provided 
+that no box is empty 
+• The king will first pick one of the boxes at random and then pick a 
+random ball from the selected box 
+• If the ball is white you live
+29
+Example
+Question How should you distribute the balls to maximize the 
+probability of survival
+Exercise 1 Prove that your solution is optimal or find a better 
+solution 2 What is your probability of survival
+• Suppose we uniformly pick a random person 𝑝 anywhere in the world Let 
+𝐴 be the event that 𝑝 is a DU student and 𝐵 the event that 𝑝 lives in 
+Denver with sample space 𝑆 denoting all people living in the US
+30
+Conditional Probability
+• How big are Pr 𝐴 and Prሾ𝐵ሿ
+– Compared to 𝑆 both Prሾ𝐴ሿ and Prሾ𝐵ሿ are small
+• How about the probability of 𝐵 given that 𝐴
+happened denoted Prሾ𝐵|𝐴ሿ
+– Knowing that 𝐴 happened makes 𝐵 much more likely
+• The given is merely a directive to focus on a subset 
+of 𝑆 namely 𝐴 This implies
+Pr 𝐵 𝐴 ൌ Prሾ𝐴 ∩ 𝐵ሿ
+Pr ሾ𝐴ሿ
+𝐴
+𝐵
+𝑆
+29
+30
+2202024
+16
+• In a best‐2‐out‐of‐three final the DU hockey team wins the first game with 
+probability 12 In the ensuing games the probability is determined by the 
+outcome of the previous game as follows If DU won the previous game then 
+they win the current game with probability 23 else they win with probability 
+13
+• What is the probability that DU wins the final
+• What is the probability that DU wins the final given that they won the first game
+• What is the sample space 𝑆
+31
+Example
+𝑆 ൌ 𝑊𝑊 𝑊𝐿𝑊 𝑊𝐿𝐿 𝐿𝑊𝑊 𝐿𝑊𝐿 𝐿𝐿
+• Events of interest 𝐹 ൌ win final 𝐺ଵ ൌ win game 1
+Exercise Given events 𝐴 𝐵 𝐶 show that if 𝐴 ∩ 𝐵 ⊆ 𝐵 ∩ 𝐶 then Pr 𝐴 𝐶 ൑ 𝑃ሺ𝐵|𝐶ሻ
+• How to you compute the probability of a chain of conjunctions
+32
+Chaining
+Pr 𝐴 ∩ 𝐵 ∩ 𝐶 ൌ Pr 𝐴 𝐵 ∩ 𝐶 ⋅ Pr 𝐵 𝐶 ⋅ Prሺ𝐶ሻ
+Pr 𝐴 ∩ 𝐵 ∩ 𝐶 ൌ Prሺ𝐴 ∩ 𝐵 ∩ 𝐶ሻ
+Prሺ𝐵 ∩ 𝐶ሻ
+⋅ Pr 𝐵 ∩ 𝐶
+Pr 𝐶
+⋅ Prሺ𝐶ሻ ൌ Pr 𝐴 𝐵 ∩ 𝐶 ⋅ Pr 𝐵 𝐶 ⋅ Prሺ𝐶ሻ
+Proof
+Exercise Prove that Pr 𝐴 𝐵 ∩ 𝐶 ൌ
+୔୰ሺ஺∩஻|஼ሻ
+୔୰ሺ஻|஼ሻ
+31
+32
+2202024
+17
+33
+Tree Diagram
+game 1
+game 2
+game 3 outcome
+event 𝐹
+
+
+
+event 𝐺ଵ
+
+
+
+prob
+13
+118
+19
+19
+118
+13
+Pr 𝐹 ൌ 12
+Pr 𝐺ଵ ൌ 12
+Pr 𝐹|𝐺ଵ ൌ Pr 𝐹 ∩ 𝐺ଵ
+Pr 𝐺ଵ
+ൌ 718
+12 ൌ 7
+9
+• Does Pr 𝐺ଵ|𝐺ଶ even make sense
+34
+A Posteriori Probability
+game 1
+game 2
+game 3 outcome
+event 𝐺ଶ
+
+
+
+event 𝐺ଵ
+
+
+
+prob
+13
+118
+19
+19
+118
+13
+Pr 𝐺ଵ ൌ 12 Pr 𝐺ଶ ൌ 12
+Pr 𝐺ଵ|𝐺ଶ ൌ Pr 𝐺ଵ ∩ 𝐺ଶ
+Pr 𝐺ଶ
+ൌ 13
+12 ൌ 2
+3
+Pr 𝐺ଶ|𝐺ଵ ൌ Pr 𝐺ଵ ∩ 𝐺ଶ
+Pr 𝐺ଵ
+ൌ 13
+12 ൌ 2
+3
+• What is the difference between 𝑃ሾ𝐺ଶ|𝐺ଵሿ and 𝑃ሾ𝐺ଵ|𝐺ଶሿ 
+33
+34
+2202024
+18
+According to Wikipedia 14 of adults in the US are age 65 and over 
+Furthermore the malefemale ratio for this group is 34
+1 Compute the fraction of males aged 65 and over among the entire population
+2 Compute the fraction of males aged less than 65 among the entire population
+3 Express the quantities above using the notation of conditional probability
+35
+Exercise
+൒ 65
+൏ 65
+𝑀
+𝐹
+𝑀
+𝐹
+𝑴 ൒ 𝟔𝟓
+𝐹 ൒ 65
+𝑴 ൏ 𝟔𝟓
+𝐹 ൏ 65
+014
+086
+37
+47
+
+ൌ 014 ⋅ 37 ൌ 6
+Pr 𝑭 ∩ ൒ 𝟔𝟓 ൌ Pr ൒ 𝟔𝟓 ⋅ Pr 𝑭 | ൒ 𝟔𝟓
+Pr 𝑀 ∩ ൒ 65 ൌ Pr ൒ 𝟔𝟓 ⋅ Pr 𝑴 | ൒ 𝟔𝟓
+• Let 𝐴 and 𝐵 be events with Pr 𝐵 ് 0 Then 𝐴 is independent of 𝐵 iff
+36
+Independence
+Example In our 2 out of 3 competition example winning the 
+final and winning the second game are not independent why
+Pr 𝐴 ∩ 𝐵 ൌ Pr 𝐴 ⋅ Prሾ𝐵ሿ
+• Equivalently 𝐴 and 𝐵 are independent iff 
+Pr 𝐴 𝐵 ൌ Prሾ𝐴ሿ
+• Symmetry If 𝐴 is independent of 𝐵 then 𝐵 is independent of 𝐴 Why
+Note An event with probability 0 is independent of every other event 
+𝑨
+𝑩
+𝒰
+35
+36
+2202024
+19
+• Beware not to assign additional meaning to the relation independent‐of
+Example To determine your proficiency in Java you are given two 
+“independent tests by two independent committees” ⇒ no mathematical 
+independence
+37
+Mathematical vs Everyday Independence
+Prpassed test 2 | passed test 1 ൐ Prpassed test 2
+Exercise In a single die roll we are interested in the events roll an 
+even number A roll a multiple of 3 B roll a prime number C 
+Which of these pairs of events if any are independent
+• Events 𝐴 and 𝐵 are conditionally independent on event 𝐶 if whenever 
+𝐶 has happened knowing whether 𝐵 happened provides no 
+information about the occurrence of 𝐴
+38
+Conditional Independence
+Pr 𝐴 𝐵 𝐶 ൌ 𝑃 𝐴 𝐶 ⋅ 𝑃ሺ𝐵|𝐶ሻ
+• Formally 𝐴 and 𝐵 are conditionally independent on 𝐶 iff
+Example Consider the events Raining Lightning and Thundering We 
+may reasonably claim that while Raining is not independent of 
+Thundering they are certainly independent given Lightning 
+• Or equivalently Pr 𝐴 𝐵 𝐶 ൌ Prሺ𝐴|𝐶ሻ
+37
+38
+2202024
+20
+• Informally a set of events is mutually independent if the probability of any 
+subset of them is not affected by which of the other events have occurred
+• More formally events 𝐴ଵ …  𝐴௠ are mutually independent iff for all
+subsets 𝑆 ⊆ ሼ1 …  𝑚ሽ
+39
+Mutually Independent Events
+Pr ሩ 𝐴௜
+௜∈ௌ
+ൌ ෑ Pr 𝐴௜
+௜∈ௌ
+• Consider the random experiment of flipping 3 fair coins and define 
+the events
+𝐴ଵ coin 1 matches coin 2
+𝐴ଶ coin 2 matches coin 3
+𝐴ଷ coin 3 matches coin 1
+• Are 𝐴ଵ 𝐴ଶ 𝐴ଷ pairwise independent
+• Are they mutually independent
+40
+Exercise
+39
+40
+2202024
+21
+• Suppose that you get an email message from your bank from a 
+foreign address
+• Is it reasonable to assume it is a scam Why
+Many scam messages use foreign email addresses
+Foreign email addresses are not very common
+Scam emails are common nowadays
+41
+Bayes’ Theorem Motivation
+Pr 𝐻 𝐸 ൌ Prሾ𝐻 ∩ 𝐸ሿ
+Prሾ𝐸ሿ
+ൌ Prሾ𝐸|𝐻ሿ
+Pr ሾ𝐸ሿ Pr ሾ𝐻ሿ
+where 𝐻 ൌ hypothesis message is scam and 𝐸 ൌ evidence uses 
+foreign address are events defined on the same sample space
+• Relates 𝐏𝐫 ሾ𝑯|𝑬ሿ the posterior to 𝐏𝐫 ሾ𝑯ሿ the prior
+ How does the likelihood of 𝐻 change in light of evidence 𝐸
+ Evidence 𝐸 multiplies the probability of 𝐻 by a factor that measures how 
+much condition 𝐻 affects the probability of 𝐸
+42
+Bayes’ Theorem
+𝐏𝐫 𝑯 𝑬 ൌ Prሾ𝐻 ∩ 𝐸ሿ
+Prሾ𝐸ሿ
+ൌ
+Prሾ𝐸|𝐻ሿ
+Pr ሾ𝐸ሿ
+𝐏𝐫 ሾ𝑯ሿ
+• H message is scam 𝐸 message uses a foreign address
+• Pr ሾ𝐻|𝐸ሿ is high compared to Pr ሾ𝐻ሿ because
+– Prሾ𝐸|𝐻ሿ is very high
+– Pr ሾ𝐸ሿ is low
+– Pr ሾ𝐻ሿ is medium but largely irrelevant in our reasoning
+• Foreign address makes  the scam hypothesis much more probable 
+because it appears in scam messages more often than in general
+41
+42
+2202024
+22
+• Suppose that 1 of Americans suffer from disease D          
+• A laboratory test for this disease is known to give the wrong result 
+10 of the time How much should you worry if you test positive
+1 Model the problem using the language of conditional probability
+2 Compute the probability that you have the disease
+3 What is the probability that you are healthy if the test result is negative
+43
+Example
+Notation 𝐷 ൌ have the disease 𝐷ഥ ൌ do not have the disease
+𝑇ା ൌ tested positive 𝑇ି ൌ tested negative
+Notation 𝐷 got the disease 𝑇ା tested positive
+1 Model the problem tested positive 
+Pr 𝐷 ൌ 1 Pr false ൅ ൌ Pr false െ ൌ 10  want Pr ሾ𝐷|𝑇ାሿ
+2 Compute the probability that you are ill 𝐷 given 𝑇ା
+44
+Example…
+Pr 𝐷 𝑇ା ൌ Pr 𝐷 ∩ 𝑇ା
+Pr 𝑇ା
+ൌ
+Pr 𝑇ା 𝐷 Prሾ𝐷ሿ
+Pr 𝑇ା ∩ 𝐷 ൅ Pr ሾ𝑇ା ∩ 𝐷ഥሿ
+ൌ
+ሺ001ሻሺ09ሻ
+001
+09 ൅ ሺ099ሻሺ01ሻ ൌ 0083
+3 Compute the probability that you are healthy given 𝑇ି
+43
+44
+2202024
+23
+• Using Bayes Theorem comment informally on the soundness 
+of the following arguments
+1 Look you can count up to 10 for sure you are a mathematician
+2 Look you speak a foreign language in a country where few 
+people know a foreign language you must be a spy
+45
+Exercise
+• A random variable 𝑋 is a function 𝑆 → ℝ ie a mapping from outcomes 
+to real numbers
+46
+Random Variables
+Example flip 3 fair coins Define random variables 𝐴 ൌ  heads 𝐵 ൌ 1 if 
+all coins agree 0 otherwise Then
+• A random variable 𝑋 is discrete if it takes countably many values  𝑥ଵ 𝑥ଶ …
+A random variable over a discrete sample space is always discrete
+A random variable over an uncountable set may or may not be discrete
+𝐻𝐻𝐻 ⟼ 3
+𝐻𝑇𝐻 ⟼ 2
+𝐻𝐻𝑇 ⟼ 2
+𝐻𝑇𝑇 ⟼ 1
+𝐴
+𝑇𝐻𝐻 ⟼ 2
+𝑇𝐻𝑇 ⟼ 1
+𝑇𝑇𝐻 ⟼ 1
+𝑇𝑇𝑇 ⟼ 0
+𝐻𝐻𝐻 ⟼ 1
+𝐻𝑇𝐻 ⟼ 0
+𝐻𝐻𝑇 ⟼ 0
+𝐻𝑇𝑇 ⟼ 0
+𝐵
+𝑇𝐻𝐻 ⟼ 0
+𝑇𝐻𝑇 ⟼ 0
+𝑇𝑇𝐻 ⟼ 0
+𝑇𝑇𝑇 ⟼ 1
+45
+46
+2202024
+24
+• We extend the notion of events to discrete random variables
+• If 𝑋 is a random variable the event ሼ𝑋 ൌ  𝑥ሽ is defined as  𝑋 ൌ 𝑥 ≔
+𝑠 ∈ 𝑆 𝑋 𝑠 ൌ 𝑥
+47
+Events on random variables
+Example flip 3 fair coins Define random variables 𝐴 ൌ  heads 𝐵 ൌ 1 if 
+all coins agree 0 otherwise
+𝐻𝐻𝐻 ⟼ 3
+𝐻𝑇𝐻 ⟼ 2
+𝐻𝐻𝑇 ⟼ 2
+𝐻𝑇𝑇 ⟼ 1
+𝑇𝐻𝐻 ⟼ 2
+𝑇𝐻𝑇 ⟼ 1
+𝑇𝑇𝐻 ⟼ 1
+𝑇𝑇𝑇 ⟼ 0
+𝐴
+𝐻𝐻𝐻 ⟼ 1
+𝐻𝑇𝐻 ⟼ 0
+𝐻𝐻𝑇 ⟼ 0
+𝐻𝑇𝑇 ⟼ 0
+𝑇𝐻𝐻 ⟼ 0
+𝑇𝐻𝑇 ⟼ 0
+𝑇𝑇𝐻 ⟼ 0
+𝑇𝑇𝑇 ⟼ 1
+𝐵
+𝐴 ൌ 0 ≡ 𝑇𝑇𝑇
+𝐴 ൌ 1 ≡ 𝐻𝑇𝑇 𝑇𝐻𝑇 𝑇𝑇𝐻
+𝐴 ൌ 3 ≡ 𝐻𝐻𝐻
+𝐵 ൌ 1 ≡ 𝐻𝐻𝐻 𝑇𝑇𝑇
+Independence
+• Two random variables X and Y are independent iff  for all values 𝑥
+and 𝑦 the events ሼ𝑋 ൌ 𝑥ሽ and ሼ𝑌 ൌ 𝑦ሽ are independent
+• If 𝑋 and 𝑌 are independent random variables then
+48
+Example Let 𝑋 denote the sum of rolling two dice one after the 
+other and let 𝑋௜ be the value on die 𝑖 Since 𝑋ଵ and 𝑋ଶ are 
+independent then 
+Pr 𝑋 ൌ 𝑥 𝑌 ൌ 𝑦 ൌ Pr 𝑋 ൌ 𝑥 ⋅ Pr 𝑌 ൌ 𝑦
+Pr 𝑋 ൌ 12 ൌ Pr 𝑋ଵ ൌ 6 𝑋ଶ ൌ 6 ൌ Pr 𝑋ଵ ൌ 6 ⋅ Pr 𝑋ଶ ൌ 6
+ൌ 16
+16 ൌ 136
+47
+48
+2202024
+25
+• In our experiment of flipping three coins are 𝐴 and 𝐵 independent 
+random variables
+ 𝐴 ൌ  of heads with sample space ሼ0123ሽ
+ 𝐵 ൌ 1 if all coins match else 0 with sample space ሼ01ሽ
+49
+Exercise
+Hint Can you find 𝑎 𝑏 ∈ ℝ such that
+Pr 𝐴 ൌ 𝑎 ∧ 𝐵 ൌ 𝑏 ് Pr 𝐴 ൌ 𝑎 ⋅ Prሾ𝐵 ൌ 𝑏ሿ
+• If 𝑋 is a random variable then the expected value of 𝑋 denoted 
+𝐸ሺ𝑋ሻ is defined as
+50
+Expected Value
+Example When rolling 2 dice let X = a + b
+EX = 2136+3236+4336+…+12136= 7
+• Linearity 𝐸 𝑎𝑋 ൅ 𝑦 ൌ 𝑎𝐸 𝑋 ൅ 𝐸ሾ𝑌ሿ constant 𝑎
+Example 𝑋ଵ ൌ number on die 1 𝑋ଶ ൌ number on die 2         
+𝐸 𝑋 ൌ 𝐸 𝑋ଵ ൅ 𝑋ଶ ൌ 𝐸 𝑋ଵ ൅ 𝐸 𝑋ଶ ൌ 2 ൈ ሺ1 ൅ 2 ൅ ⋯ ൅ 6ሻ6
+• Independence If 𝑋 and 𝑌 are independent random variables then 
+𝐸 𝑋𝑌 ൌ 𝐸 𝑋 ⋅ 𝐸ሾ𝑌ሿ
+𝐸 𝑋 ൌ ෍ 𝑥 ⋅ Prሾ𝑋 ൌ 𝑥ሿ
+௫
+49
+50
+2202024
+26
+• Let 𝑥 be a random variable with sample space ሼ𝑎ଵ 𝑎ଶ 𝑎ଷ 𝑎ସሽ and 
+probabilities Pr 𝑥 ൌ 𝑎௜ ൌ 𝑝௜
+• Then 𝐸 𝑥 ൌ 𝑎ଵ𝑝ଵ ൅ 𝑎ଶ𝑝ଶ ൅ 𝑎ଷ𝑝ଷ ൅ 𝑎ସ𝑝ସ
+51
+A Geometric Interpretation
+𝐸ሾ𝑥ሿ
+Example Alice and Bob play a game with funny dice ሺ222233ሻ and ሺ111166ሻ 
+respectively Higher roll wins that value paid by the losing player
+ What is the expected value of each dice 
+ Which player is more likely to win Which player would you rather be
+• Here is an algorithm to generate a random permutation
+52
+Exercise
+• Prove that the algorithm chooses a permutation uniformly at random
+• What is the expected number of calls to RANDINT
+51
+52
+2202024
+27
+• An indicator variable is a random variable with sample space  01
+• Notation For event 𝐴 define
+53
+Indicator Variables
+• What is the expected value of an indicator variable
+• What is the expected value of a sum of indicator variables
+𝟙஺ ൌ 𝐼஺ ൌ 𝐼 𝐴 ൌ ቊ1
+if 𝐴 occurs    
+0
+if 𝐴 does not
+• Consider the algorithm below operating on a random permutation of 
+an array 𝐴ሾ1 𝑛ሿ of positive numbers
+54
+Example
+• The number 𝑋 of executions of line 4 is a random variable
+• What is the sample space of 𝑋 What is 𝐸 𝑋 
+53
+54
+2202024
+28
+• Without indicator variables
+Let X =  executions of line 4
+55
+Finding Max on Random Array
+𝐸 𝑋 ൌ ෍ 𝑥 ⋅ Pr 𝑋 ൌ 𝑥
+௡
+௫ୀଵ
+• With indicator variables
+Let 𝑋௜ ൌ 𝐼ሼline 4 is executed in iteration 𝑖
+Then 𝑋 ൌ 𝑋ଵ ൅ 𝑋ଶ ൅ ⋯ ൅ 𝑋௡
+What is 𝐸ሾ𝑋௜ሿ What is 𝐸 𝑋 
+𝐸 𝑋௜ ൌ 1𝑖 and 𝐸 𝑋 ൌ 𝐻௡ where  𝐻௡ ൌ 1 ൅ 1
+2 ൅ 1
+3 ൅ ⋯ ൅ 1
+𝑛
+Claim  ln 𝑛 ൅ 1 ൏ 𝐻௡ ൏ 1 ൅ ln 𝑛 will prove in next module 
+• Consider a set of 𝑛 ൌ 28 people chosen at random Show 
+that the expected number of pairs of people that have the 
+same birthday is greater than 1
+56
+Exercise
+55
+56
+2202024
+29
+Theorem If 𝑋 is a non‐negative random variable then 𝑃 𝑋 ൒ 𝑡 ൑ 𝐸ሾ𝑋ሿ𝑡
+57
+Markov’s Inequality
+Proof  Define an indicator variable 𝑌 ൌ 𝐼ሼ𝑋 ൒ 𝑡ሽ  Then Pr 𝑋 ൒ 𝑡 ൌ 𝐸ሾ𝑌ሿ 
+Since 𝑌 ൑ 𝑋𝑡 for all 𝑡 then Pr 𝑋 ൒ 𝑡 ൌ 𝐸 𝑌 ൑ 𝐸 𝑋𝑡 ൌ 𝐸ሾ𝑋ሿ𝑡
+• This inequality is often used in the context of chance “games” in order 
+to find an upper bound for the probability of losing or for the 
+probability that an algorithm takes longer than certain acceptable limit
+Example Surveys show that DU students carry an average of 20 in cash 
+If you meet a student at random estimate the chance that they are 
+carrying less than 80
+• The probability mass function 𝑓 ℝ → ሾ01ሿ of a discrete random variable 
+𝑋 is simply its probability distribution defined as
+58
+Probability Mass Function
+𝐹 𝑥 ൌ Pr 𝑋 ൑ 𝑥 ൌ ෍ 𝑓ሺ𝑧ሻ
+௭ஸ௫
+𝑓 𝑥 ൌ Prሾ𝑋 ൌ 𝑥ሿ
+• The cumulative distribution function 𝐹 ℝ → ሾ01ሿ of a discrete random 
+variable 𝑋 is defined as
+Example Let 𝑋 be the number of heads after flipping a fair coin twice Then 
+𝑓 𝑥 ൌ ቐ
+14
+𝑥 ൌ 0
+12
+𝑥 ൌ 1
+14
+𝑥 ൌ 2
+𝑥
+𝑓ሺ𝑥ሻ
+57
+58
+2202024
+30
+59
+Some special random variables
+• Poisson 𝑋 ∼ Poissonሺ𝜆ሻ with pmf 𝑓 𝑥 ൌ 𝑒ିఒ ఒೣ
+௫  𝑥 ൌ 012 …
+• Binomial 𝑋 ∼ Binomialሺ𝑛 𝑝ሻ with pmf 𝑓 𝑥 ൌ
+௡
+௫ 𝑝௫ 1 െ 𝑝 ௡ି௫ 𝑥 ൌ 01 …  𝑛
+• Geometric 𝑋 ∼ Geomሺ𝑝ሻ with pmf 𝑓 𝑥 ൌ 𝑝 1 െ 𝑝 ௫ିଵ 𝑥 ൌ 123 …
+• Bernoulli 𝑋 ∼ Bernoulliሺ𝑝ሻ with pmf 𝑓 𝑥 ൌ 𝑝௫ 1 െ 𝑝 ଵି௫ 𝑥 ൌ 01
+• Some random processes are best modelled using uncountable sample spaces 
+eg heightweight of a person highest temperature tomorrow etc
+• A random variable 𝑋 is continuous if there exists a non‐negative 𝑓 called the 
+probability density function such that ׬
+𝑓 𝑥 𝑑𝑥 ൌ 1
+ାஶ
+ିஶ
+and for every 𝑎 ൑ 𝑏
+60
+Side note probability density function
+Pr 𝑎 ൑ 𝑋 ൑ 𝑏 ൌ න 𝑓 𝑥 𝑑𝑥
+௕
+௔
+Examples a standard uniform and b standard normal distributions
+a 𝑓 𝑥 ൌ ቊ1
+if 𝑎 ൑ 𝑥 ൑ 𝑏
+0
+otherwise    
+b 𝑓 𝑥 ൌ
+ଵ
+ଶగ exp െ
+௫మ
+ଶ
+ 𝑥 ∈ ℝ 
+𝑎
+𝑏
+1
+𝑏 െ 𝑎
+59
+60
+2202024
+31
+• If 𝑋 and 𝑌 are random variables defined on the same sample space 𝑆 their 
+joint probability distribution 𝑝 is given by 𝑝ሺ𝑥 𝑦ሻ ൌ Pr 𝑋 ൌ 𝑥 𝑌 ൌ 𝑦
+61
+Joint distribution
+Example Consider the experiment of flipping a fair coin three times and define
+𝑌 ൌ
+െ1
+if no heads occur         
+൅1
+if first head on toss 1
+൅2
+if first head on toss 2
+൅3
+if first head on toss 3
+𝑋 ൌ  number of heads 
+The joint distribution of 𝑋 and 𝑌 is
+• The joint distribution 𝑝ሺ𝑥 𝑦ሻ implicitly encodes
+ The marginal distributions of each variable alone
+ The conditional distributions which specify how the the outputs of one 
+random variable are distributed when given information on the outputs of the 
+other random variable
+62
+Joint distribution…
+𝑝௑ 𝑥 ൌ ∑ 𝑝ሺ𝑥 𝑦ሻ
+௬
+fix a value of 𝑋 and sum over all values of 𝑦
+𝑝௒ 𝑦 ൌ ∑ 𝑝ሺ𝑥 𝑦ሻ
+௫
+fix a value of 𝑌 and sum over all values of 𝑥
+Warning Don’t confuse 𝑝ሺ𝑥 𝑦ሻ with 𝑝ሺ𝑥|𝑦ሻ 
+Exercise Compute the marginal distributions of 𝑋 and 
+of 𝑌 for the joint distribution on the right What are 
+Prሾ𝑋 ൌ 1 𝑌 ൌ 1ሿ and Prሾ𝑋 ൌ 1|𝑌 ൌ 1ሿ What is 𝐸ሾ𝑋 ൅ 𝑌ሿ
+61
+62
+2202024
+32
+• Let 𝑓ሺ𝑥 𝑦ሻ be a function of random variables 𝑋 and 𝑌 with joint 
+distribution 𝑝ሺ𝑥 𝑦ሻ Then the expected value of 𝑓ሺ𝑥 𝑦ሻ is given by
+63
+Expectation
+𝐸 𝑓ሺ𝑋 𝑌ሻ ൌ ෍ ෍ 𝑓 𝑥 𝑦 ⋅ 𝑝ሺ𝑥 𝑦ሻ
+௬
+௫
+Example In our example of flipping a coin 3 times
+𝐸 𝑋𝑌 ൌ ∑ ∑ 𝑥 ⋅ 𝑦 ⋅ 𝑝 𝑥 𝑦 ൌ 0
+െ1
+ଵ
+଼
+௬
+௫
+ 
+൅ 1
+1
+ଵ
+଼ ൅ 1
+2
+ଵ
+଼ ൅ 1
+3
+ଵ
+଼ ൅ 2
+1
+ଶ
+଼
+൅ 2
+2
+ଵ
+଼ ൅ 3
+1
+ଵ
+଼ ൌ
+ଵ଻
+଼ ൌ 2125
+• Maximum likelihood estimation MLE is a method for finding the parameters of a 
+given probability massdensity function that best justify a set of observed data
+• This is achieved by maximizing a likelihood function so that under the assumed 
+statistical distribution the observed data is most likely
+64
+Maximum likelihood
+Example The probability 𝑤 that a random person carries a specific gene can be 
+modeled with a Bernoulli variate with mass function 𝑝 𝑥 ൌ 𝑤௫ 1 െ 𝑤 ଵି௫ 
+for 𝑥 ∈ ሼ01ሽ Given three iid samples 101 what is the most likely value of 𝑤
+The likelihood function is
+ℒ 𝑤 ൌ 𝑤௫భ 1 െ 𝑤 ଵି௫భ ⋅ 𝑤௫మ 1 െ 𝑤 ଵି௫మ ⋅ 𝑤௫య 1 െ 𝑤 ଵି௫య ൌ 𝑤 1 െ 𝑤 𝑤
+The likelihood ℒ 𝑤 ൌ 𝑤ଶ െ 𝑤ଷ is maximized when ℒᇱ 𝑤 ൌ 0
+Since ℒᇱ 𝑤 ൌ 2𝑤 െ 3𝑤ଶ ൌ 0 when 2𝑤 ൌ 3𝑤ଶ ⇒
+𝑤 ൌ 23 is the parameter value that best justifies the data
+63
+64
+2202024
+33
+Two different philosophical outlooks characterize the use of 
+randomness in computation
+1 The world behaves randomly
+ Algorithm is deterministic input is random
+ Behavior of algorithm is averaged over probability distribution of 
+inputs
+2 The algorithm behaves randomly
+ Input is given algorithm makes random choices
+ Randomization is internal to algorithm and its use does not require 
+assumptions about the input
+65
+Randomness in Computation
+• Monte Carlo eg randomized primality test
+Probably correct provably fast
+• Las Vegas eg randomized quicksort
+Probably fast provably correct
+66
+Types of Randomized Algorithms
+• Transformations
+– Convert Las Vegas 𝐵 to Monte Carlo 𝐵ᇱ by truncating the execution of 𝐵
+ Stop 𝐵 if it is taking too long Since 𝐵 runs fast with high probability then 𝐵′
+is correct with high probability
+– Convert Monte Carlo A to Las Vegas A by iterating
+ Repeatedly run 𝐴 until a correct answer is found
+ Requires certification otherwise risky
+65
+66
+2202024
+34
+• A top school is evaluating 𝑛 applicants for admission using a test 
+consisting of 𝑞 questions eg 𝑞 ൌ 100
+• Each candidate is either an Ace or a Dud Duds answer less than 70 of 
+the questions correctly while each Ace must answer at least 70 of the 
+questions correctly Goal is to separate the Aces from the Duds
+• A deterministic algorithm grades for each student the first 07𝑞 questions 
+of the exam Declare Ace if all correct else a Dud
+• A Monte Carlo algorithm grades 10 random questions for each student 
+Label as Ace if at least 7 are correct else a Dud
+• A Las Vegas algorithm tests all questions in random order until more than 
+30 are wrongly answered then Dud or 70 of 𝑞 questions answered 
+correctly then Ace
+67
+Example
+• Suppose you have a Las Vegas algorithm 𝐴 whose expected running 
+time 𝐸ሾ𝑇ሿ is 01𝑛ଶ sometimes it takes more time sometimes it 
+takes less time
+• Create a new algorithm 𝐵 that simply runs 𝐴 for at most 10𝑛ଶ units 
+of time and stops with a random answer eg whatever it has 
+computed so far if computation is not finished
+• How likely is it that 𝐵 will return an incomplete answer
+68
+From Las Vegas to Montecarlo
+Prሾ𝑇 ൐ 10𝑛ଶሿ ൑ 𝐸 𝑇
+10𝑛ଶ ൌ 001
+67
+68

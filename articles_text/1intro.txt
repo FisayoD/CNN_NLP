@@ -1,0 +1,1086 @@
+192024
+1
+Introduction
+COMP 3200
+Winter 2024
+“Computer science is no more about computers than 
+astronomy is about telescopes” – Edsger Dijkstra
+Course Goals
+• Survey a number of mathematical tools that are useful when analyzing 
+modeling and solving a wide variety of computational problems
+• Gain experience with
+ Formal reasoning and proof techniques
+ Careful use of language ⇒ pay attention to the exact meaning of words
+Example Each of 𝑛 cards has a number on one side and a letter on the other  
+Given  B 2 5 J which cards do you need to turn to test the rule that if there is a 
+J on one side there must be a 5 on the other side
+ Thinking with symbols and abstract generic objects
+ Modeling practical computing scenarios using standard math abstractions 
+sets relations functions posets graphs trees
+ Computing the resources required to store process and create various 
+computational structures that meet specific requirements
+2
+1
+2
+192024
+2
+• This class is about the use of discrete structures in computation including
+ Combinatorics and counting including some review
+ Enumerative combinatorics count the  of structures of a given kind
+ Combinatorial designs find a structure meeting certain criteria
+ Extremal combinatorics how bigsmall must it be to satisfy criteria
+ Combinatorial optimization find the “best” structure among all that satisfy given 
+criteria
+ Advanced counting techniques
+ Discrete probability theory and probabilistic reasoning
+ Relations Binary equivalence total and partial orders
+ Graph theory
+3
+Course Contents
+Example How many links must a network of size 𝑛 have to guarantee that 
+the network is connected or to guarantee failure of a link or node does not 
+disconnect the system 
+• Main prerequisite is sufficient mathematical maturity ie the ability to 
+follow and write an argument consisting of a sequence of statements 
+each of which follows from previous statements according to the laws 
+of logic
+• Elementary math functions polynomials logarithms exponentials
+• Sets and functions
+• Propositional and predicate logic
+• Proof techniques induction direct proof proof by contradiction proof 
+by cases
+Why some arguments are convincing while others are not
+What do you need to do to leave no room for doubt
+• Basic counting permutations and combinations
+4
+Required Background
+3
+4
+192024
+3
+• Which of the following “chessboards” can be tiled with 2 × 1 domino 
+pieces        Prove your claim
+5
+Warmup 1
+• Can you generalize your findings to 𝑛 × 𝑛 boards missing two cells 
+Can you handle some special cases eg when 𝑛 is a power of two
+• Can you state a general rule that distinguishes between tileable and 
+nontileable chessboards missing two arbitrary cells
+Claim Let 𝐵 be a chessboard with 2 missing cells B can be tiled iff the 
+2 missing cells have opposite colors
+1 If the cells have opposite colors then B can be tiled ⇐
+2 If B can be tiled then the 2 cells have opposite colors ⇒
+6
+Warmup…
+5
+6
+192024
+4
+• The following fragment sorts a list 𝐴 of items from a totally ordered set
+7
+Warmup 2
+• How many times is the comparison in line 3 executed
+• The answer is not as important as the pattern of reasoning
+The set 𝑆 of comparisons can be partitioned into 𝑛 − 1 disjoint subsets 
+𝑆ଵ …  𝑆௡ିଵ where 𝑆௞ is the set of comparisons when 𝑖 = 𝑘
+Since 𝑆௜ = 𝑛 − 𝑖 we want 𝑛 − 1 + 𝑛 − 2 + ⋯ + 2 + 1
+Addition Rule The size of a union of mutually disjoint finite sets is the 
+sum of the sizes of the sets
+• What is the value of the following sum
+8
+Exercise
+Hint The answer depends on the number of terms 𝑛 the first term 𝐹
+and the last term 𝐿
+• Can you derive a formula for a general pattern
+← 13 →
+𝐹
+𝐿
+7
+8
+192024
+5
+9
+Warmup 3
+• Given a list of airports serviced by an airline eg HNL SFO LAX ORD DFW LGA PVD MIA
+1 How many different nonstop routes⁎ can the airline offer
+2 What is the smallest number of nonstop routes the airline must offer so that there is a way 
+possibly with connections to get to any airport from any other airport in the list
+3 Can you decide if it is possible to offer a set of nonstop routes each no longer than 𝑚 miles 
+that allows you to get from any airport to any other airport 
+4 How do you visit all airports while minimizing flying time
+5 How to you test all routes while minimizing flying time
+6 Can you get from 𝐴 to 𝐵 even if an arbitrary airport closes
+⁎ If 𝐴 𝐵 is a route the airline offers flights from 𝐴 to 𝐵 as well as flights from 𝐵 to 𝐴
+• Can you do 𝑛 = 3 𝑚 = 3 
+10
+Warmup 4
+𝑛 = 3 𝑚 = 2
+• When can you lay out 𝑛 houses and 𝑚 wells with paths from each 
+house to each well that do not cross
+Always understand the unstated assumptions
+9
+10
+192024
+6
+• Common sets of numbers
+ℤ denotes the set of integers 0 ±1 ±2 ±3 …
+ℕ denotes the set of natural numbers or counting integers 0123 …
+ℤ௡ is the finite set 0 1 …  𝑛 − 1 ie the set of integers modulo 𝑛 for 𝑛  0
+ℚ is the set of rational numbers ie ratios of integers
+ℝ is the set of real numbers
+The set ℝ − ℚ are the irrational numbers eg 𝜋 2
+11
+Notation
+• If 𝑥 ∈ ℝ 
+𝑥 is the largest integer 𝑧 ≤ 𝑥 eg 
+2 = 1
+𝑥  is the smallest integer 𝑧 ≥ 𝑥 eg 
+2 = 2
+• If 𝑎ଵ 𝑎ଶ …  𝑎௡ are numbers
+∑
+𝑎௜ = 𝑎ଵ + 𝑎ଶ + ⋯ + 𝑎௡
+௡
+௜ୀଵ
+and ∏
+𝑎௜ = 𝑎ଵ ⋅ 𝑎ଶ ⋯ ⋅ 𝑎௡
+௡
+௜ୀଵ
+• For which values of 𝑥 is 𝑥 irrational
+an irrational number cannot be stored using floats
+• Can you find irrational numbers 𝑥 and 𝑦 such that 𝑥௬ is rational
+Hint What can you say about 𝑥௬ when 𝑥 = 𝑦 =
+2  Why
+12
+Exercise
+11
+12
+192024
+7
+• What is the value of the following expressions
+13
+Exercise
+−32
+෍ 1
+2𝑖
+ଷ
+௜ୀଵ
+෍ ෍ 𝑖 + 𝑗
+௡
+௝ୀଵ
+௡
+௜ୀଵ
+• Can you give a good approximation for the following sum when 𝑛 is large
+෍ 1
+2𝑖
+௡
+௜ୀଵ
+ෑ 𝑖 + 1
+𝑖
+ଽଽ
+௜ୀଵ
+• Recall that if 𝐴 and 𝐵 are 𝑛 × 𝑛 matrices the product 𝐶 = 𝐴 × 𝐵 is 
+also an 𝑛 × 𝑛 matrix defined as
+14
+Exercise
+• How many scalar multiplications and scalar additions are performed 
+when multiplying 𝐴 × 𝐵
+• How many when computing 𝐴௡
+𝑐௜௝ = ෍ 𝑎௜௞ ⋅ 𝑏௞௝
+௡
+௞ୀଵ
+13
+14
+192024
+8
+• Given reals 𝑎  1 and 𝑏  0 the logarithm of 𝑏
+in base 𝑎 is defined as  
+log௔ 𝑏 = 𝑐 iff 𝑎௖ = 𝑏
+15
+Logarithms
+• Convention  log 𝑏 = logଶ 𝑏 and ln 𝑏 = log௘ 𝑏
+• Properties
+logଵ଴ 𝑥
+ln 𝑥
+• Without using a calculator
+Explain why 1  logଶ 3  2
+Find logଷ 24
+Find logସ 100
+• Exactly how many decimal digits does integer 𝑥  0 require
+ For example 8 requires 1 digit while 256 requires 3
+• How many bits are needed to store  8ଵ଴଴ − 3
+• How many bits are needed to store 4ସర − 1 
+• Given a sorted list 𝐴 of natural numbers and 𝑥 ∈ ℕ how many 
+comparisons do you need to perform in order to determine if 𝑥 ∈ 𝐴 
+16
+Exercise
+15
+16
+192024
+9
+• Let 𝑋 and 𝑌 be sets Informally a function is a rule that assigns to 
+each element of 𝑋 exactly one element of 𝑌
+Example 𝑓 𝑥 ≔
+ଵ
+ଵା௫  𝑥 ∈ ℝஹ଴  𝑔 𝑥 = 0𝑥1𝑥 𝑥 ∈ 01 ∗
+17
+Functions
+Question What computational artifacts data structures algorithms 
+can we use to represent f 
+• Definition A function 𝑓 from a set 𝑋 into a set 𝑌 is a set of ordered pairs 
+𝑥 𝑦 with 𝑥 ∈ 𝑋 and 𝑦 ∈ 𝑌 such  that for any 𝑥 ∈ 𝑋 there is exactly 
+one pair whose first component is 𝑥
+• We say that 𝑓 maps 𝑋 to 𝑌 or that 𝑓 is a mapping from 𝑋 to 𝑌
+• We refer to 𝑋 and 𝑌 as the domain and codomain of 𝑓
+• 𝑓 𝑋 → 𝑌 𝑥 ↦ 𝑦
+• Domain 𝑓 = 𝑋 and Codomain 𝑓 = 𝑌
+• Given 𝑆 ⊆ 𝑋 the image of 𝑆 under 𝑓 is defined as   
+• The range of 𝑓 is defined a
+18
+Notation
+𝑓 𝑆 = 𝑓 𝑥  𝑥 ∈ 𝑆
+Range 𝑓 = 𝑓 𝑋 = 𝑓 𝑥  𝑥 ∈ 𝑋
+17
+18
+192024
+10
+• It is often useful to apply several functions in sequence so that the 
+output of one is the input to the next one
+19
+Function Composition
+𝑔 ∘ 𝑓 𝑋→𝑍
+𝑔 ∘ 𝑓
+𝑥 = 𝑔𝑓 𝑥 
+a
+b
+c
+d
+2
+3
+4
+2
+3
+1
+1
+𝑋
+𝑌
+𝑍
+𝑓
+𝑔
+2
+3
+4
+2
+3
+1
+1
+𝑋
+𝑍
+𝑔 ∘ 𝑓
+• A function 𝑓 𝑋 → 𝑌 is called
+20
+Special Types of Functions
+Onetoone or injective if 𝑥 ≠ 𝑦 ⇒ 𝑓 𝑥 ≠ 𝑓𝑦 We write 𝑓 𝑋 ↪ 𝑌
+Onto or surjective if for every 𝑦 ∈ 𝑌 there is 𝑥 ∈ 𝑋 such that 𝑓 𝑥 = 𝑦 
+ie the range of 𝑓 is the same  as its codomain
+Bijective if it is both onetoone and onto
+19
+20
+192024
+11
+• For a onetoone injective function each element of Y has at most 
+one incoming arrow
+• For an onto surjective function each element of Y has at least one 
+incoming arrow
+• For a bijective both onetoone and onto function each element of 
+Y has exactly one incoming arrow
+21
+Consider a function 
+Which of the following functions ℤ → ℤ are injective 
+Which ones are surjective 
+Which ones are bijective
+22
+Exercise
+Exercise Is your answer the same if we change the domain and 
+codomain to ℕ if we change it to ℝ
+•
+𝑥 ↦ 𝑥 + 2
+•
+𝑥 ↦ 𝑥ଶ + 2
+•
+𝑥 ↦ 𝑥ଷ + 𝑥ଶ + 1
+21
+22
+192024
+12
+Claim Let 𝑓 𝑋 → 𝑌 and 𝑔 𝑌 → 𝑍 be functions Then
+1 If 𝑓 and 𝑔 are injective then 𝑔 ∘ 𝑓 is also injective
+2 If 𝑓 and 𝑔 are surjective then 𝑔 ∘ 𝑓 is also surjective
+3 If 𝑓 and 𝑔 are bijective then 𝑔 ∘ 𝑓 is also bijective
+4 For any function 𝑓 𝑋 → 𝑌 there exists a set 𝑍 a bijection ℎ 𝑍 ↪ 𝑌 
+and a surjection 𝑔 𝑋 → 𝑍 such that 𝑓 = ℎ ∘ 𝑔
+23
+Properties of function composition
+Exercise Statement 4 says that any function can be written as a 
+composition of an injective function and a surjective function Prove this 
+claim
+• If 𝑓 𝑋 ↪ 𝑌 is a bijection then the inverse function 𝑓ିଵ 𝑌 ↪ 𝑋 is also 
+a bijection defined as 𝑓ିଵ 𝑦 = 𝑥 iff 𝑦 = 𝑓𝑥
+24
+Inverse Functions
+Exercise Given a bijection 𝑓 1 …  𝑛 → 1 …  𝑛 describe an efficient 
+algorithm to compute 𝑓ିଵ
+Hint Since the domain of 𝑓 is finite we can represent 𝑓 using an array
+23
+24
+192024
+13
+• Sometimes we may want to allow a function to be undefined for some 
+domain elements
+• A function defined on all domain elements is called a total function 
+otherwise it is a partial function
+• From now on the term function includes both partial and total functions
+25
+Partial Functions
+Example On domain ℝ 𝑓 𝑥 = 1𝑥ଶ−1 is partial while 
+𝑔 𝑥 = 1𝑥ଶ + 1 is total
+Remark Algorithms in general can be viewed as definitions of 
+functions from ℕ → ℕ Why 
+Are these functions partial or total
+Pigeonhole Principle
+26
+Wikipedia
+httpsenwikipediaorgwikiPigeonholeprinciple
+25
+26
+192024
+14
+• If you own three colors of socks how many socks do you need to take in the 
+dark to guarantee that you have a matching pair
+• Are there two different subsets of the list below that add up to the same value
+27
+Warmup
+4815379351865384279613427    5332822657075235431620317
+5692168374637019617423712    8247331000042995311646021
+0489445991866915676240992    3208234421597368647019265
+5800949123548989122628663    8496243997123475922766310
+1082662032430379651370981    3437254656355157864869113
+6042900801199280218026001    8518399140676002660747477
+1178480894769706178994993    3574883393058653923711365
+6116171789137737896701405    8543691283470191452333763
+1253127351683239693851327    3644909946040480189969149
+6144868973001582369723512    8675309258374137092461352
+1301505129234077811069011    3790044132737084094417246
+6247314593851169234746152    8694321112363996867296665
+1311567111143866433882194    3870332127437971355322815
+6814428944266874963488274    8772321203608477245851154
+1470029452721203587686214    4080505804577801451363100
+6870852945543886849147881    8791422161722582546341091
+1578271047286257499433886    4167283461025702348124920
+6914955508120950093732397    9062628024592126283973285
+1638243921852176243192354    4235996831123777788211249
+6949632451365987152423541    9137845566925526349897794
+1763580219131985963102365    4670939445749439042111220
+7128211143613619828415650    9153762966803189291934419
+1826227795601842231029694    0020480135385502964448038
+5173920083651862307925394    9270880194077636406984249
+1843971862675102037201420    4837052948212922604442190
+7215654874211755676220587     9324301480722103490379204
+2396951193722134526177237     5106389423855018550671530
+7256932847164391040233050     9436090832146695147140581
+2781394568268599801096354     5142368192004769218069910
+3171004832173501394113017     9475308159734538249013238
+2796605196713610405408019     5181234096130144084041856
+7426441829541573444964139     9492376623917486974923202
+2931016394761975263190347     5198267398125617994391348
+7632198126531809327186321     9511972558779880288252979
+2933458058294405155197296     5317592940316231219758372
+7712154432211912882310511     9602413424619187112552264
+3075514410490975920315348     5384358126771794128356947
+7858918664240262356610010     9631217114906129219461111
+8149436716871371161932035     3157693105325111284321993
+3111474985252793452860017     5439211712248901995423441
+7898156786763212963178679     9908189853102753335981319
+3145621587936120118438701     5610379826092838192760458
+8147591017037573337848616     9913237476341764299813987
+3148901255628881103198549     5632317555465228677676044
+5763257331083479647409398     8176063831682536571306791
+• For an arbitrary integer 𝑛  0 construct a set of 𝑛 positive integers 
+such that all its subsets have distinct sums
+Note your algorithm must work for any 𝑛
+28
+Exercise
+Example If 𝑛 = 5 one solution is 
+6 9 11 12 13
+27
+28
+192024
+15
+29
+Pigeonhole Principle
+Proof By contradiction
+Example Among 13 people there are at least two whose birthdays fall 
+in the same month
+Note Claim is tight and nonconstructive
+Alternative phrasing Let 𝑋 and 𝑌 be finite sets and 𝑓 𝑋 → 𝑌 a 
+function from 𝑋 to 𝑌 Then if 𝑋  |𝑌| then 𝑓 is not 11
+Basic Pigeonhole Principle If 𝑛 + 1 objects are placed into 𝑛 boxes 
+then at least one box contains two or more objects
+Given a sequence 𝑚 integers 𝑎ଵ 𝑎ଶ …  𝑎௠ there is 1 ≤ 𝑘 ≤ ℎ ≤ 𝑚
+such that 𝑎௞ + 𝑎௞ାଵ + ⋯ + 𝑎௛ is divisible by 𝑚
+30
+Example
+Exercise Describe and analyze an efficient algorithm to find a contiguous 
+subsequence of 𝑎ଵ 𝑎ଶ …  𝑎௠ that is divisible by 𝑚
+Proof Consider the 𝑚 sums 𝑎ଵ 𝑎ଵ + 𝑎ଶ …  𝑎ଵ + ⋯ + 𝑎௠ If any of these is 
+divisible by 𝑚 then the conclusion holds Otherwise each sum ≠ 0 mod 𝑚 
+ie 𝑎ଵ + ⋯ + 𝑎௝ mod 𝑚 ∈ 1 …  𝑚 − 1 
+Therefore there are two sums that are equal mod 𝑚 𝑎ଵ + ⋯ + 𝑎௞ =
+𝑎ଵ + ⋯ + 𝑎௛ = 𝑟 mod 𝑚 and 𝑎௞ାଵ + ⋯ + 𝑎௛ is divisible by 𝑚 ∎
+29
+30
+192024
+16
+Suppose you choose 101 integers from the set 12 …  200 Show that 
+among the integers chosen there are two such that one of them is 
+divisible by the other
+31
+Exercise
+Hint Express each integer as an odd number multiplied by a power of 
+two
+Generalized Pigeonhole Principle Let 𝑞ଵ … 𝑞௡ be positive integers If 
+𝑞ଵ + ⋯ + 𝑞௡ − 𝑛 + 1 objects are placed into 𝑛 boxes then for each 
+1 ≤ 𝑖 ≤ 𝑛 there is a box containing at least 𝑞௜ objects
+32
+Variants and Generalizations
+Variant 1 If 𝑛 𝑟 − 1 + 1 objects are placed into 𝑛 boxes then one 
+of the boxes contains 𝑟 or more objects
+Variant 2 If 𝑛 integers 𝑚ଵ …  𝑚௡ have an average greater than 𝑟 − 1 
+then at least one of the integers is greater than or equal to 𝑟
+Equivalently if 𝑋 and 𝑌 are finite sets with 𝑋  𝑟 − 1 |𝑌| then every 
+function 𝑓 𝑋 → 𝑌 maps at least 𝑟 elements of 𝑋 to the same element 
+of 𝑌
+31
+32
+192024
+17
+Claim Let 𝑛 be an arbitrary positive integer If 𝑛ଶ + 1 people are lined up 
+shoulder to shoulder in a straight line then it is always possible to choose 𝑛 + 1
+of the people to take one step forward so that from left to right they appear 
+sorted by height either increasingly or decreasingly
+Equivalently every sequence 𝑎ଵ …  𝑎௡మାଵ of numbers contains an increasing 
+or decreasing subsequence of length 𝑛 + 1
+Note The target sequence need not be contiguous 
+Example For 〈875119364122〉 with 𝑛 = 3 the longest increasing subsequence 
+has length 3 but there is a decreasing sequence eg ⟨8742⟩ of length 4
+33
+Example Paul Erdős
+Proof Let 𝑎ଵ …  𝑎௡మାଵ be an arbitrary sequence of numbers
+We consider two cases If there is an increasing subsequence of length 𝑛 + 1 we are done 
+Therefore for the rest of the argument we assume that there is no increasing subsequence 
+of length 𝑛 + 1 We show then that there must be a decreasing subsequence of length 𝑛 + 1
+Continued on next page…
+34
+Proof…
+Proof Let 𝑎ଵ …  𝑎௡మାଵ be our sequence of numbers
+Suppose there is no increasing subsequence of length 𝑛 + 1 else we are done We will   
+show that this implies that there must be a decreasing subsequence of length 𝑛 + 1
+For each 𝑘 = 1 …  𝑛ଶ + 1 let 𝑚௞ be the length  of the longest increasing subsequence 
+that starts with 𝑎௞ We must have 𝑚௞ ≤ 𝑛 for each 𝑘 by our assumption above
+Since 𝑚௞ ≥ 1 the 𝑛ଶ + 1 𝑚௜’s are integers between 1 and 𝑛 By Variant 1 of Pigeonhole 
+with  𝑟 = 𝑛 + 1 we can distribute 𝑛 𝑟 − 1 + 1 integers into 𝑛 boxes by their value
+Therefore one of the boxes contains at least 𝑟 = 𝑛 + 1 integers ie 𝑛 + 1 of the 𝑚௜’s 
+are equal say 𝑚௞భ = 𝑚௞మ = ⋯  𝑚௞೙శభ with 1 ≤ 𝑘ଵ  𝑘ଶ  ⋯  𝑘௡ାଵ ≤ 𝑛ଶ + 1
+Suppose ∃𝑖 𝑎௞೔ ≤ 𝑎௞೔శభ Then since 𝑘௜  𝑘௜ାଵ we can take a longest increasing 
+sequence stating with 𝑎௞೔శభ and make it longer by prefixing it with 𝑎௞೔ But then 𝑚௞೔ 
+𝑚௞೔శభ contradicting the fact that 𝑚௞೔ = 𝑚௞೔శభ Thus 𝑎௞೔  𝑎௞೔శభfor every 𝑖 = 1 …  𝑛
+Since 𝑎௞೔  𝑎௞೔శభ for all 𝑖 = 1 …  𝑛 it follows  𝑎௞భ  𝑎௞మ  ⋯  𝑎௞೙శభ a decreasing 
+subsequence of length 𝑛 + 1 ∎
+33
+34
+192024
+18
+The following principles related to Pigeonhole are sometimes useful
+1 If 𝑛 objects are put into 𝑛 boxes and no box is empty then each box 
+contains exactly one object
+2 If 𝑛 objects are put into 𝑛 boxes and no box gets more than one 
+object then each box contains exactly one object
+3 If 𝑛 objects are put into 𝑛 + 1 boxes then at least one box is empty
+35
+Related Principles
+Consider the following game Two players receive a sequence of 0s and 
+1s Starting with the given sequence of length 𝑛 they alternate their 
+moves In each move a player appends 0 or 1 to the end of the current 
+sequence A player loses if his digit completes a block of 𝑛 consecutive 
+digits that has already appeared before the two occurrences may 
+overlap
+36
+Exercise
+Is the game guaranteed to terminate If so provide an upper bound on 
+the number of moves before termination otherwise describe a 
+sequence that will force the game to go on indefinitely
+Example For 𝑛 = 4 and sequence 0010000110101111001 player 2 will lose
+35
+36
+192024
+19
+Prove that given six or more people either there are three each pair of 
+whom are acquainted or there are three each pair of whom are 
+unacquainted
+37
+Ramsey’s Theorem
+Proof The first step is to find a suitable abstraction
+We model the problem by using a complete graph with six vertices 
+For every pair of vertices 𝑢 and 𝑣 the edge between 𝑢 and 𝑣 is 
+colored blue if 𝑢 and 𝑣 know each other and red otherwise 
+Consider any vertex 𝑤 and its 5 incident edges The Generalized 
+Pigeonhole Principle guarantees that at least three of these edges 
+have the same color all blue or all red 
+Assume three are blue meeting vertices 𝑥 𝑦 𝑧 If any of the edges 
+joining 𝑥 𝑦 𝑧 say 𝑥𝑦 is blue we have a trio 𝑤 𝑥 𝑦 of mutual 
+acquaintances otherwise no pair from 𝑥 𝑦 𝑧 know each other
+ 𝑤
+ 𝑎
+ 𝑏
+ 𝑥
+ 𝑦
+ 𝑧
+• Let 𝑋 = ⟨𝑥ଵ 𝑥ଶ …  𝑥௡⟩ be a list of 𝑛 distinct numbers in no particular order
+• Elements 𝑥௜ and 𝑥௝ are neighbors if they would be adjacent had 𝑋 been 
+sorted ie if 𝑥௜  𝑥௝ and there is no ℎ ≠ 𝑖 𝑗 with 𝑥௜  𝑥௛  𝑥௝
+Example If 𝑋 = 〈2751211〉 25 and 1112 are pairs of neighbors
+• We consider two related problems
+1 In the minimumgap problem you want to find a closest pair of neighbors
+2 In the maximumgap problem you want to find a farthest pair of neighbors
+Example If 𝐿 = 〈2751211〉 the minimumgap is 12 − 11 = 1 and the 
+maximumgap is 11 − 7 = 4
+• How fast can you solve these problems
+Trivially solved in subquadratic time how
+• Can you find faster solutions by making use of the pigeonhole principle or 
+one of its variants Hint Partition the range of 𝑋 into 𝑛 − 1 buckets
+38
+Exercise
+37
+38
+192024
+20
+Double Counting
+39
+Wikipedia
+httpsenwikipediaorgwikiDoublecountingprooftechnique
+෍ ෍ 𝐴௜௝
+௠
+௝ୀଵ
+= ෍ ෍ 𝐴௜௝
+௡
+௜ୀଵ
+௠
+௝ୀଵ
+௡
+௜ୀଵ
+𝐴
+• At the end of a party the host asks each of the guests how many times 
+they shook hands She gets the following counts including her own
+2 5 1 3 1 0 4 2 3 
+• Did everyone report an accurate count
+40
+Warmup
+Claim Handshaking Lemma Every simple undirected graph contains 
+an even number of vertices of odd degree
+39
+40
+192024
+21
+• A proof technique for demonstrating that two expressions are equal by 
+showing that they are simply two ways of counting the size of the same set 
+ By counting the same set in two different ways we get interesting results
+• Approach Describe a set from two perspectives This results in two 
+different expressions for its size which consequently must be equal to 
+each other
+• Challenge Decide what needs to be doublecounted
+41
+Double Counting
+Example Show that 𝑆௡ = 1 + 9 + ⋯ + 9௡ = 9௡ାଵ − 18
+Let 𝑆௜ be the quantity to be doublecounted 
+On one hand 𝑆௡ାଵ = 𝑆௡ + 9௡ାଵ on the other 𝑆௡ାଵ = 1 + 9 ⋅ 𝑆௡
+This implies the desired result
+• A planar graph is a graph 𝐺 that can be drawn with no edge crossings
+ 𝐺 partitions the plane into 𝑣 vertices 𝑒 edges and 𝑓 faces
+42
+Example
+𝑣 = 6 𝑓 = 4 𝑒 = 8
+• If 𝑠௜ is the size of the 𝑖୲୦ face then 𝑒 = 1
+2 ෍ 𝑠௜
+௙
+௜ୀଵ
+• If 𝑑௝ is the degree of the 𝑗୲୦ vertex then 𝑒 = 1
+2 ෍ 𝑑௝
+௩
+௝ୀଵ
+𝑑ଵ = 2
+𝑑ଶ = 2
+𝑑ଷ = 2
+𝑑ସ = 3
+𝑑ହ = 4
+𝑑଺ = 3
+𝑠ଵ = 6
+𝑠ଶ = 3
+𝑠ଷ = 3
+𝑠ସ = 4
+1
+2
+3
+4
+5
+6
+𝟏
+𝟐
+𝟑
+𝟒
+41
+42
+192024
+22
+• In a class of 10 students everyone solved three problems from the 
+homework and each problem was solved by two students What is 
+the number 𝑘 of problems in the homework
+• Imagine a table recording who solved what
+43
+Example
+• How many problems were solved in total
+• ∑ of columns = 2𝑘 = ∑ of rows = 3 ⋅ 10 ⇒ 𝑘 = 15
+• In the next assignment for the same group of 10 students every 
+student solved more than half of the problems Is it possible that no 
+problem  was solved by more than half of the students
+• Now suppose that in the same class again 10 students every girl knows 
+3 boys and every boy knows 2 girls How many students are boys
+What should you double count
+44
+Exercise
+43
+44
+192024
+23
+• Using doublecounting compute the number of triples 𝑎 𝑏 𝑐 which 
+satisfy 𝑎 𝑏 𝑐 ∈ 1 2 …  𝑛 𝑎  𝑐 and 𝑏  𝑐
+• How many triples 𝑎𝑙 𝑏 𝑐 of numbers satisfy 𝑎 𝑏 𝑐 ∈ 1 2 …  𝑛 and 
+𝑎  𝑏  𝑐
+45
+Exercise
+Mathematical Induction
+46
+Section 13
+45
+46
+192024
+24
+• The fourcolor map theorem states that no more 
+than four colors are needed to color the regions 
+of any map so that no two adjacent regions† have 
+the same color 
+47
+Warmup
+†Adjacent means that two regions share a common boundary segment not merely a corner where 
+three or more regions meet
+• A number of lines are drawn in the 
+plane dividing it into regions Can 
+the regions be 2colored in such a 
+way that no two adjacent regions 
+have the same color 
+• A powerful technique to prove properties of arbitrarily large sets of 
+natural numbers including all of ℕ
+• In practice induction can be used to prove properties about other 
+mathematical structures such as sets graphs trees algorithms etc
+• Main idea captured by a simple metaphor
+48
+Induction
+ 11 correspondence between natural 
+numbers and dominos
+ If one domino falls the next falls
+ If the first domino falls all dominos fall
+47
+48
+192024
+25
+Let 𝑋 be a set of natural numbers with the following properties
+1 The number 0 belongs to 𝑋 base case
+2 If a natural number 𝑘 belongs to 𝑋 then 𝑘 + 1 also belongs to 𝑋
+inductive step
+Then 𝑋 = ℕ
+49
+Principle of Mathematical Induction
+• Use when you want to prove that every natural number 𝑛 satisfies a 
+certain property 𝑃 𝑛
+• We can use induction to prove properties about other mathematical 
+structures sets graphs trees algorithms
+– The key is to express the goal in terms of a property 𝑃 of natural numbers
+1 State that the proof uses induction This immediately conveys to the reader 
+the overall structure of the proof making it easier to follow the argument
+2 Define an appropriate predicate 𝑷𝒌 The eventual conclusion of your 
+argument will be that 𝑃𝑘 holds for all natural numbers 𝑘 This predicate 
+when assumed true is referred to as the inductive hypothesis
+3 Prove that 𝑷𝟎 is true This step called the base case is usually easy to 
+prove by direct verification More than one base case may be required
+4 Prove that 𝑷𝒌 implies 𝑷𝒌 + 𝟏 for all 𝒌 ∈ ℕ This is the inductive step 
+We are not claiming that either 𝑃𝑘 or 𝑃𝑘 + 1 are true Even though the 
+statements 𝑃𝑘 and 𝑃𝑘 + 1 look similar bridging the gap may be tricky
+5 Invoke induction Given 14 the induction principle allows you to conclude 
+that 𝑃𝑘 holds for all natural numbers
+50
+Template for Induction Proofs
+49
+50
+192024
+26
+• Prove that ∑
+2௜ = 2௡ାଵ − 1
+௡
+௜ୀ଴
+for all 𝑛 ∈ ℕ
+• What is the predicate 𝑃𝑘
+𝑃𝑘 is the property of k that 1 + 2 + ⋯ + 2௞ = 2௞ାଵ − 1
+• Base case Is 𝑃0 true
+• Inductive step show 𝑃𝑘 ⇒ 𝑃𝑘 + 1
+We assume 𝑃𝑘 ie assume that ∑
+2௜ = 2௞ାଵ − 1
+௞
+௜ୀ଴
+Need to show that under this assumption 𝑃𝑘 + 1 also holds
+51
+Example
+or 𝑃 𝑘 − 1 ⇒ 𝑃𝑘
+෍ 2௜ = 2௞ାଵ +
+௞ାଵ
+௜ୀ଴
+෍ 2௜ = 2௞ାଵ + 2௞ାଵ − 1 = 2௞ାଶ − 1
+௞
+௜ୀ଴
+Prove each of the following by induction
+a
+1ଶ + 3ଶ + 5ଶ + ⋯ + 2𝑛 − 1 ଶ =
+௡ ଶ௡ିଵ ଶ௡ାଵ
+ଷ
+b
+1⋅ 3 + 2 ⋅ 4 + 3 ⋅ 5 + ⋯ + 𝑛 𝑛 + 2 =
+௡௡ାଵଶ௡ା଻
+଺
+c
+∑
+ଵ
+௜௜ାଵ
+௡
+௜ୀଵ
+=
+௡
+௡ାଵ
+52
+Exercise
+51
+52
+192024
+27
+• Consider a 2௡ × 2௡ grid with an arbitrary cell removed shown in black 
+• Prove that such board can be tiled with Lshapes consisting of 3 cells 
+each shown in red
+53
+Exercise
+• Use induction to prove properties of a 
+subset of ℤ of the form 𝑥 ∈ ℤ 𝑥 ≥ 𝑛଴
+54
+Variants
+𝑃 0  𝑃 1  …  𝑃𝑘 ⇒ 𝑃𝑘 + 1
+Exercise Prove that every integer greater than 1 can be expressed 
+uniquely as a product of prime numbers listed in ascending order
+• Can strengthen the inductive hypothesis by assuming it holds for 
+all natural numbers ≤ 𝑘 strong induction Then the inductive 
+step becomes
+53
+54
+192024
+28
+• Following the induction template prove that 3 and 5 cent coins can 
+be used to produce any amount of change greater than 7 cents
+• What are the base cases
+• What is the inductive hypothesis
+55
+Exercise
+• What is wrong with the following proof that all horses have the same color
+56
+Exercise
+Theorem In every set of 𝑛  0 horses all the horses are of the same color 
+Proof We proceed by induction on 𝑛
+Base case If there is only one horse the claim is true
+Inductive step Assume that any set of 𝑛 horses is monochromatic
+Let 𝐻 = ℎଵ ℎଶ …  ℎ௡ ℎ௡ାଵ be an arbitrary set of 𝑛 + 1 horses Consider the 
+sets 𝐻ଵ = ℎଵ …  ℎ௡ and 𝐻ଶ = ℎଶ …  ℎ௡ାଵ
+Since 𝐻ଵ = 𝐻ଶ = 𝑛 each 𝐻௜ is monochromatic
+Thus ℎଶ …  ℎ௡ have the same color
+Since ℎଵ has the same color as ℎଶ and ℎ௡ has the same color as ℎ௡ାଵ we 
+conclude that all horses of 𝐻 have the same color
+By induction all horses have the same color
+55
+56
+192024
+29
+Any nonempty subset of natural numbers contains a smallest element
+57
+WellOrdering Principle WOP
+• The wellordering principle regular induction and strong induction 
+are all equivalent 
+Each one of the principles implies the other two
+• While all equivalent some arguments are best expressed using the 
+wellordering principle
+• As obvious as the principle may sound it does not hold for real or even 
+rational numbers
+Exercise Show that if the WOP is correct then the principle of induction 
+is correct 
+58
+Example
+Claim Every integer 𝑛  1 can be factored as a product of primes
+Proof by WOP
+Let 𝐶 be the set of integers  1 that cannot be factored into primes 
+For the sake of contradiction assume that 𝐶 is not empty
+The WOP implies that 𝐶 has a smallest element 𝑠 which cannot be prime why 
+But then 𝑠 = 𝑎 ⋅ 𝑏 where 1  𝑎 𝑏  𝑠 Since 𝑝 ∉ 𝐶 𝑞 ∉ 𝐶 else 𝑠 would not 
+be smallest they have prime factorizations 𝑝௜భ ⋅ 𝑝௜మ ⋅ ⋯ 𝑝௜೘ and 𝑝௝భ ⋅ 𝑝௝మ ⋅ ⋯ 𝑝௝೙ 
+respectively
+Writing 𝑠 = 𝑝௜భ ⋅ 𝑝௜మ ⋅ ⋯ 𝑝௜೘ ⋅ 𝑝௝భ ⋅ 𝑝௝మ ⋅ ⋯ 𝑝௝೙ contradicts 𝑠 ∈ 𝐶 so 𝐶 is empty ∎
+Question Does the proof above imply that the factorization of 𝑛 into 
+primes is unique up to ordering of the prime factors
+57
+58
+192024
+30
+• To prove that 𝑃𝑛 is true for all 𝑛 ∈ ℕ using the WOP
+59
+Template for WOP proofs
+1 State that the proof uses the WOP This announces the overall structure of the proof
+2 Define 𝑷𝒏 May need to be clever in defining 𝑛 in terms of the variables involved
+3 Define the set 𝑪 of counter examples to 𝑷 Specifically 𝐶 ≔ 𝑛 ∈ ℕ ∶ 𝑃 𝑛  is false 
+4 Assume claim is false To prove by contradiction assume that 𝐶 is nonempty 
+5 Invoke WOP The nonempty set 𝐶 must contain a smallest element 𝑠 ∈ 𝐶
+6 Reach a contradiction This might involve showing that 𝑃𝑠 is true or that there is   a 
+member of 𝐶 smaller than 𝑠 this is the openended part of the proof
+7 Conclusion The contradiction implies that 𝐶 is empty ie there are no false cases
+• Using the Well Ordering Principle prove that the following equation 
+admits no solution where 𝑥 𝑦 𝑧 ∈ ℕ
+60
+Exercise
+4𝑥ଷ + 2𝑦ଷ = 𝑧ଷ
+Hint There different valid ways in which you could formulate 𝑃𝑛 One of 
+them is in terms of 𝑛 = 𝑥𝑦𝑧
+59
+60
+192024
+31
+• Invariants are important tools for proving properties of a system a game 
+program device etc such as impossibility of certain events termination 
+and various types of bounds
+• The goal is to prove that a process preserves a certain property the 
+invariant at all times
+• An invariant may take many forms including
+Sign eg a variable never becomes negative
+Parity eg a quantity of interest is always odd
+Value eg a quantity does not change
+Order eg a section of an array is sorted
+Logical proposition eg the altitude of a plane never drops below 
+1000 feet without the landing gear being deployed
+61
+Invariants
+• Tools to reason about invariants include double counting the well
+ordering principle and induction
+• Double counting uses a sum invariant
+• The wellordering principle is based on showing that a relevant 
+quantity never goes below a certain threshold
+• To prove a property by induction show that the property holds at the 
+beginning base case and if it holds after 𝑡 steps then it also holds 
+after 𝑡 +  1 steps
+To prove termination or to compute a bound identify a nonnegative 
+quantity that decreases at every step
+To prove impossibility find a quantity that never changes
+62
+Invariants…
+61
+62
+192024
+32
+• Each citizen of a town supports one of two candidates for an election
+• If among the friends of a citizen 𝑧 there are more fans of the other 
+candidate than the candidate preferred by 𝑧 then 𝑧 changes their 
+support to the other candidate
+• In each time period say a day one such citizen switches
+• Is it possible that this switching process goes on forever 
+• What is a good mathematical abstraction to model the problem
+63
+A Toy Example
+day 3
+day 0
+day 1
+day 2
+• Is it possible for a large enough population and pattern of friendships that the 
+process does not terminate
+• To show termination find a nonnegative quantity that decreases at every step
+• A friendship between two friends is shaky if they favor opposite candidates
+• How does the number of shaky friendships change with time
+64
+Termination
+Claim For any friendship network the number of shaky connections decreases 
+with every switch Therefore the network stabilizes in finite time
+𝑥
+𝒙
+day 0
+day 1
+day 2
+ shaky = 6
+ shaky = 4
+ shaky = 2
+63
+64
+192024
+33
+• You are programming a robot that moves along the cells of a regular grid
+• The robot starts at 00 and at each step it moves up or down one 
+vertical unit and left or right one horizontal unit 
+65
+Exercise
+𝑥 𝑦 →
+𝑥 + 1 𝑦 + 1
+𝑥 + 1 𝑦 − 1
+𝑥 − 1 𝑦 + 1
+𝑥 − 1 𝑦 − 1
+• How many steps does the robot need to reach cells 1312 and 519
+• Can you design an algorithm that allows the robot to reach an arbitrary 
+cell 𝑠 𝑡 using a minimum number of steps or determine that the cell 
+cannot be reached
+• The 8puzzle consists of a 3 × 3 board containing 8 tiles labeled 1 
+through 8 plus one empty space You are given an initial and a final state
+• Starting with the initial state the goal is to repeatedly move tiles into 
+the adjacent hole until the final configuration is reached
+• Show a solution to the instance below or explain why it cannot be solved
+66
+Exercise
+65
+66
+192024
+34
+• Prove that the following function correctly sorts and array 𝐴 of 𝑛  0
+integers
+67
+Exercise
+Loop Invariant 𝑷𝒋 after completing iteration 𝑗 
+𝐴1  𝑗 is sorted for all 𝑗 ≥ 1
+• On a stack of 𝑛 boxes you make a sequence of moves
+• In each move you divide one stack of boxes into two nonempty 
+stacks The game ends when you have 𝑛 stacks of one box each You 
+earn points for each move according to the following rule 
+if you divide a stack of size 𝑠 = 𝑎 + 𝑏 into stacks of sizes 𝑎 and 𝑏 
+respectively then you score 𝑎 ⋅ 𝑏 points 
+• Your total score is the sum of the points that you earn for each move 
+• What strategy maximizes your total score
+68
+The Unstacking Game
+67
+68
+192024
+35
+• Argue that the call MSORT𝐴 1 𝑛 correctly sorts an array 𝐴1𝑛 of 
+arbitrary integers assuming MERGE is correct
+69
+Exercise
+• Let 𝑇𝑛 be the running time of MSort𝐴 1 𝑛 Prove that for any 𝑛 ≥ 2 
+there is a constant 𝑐 such that  𝑇 𝑛 ≤ 𝑐𝑛 log 𝑛
+• Computational counterpart to induction
+Constructive induction argument can be  turned into code
+• Solves a problem by using the solution to smaller subproblems of the 
+same type
+• Include base cases that can be solved directly
+• Each recursive call should make progress ie get you closer to a base case
+Usually arguments of the recursive call are getting smaller
+70
+Recursion
+Example You are standing in a long line waiting for the opening of a 
+museum How can you find the number of people ahead of you if you are 
+not allowed to get out of the line and count
+69
+70
+192024
+36
+• Find the largest integer 𝑔 that evenly divides natural numbers 𝑎 and 
+𝑏 where 𝑎  𝑏
+71
+Example The Euclidean Algorithm
+Claim If 𝑑|𝑎 and 𝑑|𝑏 then 𝑑|𝑎 mod 𝑏 why
+Claim If 𝑎 𝑏 ∈ ℤା there exist unique 𝑞 𝑟 ∈ ℕ such 
+that 𝑎 = 𝑞 ⋅ 𝑏 + 𝑟 and 0 ≤ 𝑟  𝑏
+• Show that the number of recursive calls is at most logଶ 𝑎 under the 
+assumption that 𝑎  𝑏
+• What happens if 𝑏  𝑎
+72
+Exercise
+71
+72
+192024
+37
+• Let 𝑎 𝑏 ∈ ℕ and 𝑐 = GCD 𝑎 𝑏  Explain how to find integers 
+𝑥 and 𝑦 such that  𝑎 ⋅ 𝑥 + 𝑏 ⋅ 𝑦 = 𝑐 think of a modification 
+of the GCD algorithm
+• One of the computational tasks of RSA cryptography 
+requires finding the inverse of a number modulo another 
+Given 𝑎 𝑛 ∈ ℤା explain how to solve 𝑎 ⋅ 𝑥 = 1 mod 𝑛 or 
+determine that no solution exists 
+73
+Exercise
+• Let 𝑎 𝑏 ∈ ℕ Suppose you want to tile a rectangle of size 𝑎 × 𝑏 using 
+a minimum number of squares How many such tiles are needed 
+What is the size of the smallest tile
+Example 𝑎 = 175 𝑏 = 65
+74
+Exercise
+73
+74
+192024
+38
+• Beware of infinite loops never reaching a base case
+Example 𝑛 =
+௡ାଵ 
+௡ାଵ
+Recurse with Care
+• Avoid unnecessary use of extra memory
+Exercise What is 𝑓10001
+Does 𝑓 always terminate
+• Beware of exponential running time
+Example 𝐹଴ = 0 𝐹ଵ = 1 𝐹௡ = 𝐹௡ିଵ + 𝐹௡ିଶ
+• While our use of induction has focused on the natural numbers the 
+idea is far more general and it is often applied to sets other than ℕ
+• Recursive data types play a central role in programming
+• Not surprisingly the definition of a recursive data type mimics the 
+steps of an inductive proof and includes
+Base cases that stand alone
+Constructor cases that build new instances using base cases and other 
+instances known to be valid
+76
+Structural Induction
+75
+76
+192024
+39
+• What set 𝑆 is defined by each of the following rules 
+1 Base case the empty string 𝜀 ∈ 𝑆
+Constructor if 𝑠 ∈ 𝑆 then 𝑠0 ∈ 𝑆 and 𝑠1 ∈ 𝑆
+2 Base case the empty string 𝜀 ∈ 𝑆
+Constructor if 𝑠 𝑡 ∈ 𝑆 then 𝑠 𝑡 ∈ 𝑆
+77
+Exercise
+• Functions of recursive data structures can be conveniently defined 
+recursively
+• Given 𝜀 ∈ 𝑆 and 𝑟 𝑡 ∈ 𝑆 ⇒ 𝑟 𝑡 ∈ 𝑆 we can define
+78
+Functions of Recursive Data Types
+depth 𝑠 = ൜
+0
+if 𝑠 = 𝜀     
+max 1 + depth 𝑟  depth𝑡
+if 𝑠 = 𝑟 𝑡 
+Exercise Define rooted binary trees recursively and provide a 
+function to compute their height
+77
+78

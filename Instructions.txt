@@ -1,0 +1,2 @@
+cd into web_code and run this in terminal to run flask: 
+FLASK_APP=app.py flask run

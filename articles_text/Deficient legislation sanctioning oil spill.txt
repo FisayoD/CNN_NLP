@@ -1,0 +1,812 @@
+RESEARCH ARTICLE
+Effects of oil spills on fish production in the
+Niger Delta
+Eze Simpson OsuagwuID¤ Eseoghene Olaifa
+Department of Economics and Development Studies Covenant University Ota Nigeria
+¤ Current address International Institute for Development Studies Wilmington Delaware United States of
+America
+ ezeosuagwucovenantuniversityedung
+Abstract
+The Niger Delta region is the oil producing area of Nigeria which consists of highly diverse
+ecosystems that are supportive of numerous species of terrestrial and aquatic fauna and
+flora Crude oil spills endanger fish hatcheries in coastal water and also contaminate valu
+able fish This study examines the effects of oil spills on fish production in the Niger Delta of
+Nigeria from 1981–2015 using an estimable Cobb Douglas production function The findings
+suggest that oil production and spills negatively affect fish production while farm labour has
+a positive effect on fish production On the other hand fishery loan exerts a negative effect
+on fish production and this could be ascribed to the bottlenecks in accessing these loans
+This study corroborates the findings in literature on the negative concomitance of oil spills
+and fish production and suggests a cautious approach to oil exploration activities for a sus
+tainable development in the region
+Introduction
+In the Niger Delta oil spill is perceived to be a major consequence of an inordinate exploita
+tion of petroleum resources in the region Some recent studies have examined spatial varia
+tions in the natural mortality of particular fish species in order to assess the impact of oil spills
+on marine ecosystems specifically in the Arctic area 1 2 – 3 But varying results from these
+studies indicate the resistance of fish species to the toxicity of the environment However this
+study examines oil spills as a major environmental problem that hampers fish production
+drawing from econometric techniques of the CobbDouglas production function ignoring
+spatial variations due to data constraints Above all we seek to ascertain a statistical relation
+ship and suggest possible policy implications for a sustainable economic environment for
+increasing fish production and food sufficiency in one of the most degraded areas in the
+world This study differs from previous research on environmental degradation in the Niger
+Delta and implications on agricultural productivity by specifically examining fish production
+from the perspective of analysing data on fresh water fishing
+The Niger Delta is the major oil producing region of Nigeria which is located by the Atlantic
+Coast where River Niger divides into numerous tributaries The region is known to be the sec
+ond largest delta in the world of about 450 kilometres of coast line that terminates at the Imo
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+1  14
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+a1111111111
+OPEN ACCESS
+Citation Osuagwu ES Olaifa E 2018 Effects of oil
+spills on fish production in the Niger Delta PLoS
+ONE 1310 e0205114 httpsdoiorg101371
+journalpone0205114
+Editor Geir Ottersen Havforskningsinstituttet
+NORWAY
+Received May 3 2018
+Accepted September 19 2018
+Published October 25 2018
+Copyright © 2018 Osuagwu Olaifa This is an
+open access article distributed under the terms of
+the Creative Commons Attribution License which
+permits unrestricted use distribution and
+reproduction in any medium provided the original
+author and source are credited
+Data Availability Statement Data attached as
+supporting information
+Funding The authors received no specific funding
+for this work
+Competing interests The authors have declared
+that no competing interests exist
+River entrance 4 This region spans through 20000 square kilometres and has been described
+as the largest wetland in Africa and among the three largest in the world consisting about 2370
+square kilometres of rivers creeks and estuaries and stagnant swamp covering about 8600
+square kilometres 5 – 6 This highly diverse ecosystem supports numerous species of aquatic
+flora and fauna and terrestrial life 7 describes the Niger Delta area as the one of the richest
+wetlands in the world The exploitation of oil in the Niger Delta region has brought to bear oil
+spillage and its numerous problems Such problems include contamination of water bodies
+danger to aquatic life and destruction of farmlands 8 According to 8 between 1976 and
+1996 it was estimated that over 6000 oil spills occurred in the Niger Delta region and about
+2million barrels of crude oil leaked into the environment This calls for serious concern know
+ing that this ecosystem is a major source of livelihood for the inhabitants of the region
+Oil was first discovered in the region in 1956 and since the early 1970s oil has dominated
+the country’s economy Oil exploration has over the years impacted negatively on the physical
+environment of the oilbearing communities 9 10 observes that oil exploitation has
+increased the rate of environmental degradation and has perpetuated food insecurity as a
+result of death of fish and crops as well as loss of farm lands and viable rivers for fishing activi
+ties leading to loss of livelihood There is no doubt that the disastrous effect of oil spill impedes
+agricultural productivity and fishing to be specific which in the longrun has an adverse con
+sequence on the economic life of the inhabitants of this region 11 9 Furthermore studying
+the prospects and challenges of environmental impact of oil exploration in the Niger Delta
+region of Nigeria and the remediation of contaminated lands in the region 12 argues that
+resolving the technical dilemma of the cleanup mechanism and identifying social impedi
+ments will be the key success driver of the United Nations Environmental Programme action
+plan which was recently adopted by the government of Nigeria for the cleanup of the Niger
+Delta The study further recommends that bioremediation should be adopted considering its
+low greenhouse effect and the reduced cost burden on the weak and overstretched economy of
+Nigeria The motivation for this study draws from the increasing importance of fish to the eco
+nomic life of this region and the country at large with the attendant negative effect of oil
+exploration activities In this study we provide specific answers to the problem of environ
+mental degradation through oil spills on fish production in the Niger Delta region by applying
+econometric techniques Also the effect of positive actions such as agricultural credit to fisher
+men is considered as an explanatory variable to reduce omitted variable bias This study is pre
+sented in six sections the second is a review of related literature the third is a presentation of
+stylized facts while the fourth section discusses the method of analysis fifth is the interpreta
+tion and discussion of results and the study concludes in the sixth section
+Literature review
+Studies on the impact of oil spills on fish production are becoming increasing important not
+only because it provides the basis for understanding the reprehensible activities of oil explora
+tion but uncovers the ideological and intellectual perspective of the relationship between oil
+spills and environmental degradation 13 14 15 16 examines the environmental impact of
+oil exploration and exploitation in Niger Delta of Nigeria using tabular analysis of data obtained
+from secondary sources The study finds that the oil industry sited within this region has con
+tributed enormously to the economic growth of the country but unsustainable oil exploration
+activities have rendered the Niger Delta region one of the five most severely damaged ecosys
+tems in the World Nevertheless 17 assessed oil exploration and spillage in the Niger Delta
+region of the country using comparative analysis of secondary data covering periods from 1976
+to 2000 on descriptive techniques such as line and bar graphs and found a decrease in oil
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+2  14
+spillage quantity but an increase in the number and times of oil spill On the other hand the
+findings in 15 provides evidence for the decrease in agricultural yield over the period follow
+ing persistent environmental degradation due to oil spills and oil pipeline vandalization
+18 estimates the effects of oil pollution on crop production in Rivers State Nigeria on a
+sample of 296 respondents drawn from 17 out of 23 Local Government Areas applied a stochas
+tic translog production function in a multistage sampling technique The results indicate that
+the effect of crude oil pollution on crop farms reduced the size of farmland significantly at 1
+reducing marginal physical product MPP while in nonpolluted farms output increased
+Physical inputs crude oil pollution variables and their interactions show strong negative
+diminishing returns to scale in oil polluted farms but in nonpolluted farmlands result indi
+cate strong positive returns to scale The technical efficiency results show that less than 22 of
+crop farmers were over 80 efficient in their use of resources in oil polluted farmlands while
+technical efficiency in nonpolluted farmlands indicates a high efficiency of 33 This result
+indicates that environmental degradation poses a serious threat to farmers by diminishing both
+physical ability and psychological desires to farm The goal of farming may be defeated before
+the proper exercise especially when the individual has no hope of any compensation when the
+crops are destroyed or the waters are polluted as always the case in the Niger delta region
+19 critically assessed the effect of oil exploration on poverty in the Niger Delta region of
+Nigeria The author’s extensive review of the literature and drawing conclusion from the
+empirical findings restate the neglect of the region and the consequences of pollution as a
+drawback to economic progress The study further concludes that the greatest negative ten
+dency associated with the exploration and exploitation of oil in this region is environmental
+degradation However a recent study by 20 suggests soil screening and massive cleanup
+funding to enhance contaminated land legislation The efforts of government in the recently
+commissioned cleanup exercise of affected areas in the Niger Delta could not be ascertained
+but given the importance of oil exploration and exploitation to the Nigerian economy one
+would expect that this initiative will yield positive results
+21 examined oil pollution and agricultural productivity in the Niger Delta of Nigeria the
+study employed an empirical analysis derived from a unique estimable production function
+based on Ramon Lopez’s Cobb Douglas production function model Findings established that
+increasing levels of oil spill and forest loss negatively affect agricultural productivity while
+land labour and capital positively improved agricultural productivity in the Niger Delta In
+the same vein 22 explore the environmental effects of petroleum activities and policies in
+Nigeria employing descriptive techniques to attain logical interpretations Findings from this
+study revealed that the actions of oil companies operating in the Niger Delta have tremendous
+influence on the survival of ecosystems and biodiversity of the region In a similar study 23
+investigates the consequences of oil spill on seafood safety in coastal areas of Ibeno Akwa
+Ibom State observed the mean concentration of toxic petroleum hydrocarbons in the tissues
+of various fish species sample to be increasing as a result of oil spills Investigating the impact
+of petroleum activities on various episodes of economic crisis in Nigeria 11 24 evaluates the
+historical pattern of oil spills using a descriptive technique to analyse data obtained from sec
+ondary sources and affirming that the transmogrification of the economy from agricultural
+based to petroleumbased laid the foundation for the current economic crisis in Nigeria Also
+25 while exploring the extent of environmental degradation in Niger Delta region and exam
+ining the efforts of oil companies in remediating the degraded farmlands in Niger Delta finds
+that oil pollution causes damage to human health agricultural land and fish ponds as well as
+longstanding ecological malfunctioning
+26 examining the effects of environmental degradation on human health in nine selected
+oil communities in Delta State Nigeria using cluster and principal component analysis
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+3  14
+observed that gas flaring has a statistically significant but dangerous impact on human health
+in the affected areas giving the high temperature and emission to the atmosphere Nonetheless
+the problem of illegal bunkering and vandalizing petroleum pipelines contribute immensely to
+oil spillage and degradation of the environment 27 observes that oftentimes illegal bunker
+ing and petroleum pipeline vandalization results from destructive tendencies of restive youths
+who were aggrieved by government neglect of oil producing communities and corruption of
+the ruling class in amassing wealth through collaborations with oil companies 28 Unfortu
+nately these social vices perpetrated by the youths have a countereffect in increasing the level
+of oil spills on the environment and the negative effect on water and land agricultural produce
+Also 29 analyse the influence of petroleum on Nigerian economy using secondary annual
+data from 2000 to 2009 The technique employed for the analysis include linear regression
+model and found that petroleum has substantial direct influence on the economy Unfortu
+nately the mismanagement of the proceeds from petroleum exploration imbues Nigeria into
+the resource curse dilemma 28 30 Given the present circumstances in the Niger Delta and
+the need for improved economic activities for the population it becomes very imperative for
+studies to explore the impact of environmental degradation on specific issues such as fish pro
+duction to enable policy makers pinpoint areas of concentration in the implementation of
+various policies for the economic development of the region
+Recent quantitative assessments of oil spills on fish production for other regions especially
+in the Arctic categorized fish in two distinct ways 3 described the pelagic and demersal fish
+as varying with respect to their natural habitat and the impact of oil spills The study contends
+that while the pelagic and fish eggs may come into direct contact with oil spill the demersal
+fish does not easily come into contact with spilled oil except it spills deep into the sea bed
+However prolonged spills may inhibit the survivability of the demersal fish to avoid spilled oil
+by swimming away from danger zone The implication is that if a spill is allowed to spread it
+permeates deep down to the sea bed over a long period causing more harm to the environ
+ment which in turn affects fish production In the same vein 1 assessing the impact of simu
+lated oil spills on the Northeast Arctic Cod fishery finds a spatial regeneration of fish
+population In all simulations the adult fish population remained at full reproductive potential
+with a reasonable number of juveniles swimming to replace the old fish population Neverthe
+less the variation in age of the fish determines the rate of survival following the impact of an
+oil spill The study concludes that the reproductive health of the adult fish population is not
+affected in all simulations However the results provide the necessary insights to assist in the
+management of oil spills on fisheries
+Another very compelling study 2 using data from the Northeast Arctic cod to estimate
+spatial variations in natural mortality segregates studies on the impact of oil spills on fish
+into retrospective and prospective studies While the former investigates the impact of a
+spill the later estimates the probable outcome of potential future oil spills In this case the
+prospective study finds that spatial variation in natural mortality can alter the impact of an
+oilspill on fish However in this study we have employed the retrospective dimension to
+analyse the effects of oil spill on fish production in the Niger Delta Here we strongly aver to
+the contrary on the assertion in 2 that scientific studies on the impact of oil spills on fish
+stocks tend to ignore the fact that spatial patterns of natural mortality may influence the
+magnitude of the impact over time To this end we apply parametric CobbDouglas pro
+duction function on fish production and oil spill data assuming that oil spills kill fish at the
+egg or larval stage and at maturity The oil spill risk assessment is based on a probability of
+constant mortality rate for all fish categories hence the spatial variability is difficult to esti
+mate given the paucity of data
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+4  14
+Stylized facts
+The extent of oil spillage
+Oil spill incidents have occurred at different times along the Niger Delta area From the records
+of the Department of Petroleum Resources DPR 31 – 32 within the period 1976–2015 a
+total no of 16476 spills occurred at different occasions and a total quantity of approximately 3
+million barrels spilled into the environment Unfortunately more than 70 was not recovered
+69 of these spills occurred offshore a quarter was in swamps and 6 spilled on land 33
+In 34 the record from the Nigerian National Petroleum Corporation NNPC indicates
+that the amount of crude oil spilled into the Niger Delta is estimated at 2300 cubic metres on
+average over 300 spills occurred every year from 1975 to 1995 In contrast the World Bank
+provides figures 5 – 6 which estimates oil spill to the environment at almost ten times the
+NNPC figures arguing that the official figures ignore the so called “minor” spills In the same
+vein 8 categorically describes the largest individual spills to include the blowout of a Texaco
+offshore station in 1980 which dumped an estimated 400000 barrels 64000 m3 of crude oil
+into the Gulf of Guinea and Royal Dutch Shell Forcado Terminal tank failure with an esti
+mated spillage of 580000 barrels 92000 m3 35 has modestly estimated the quantity of
+petroleum products and crude oil spilled in the Niger Delta through oil exploration activities
+as falling between 9 million and 13 million barrels
+Methodology
+Source of data
+This study employs time series data from 1981 to 2015 sourced from Central Bank of Nigeria
+Statistical Bulletin 2015 Department of Petroleum Resources 2016 and Food and Agricul
+tural Organisation 2017 statistical bulletin The data for fish production measured in tonnes
+and fishery loan and labour was obtained from Food and Agricultural Organization The data
+for quantity of oil production and oil spill in barrels was obtained from the Department of
+Petroleum Resources and Central Bank of Nigeria Statistical Bulletin
+Model specification
+This study adopts a Cobb Douglas production model as specified by 21 which was employed
+to assess the influence of oil pollution on agricultural productivity in the Niger Delta of Nigeria
+The implicit model is stated thus
+FISPt ¼ f ðOILSt OILPt FCAPt FLABtÞ
+ð1Þ
+Where
+FISPt Fish production by captured fish measured in tones at period t
+OILSt Quantity of oil spills in barrels at period t
+OILPt Oil production in barrels at period t
+FCAPt Fish capital proxy by number of fishery loan at period t
+FLABt Fish labor captured by number of fishers at period t
+The dependent variable is Fish production FISP measured in metric tons as the total fish
+production or output captured from inland and marine waters Aquaculture value is excluded
+because this research is examining natural fish production and not agricultural sources Also
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+5  14
+the fishery statistical data presented excludes the production for marine mammals such as
+crocodiles corals sponges pearls shells and aquatic plants
+Independent variables are Oil spills OILS measured in barrel during production trans
+portation and vandalization process officially recorded annually by oil companies in barrels
+Oil production OILP is the value of total quantity of crude oil produced in Nigeria and mea
+sured in barrels annually as officially reported by the various oil companies Fishery Labour
+FLAB is the total number of fishers involved in fish production which include both artisanal
+and industrial sectors in fishing business and Fish capital FCAP is proxy by the value of fish
+production loan through Agricultural Credit Guarantee Scheme Funds
+Eq 1 can be rewritten explicitly as follows
+FISPt ¼ A OILSb1
+t OILPb2
+t FCAPb3
+t FLABb4
+t εt
+ð2Þ
+By adopting a doublelog transformation of the model specified in Eq 2 through taking
+the natural logarithm of both sides of equation and assuming linearity among the variables A
+is an efficiency parameter which accounts for the total factor productivity of the input and out
+put variables in the model In this case the model specification is transformed to a loglinear
+model for the purpose of estimation The usefulness of this transformation includes minimiza
+tion of the huge differences in the magnitude of different variables thereby bringing out the
+coefficient of covariation better and the explanation of the results in the form of elasticity
+with easily understandable interpretation devoid of complication from measurement unit
+LogFISPt ¼ b0 þ b1logOILSt þ b2logOILPt þ b3logFCAPt þ b4logFLABt þ εt
+ð3Þ
+Where
+Log Natural log of the respective variables
+εt stochastic term with the usual properties of zero and nonserial correlation
+β0 constant term
+β1 β2 β3 β4 are elasticities showing the degree of responsiveness of the dependent variable
+FISP to a proportional change in the independent variables OILS OILP FCAP FLAB
+A priori expectation
+β1  0 β2  0 β3  0 β4  0
+Estimation techniques
+This study employs econometric technique to assess the relation
+ship between oil spills and fish production among other associated variables The descriptive
+method consists of trend graphs as shown in Figs 1 2 and 3 The trends of oil spillage and fish
+production explains the behaviour of the variables from 1981 to 2015 The scope captures the
+dynamics of the explanatory variables and the effects on fish production in the Niger Delta
+region The econometric methods adopted include Augmented Dickey Fuller Stationarity test
+Johansen cointegration test Fully Modified Ordinary Least Square FMOLS and Pairwise
+Granger Causality Test This study employed the Augmented Dickey Fuller unit root to test for
+stationarity of variables because most time series are nonstationary at their levels Cointegra
+tion is used to test for long run relationship between the dependent variable and the indepen
+dent variables Fully Modified Ordinary Least Squares is used to estimate the long run effect of
+the independent variables on the dependent variables after correcting for the endogeneity prob
+lem in the time series and Pairwise Granger Causality Test
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+6  14
+Interpretation and discussion of results
+Interpretation of results
+This section deals with the analysis and the interpretation of findings from the specified model
+based on a test of the research hypothesis The parameter estimates are tested on econometric
+specifications Inherently asymmetric data are normalized with logarithm Stationarity tests of
+Fig 1 Graph showing the volume of oil spills in barrels 1981–2015
+httpsdoiorg101371journalpone0205114g001
+Fig 2 Trend of oil spills in barrels 1981–2015
+httpsdoiorg101371journalpone0205114g002
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+7  14
+time series data are conducted to stabilize the mean variance and autocorrelation properties
+that are presumed to be unstable over time The cointegration and error correction specifica
+tions are obtained in order to elicit statistical relationships between variables and a Granger
+causality test determines if there exists a causal link between oil spills and fish production and
+the direction of causation
+Stationarity test
+The decision rule for the Augmented Dickey Fuller ADF Unit root
+test states that the PP Test statistic value must be greater than the Critical Value at 5 absolute
+terms for stationarity to be established at level and if otherwise differencing occurs using the
+same decision rule 36 Thus the summary of results of the Augmented Dickey Fuller ADF
+unit root presented in Table 1 below shows that all the variables are stationary after first differ
+ence This implies that the variables are all integrated at order one symbolized as I 1
+Cointegration test The cointegration test establishes whether a longrun equilibrium
+relationship exist among the variables of interest Since the unit root test revealed that all the
+variables are integrated of order 1 Johansen Cointegration test can be applied
+Test of cointegration hypothesis
+H0 φ = 0 No cointegrating equation
+H1 φ 6¼ 0 cointegrating equations
+Fig 3 Graph of oil spills Barrels and fishing outputs N’ billions of Nigeria 1981–2015
+httpsdoiorg101371journalpone0205114g003
+Table 1 Results of Augmented Dickey Fuller ADF unit root test
+Variables
+ADF Test Statistics
+Critical Value
+Order of integration
+Remarks
+Level
+1ST diff
+1
+5
+LOGFISP
+09628
+83643
+36463
+29540
+I1
+First Difference
+LOGFLAB
+10359
+78305
+36395
+29511
+I1
+First Difference
+LOGFLON
+05447
+93702
+36537
+29571
+I1
+First Difference
+LOGOILP
+16021
+56437
+36394
+29511
+I1
+First Difference
+LOGOILS
+03276
+62749
+26347
+19510
+I1
+First Difference
+Source Author’s computation 2017 from Eview 80
+httpsdoiorg101371journalpone0205114t001
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+8  14
+The results of unrestricted trace cointegrating rank test suggest that the null hypothesis H0
+of no cointegrating equation is rejected and suggests the presence of one cointegrating equa
+tion at 5 percent significance level Also the unrestricted maxeigen cointegrating rank test
+rejects the null hypothesis H0 of no cointegrating equation and suggests the presence of one
+cointegrating equation at 5 percent significance level as shown in Table 2 Hence we con
+clude that both unrestricted trace cointegrating rank test and unrestricted maxeigen cointe
+grating rank test confirmed the presence of cointegrating equation Hence there is a long run
+relationship between the dependent variable LOGFISP and the independent variables
+LOGOILS LOGOILP LOGFCAP and LOGFLAB
+Fully modified ordinary least square FMOLS The long run adjustment dynamics can
+be usefully described by the Fully Modified Ordinary Least Square FMOLS FMOLS mod
+els are categories of multiple time series models that directly estimate the long run effect of
+the independent variables on the dependent variable after correcting for the endogeneity
+problem in the time series Robin 2008 FMOLS is also referred to as cointegrating equa
+tion model
+Goodness of fit The goodnessoffit is justified by the value of the coefficient of determi
+nation R squared The adjusted R squared of 07013 indicate the explanatory variables in the
+model explains that 70 percent variations in fish production is jointly explained by number of
+fishers credits to fishers oil production and oil spills in Nigeria while 30 percent of variation
+in the dependent variable are assumed to be due to error term or omitted variables The F sta
+tistics confirmed that the model is statistically significant at 5 percent significant level as
+shown in Table 3
+Statistical tests
+The long run estimates presented in Table 3 reveal that number of fishers
+FLAB oil production OILP and oil spills OILS in Nigeria are statistically significant at 5
+percent significance level But loan to fishers or fish production is statistically insignificant to
+explain changes in fish production at 5 percent significance level
+Specifically a 1 increase in the number of fishers induces 072 percent rise in fish produc
+tion in the long run given that other variables are held constant However 1 percent increase
+in oil production induces 043 percent decline in fish production and 1 percent increase in oil
+spills induces 004 percent fall in fish production in the longrun see Table 3
+Pairwise granger causality test
+37 concept of causality occurs when time series Xt and
+Yt are cointegrated a linear combination of Xt and Yt must be stationary for further econo
+metric tests to be carried out Granger causality tests the difference between the two types of
+causation that exist between two variables unidirectional and bidirectional causation Unidi
+rectional causality implies that if A Causes B B cannot cause A while bidirectional causality
+occurs if A Causes B then B causes A
+Table 2 Unrestricted cointegration rank test result
+No of CEs
+Eigen Value
+Trace Statistics
+005 Critical Value
+MaxEigen Statistics
+005 Critical value
+None
+07183
+852021
+769728
+392774
+348059
+1
+04901
+459246
+540790
+208779
+285881
+2
+03570
+250467
+351928
+136909
+222996
+3
+02251
+113558
+202618
+790561
+158921
+4
+01053
+345017
+916455
+345017
+916455
+Source Author’s computation 2017 from Eview 80
+NOTE  denotes rejection of hypothesis at 5 level of significance Trace test and Maxeigenvalue test indicate 1 cointegrating equation each at the 005 level
+httpsdoiorg101371journalpone0205114t002
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+9  14
+Using this concept we fail to reject the null hypothesis that fish production does not
+Granger cause the number of times oil is spilled on the environment since its Pvalue 030 is
+greater than 005 significance level see Table 4 However as shown in Table 4 we reject the
+null hypothesis in favour of the alternative hypothesis which states that the number of times
+oil is spilled on the environment affect the level of fish production thus we make a case of uni
+directional relationship arguing that the number of times oil is spilled influences the level of
+fish production in the Niger Delta of Nigeria Worthy of note is that causality in the Granger
+sense does not significantly imply correlation of oils spills and fish production in the Niger
+Delta Nonetheless we exercise caution in the fact that other seasonal factors may determine
+changes in the quantity of fish produced in the region A statistical relationship of causation
+does not necessarily imply correlation but in this case we see a subjective pattern that war
+rants the conclusion drawn for this study
+Discussion of results
+This study confirms the adverse effect of increase in oil spills on fish production in the Niger
+delta region of Nigeria Oil spills are usually due to continuous incidence of vandalism and
+corrosion of oil pipelines which destroy aquatic life and pollute the environment such that
+agricultural activities become impossible in the affected areas The longterm effect of an oil
+spill incidence is usually associated with a reduction in crop yield and death of fish This study
+corroborates the findings in 21 that oil spill is a major impediment to agricultural activities
+in the Niger Delta region of the country In addition it provides an empirical impetus for the
+findings in 38 for the management of petroleum hydrocarbon contaminated sites in Nigeria
+Nevertheless several studies have shown that the pollution caused by oil spillage does not end
+with the mopping up of the spilled oil in the land area or water 39 It is now known that
+health risk is not averted by abstinence from fish killed by spilled oil Some of the fishes and
+animals that escape instant death from pollution are known to have taken in some of the toxic
+Table 3 Summary of FMOLS results
+Dependent Variable
+LOGFISP
+Coefficient
+Std error
+tstatistic
+Pvalue
+LOGFLAB
+07153
+0019609
+3947806
+00000
+LOGFLOAN
+00051
+0004644
+1090872
+02846
+LOGOILP
+04319
+0036292
+1190307
+00000
+LOGOILS
+00359
+0006375
+5638374
+00000
+Constant
+124855
+0647376
+1928704
+00000
+Adjusted R2 = 070
+Source Researcher’s computation 2017 from Eview 80
+NOTE  denotes rejection null hypothesis at 5 significance level
+httpsdoiorg101371journalpone0205114t003
+Table 4 Pairwise granger causality tests
+Sample 1981–2015
+Null Hypothesis
+Obs
+FStatistic
+Prob
+LFISP does not Granger Cause LNOSPILLS
+34
+514301
+0305
+LNOSPILL does not Granger Cause LFISP
+410906
+00513
+Source Author’s Compilation using EVIEWS 90
+httpsdoiorg101371journalpone0205114t004
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+10  14
+substances which in turn get into human beings that eat them This will in turn cause infec
+tions on man coupled with other “side effects in form of genetic mutations” 40 – 41 There is
+strong scientific proof that fish is a major indicator for environmental contamination provid
+ing evidence for transmission of pollutants in marine ecosystems 33
+In fact oil activity depresses fish production in the long run because of the unwholesome
+environmental degradation that accompany exploration of crude oil in the region Oil driven
+environmental factors affecting fishing activities include gas flaring oil well blowouts and
+improper disposal of drilling mud and pipeline leakages as observed in 42 and in 20 sug
+gesting the prioritisation of sites for the cleanup exercise in the Niger Delta region equally
+noting that high risk areas may not necessary imply the most contaminated zones but based
+on the observed levels of hydrocarbon contamination and importance of the zone to the liveli
+hood of the inhabitants
+Furthermore this study finds that more labour involvement in fish production improves
+fish outputs in the region exerting a positive and substantial influence on fish production Sus
+tainable improvement in agricultural sector requires skilled and ablebodied youths to engage
+in the agricultural process This would drastically increase agricultural outputs in the country
+providing jobs for the unemployed youths and reducing incidence of restiveness in the region
+However credit to fish farmers through the Agricultural Credit Guarantee Scheme Funds
+ACGSF exert negligible inverse and insignificant effect on fish outputs in the long run This
+finding confirms the outcome of the studies by 43–46 that the Agricultural Credit Guarantee
+Scheme Fund ACGSF has no significant impact on agricultural production This may be as a
+result of some challenges affecting the effectiveness of the scheme Some of the challenges
+include a high rate of loan default by farmers lack of full cooperation by participating banks
+This study also supports the assertion that the nature of operating equipment used by the
+oil companies including pipeline vandalization by errant youths of the region are contributory
+factors to the number of oil spills on the environment which constitute a setback to fish pro
+duction and agricultural productivity resulting from the destruction of the environment This
+result is in tandem with the observation in 10 on the socioeconomic consequences of oil spill
+on the environment recommending an improvement in the infrastructure and equipment in
+order to prevent oil spills and the attendant youth restiveness resulting from deprivation
+Conclusion
+This study concludes that there is a tradeoff between oil exploitation activities and fish produc
+tion due to the effect of oil spills We demonstrate that increasing levels of oil spillage and oil
+production negatively affects fish production in the Niger Delta region of Nigeria However
+changes in fish production may be stimulated by other seasonal and environmental factors not
+accounted for in our model of estimation Frankly incidence of oil spills among other environ
+mental factors depress agricultural outputs particularly fishing Also agricultural interventions
+in Nigeria such as Agricultural Credit Guarantee Scheme Fund ACGSF failed to substantially
+improve fish production in Nigeria Furthermore labour input in fishing agricultural subsector
+can be employed towards improving productivity in the subsector A major policy implication
+arising from the empirical evidence in this study is the need for an enhanced social protection
+policy for the inhabitants of the Niger Delta because providing credit for agricultural purposes
+may not yield significant results because of the short supply of arable land for cultivation and
+clean water for the survival of an aquatic ecosystem In the same vein since most of these river
+ine communities are traditionally into peasant fish production a destruction of the habitat
+completely dispossesses them of their productive capacity This informs why there is a high loan
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+11  14
+default amongst loan recipients The inhabitants of this region need to be educated on the pro
+cess of commercial fishing that is required for the repayment of loans
+The Department of Petroleum Resources should enforce policies on pipeline life span dura
+tion in order to reduce corrosion of pipelines The adoption of the Special Partnership Frame
+work SPF will help significantly in reducing oilinduced environmental diseconomies in the
+Niger Delta including secondround consequences that undermine peace in the region which
+adversely affects both oil and agricultural outputs Improved pipeline quality and monitoring
+would also lessen the incidence of vandalism
+On the other hand government should be prompt in the cleanup of the affected areas by
+enacting and enforcing stringent environmental laws that will protect oil producing areas
+Government should be able to identify natural resources such as wetlands and coastal zones
+in Nigeria and monetary investment in environmental protection of vulnerable areas should
+be seriously considered There should be an operating standard for the examination of the
+existing water quality and monitoring in addition to active monitoring and evaluation systems
+for waterrelated projects and services in the region
+Finally we recommend the establishment of a framework for collaboration through train
+ing and financial support by government to strengthen environmental agencies and organiza
+tions in their role as watchdog for ensuring the exchange of information especially for high
+risk oil extracting activities
+Supporting information
+S1 Dataset Research dataset
+XLSX
+Author Contributions
+Conceptualization Eze Simpson Osuagwu
+Formal analysis Eze Simpson Osuagwu
+Methodology Eze Simpson Osuagwu
+Supervision Eze Simpson Osuagwu
+Validation Eze Simpson Osuagwu
+Writing – original draft Eseoghene Olaifa
+Writing – review  editing Eze Simpson Osuagwu
+References
+1
+Carroll J Vikebo F Howell D Broch O J Nenstad R Augustine S et al 2018 Assessing impacts
+of simulated oil spill on the Northeast Arctic cod fishery Marine Pollution Bulletin Volume 126 63–73
+httpsdoiorg101016jmarpolbul201710069 PMID 29421135
+2
+Langangen O Olsen E Stige L C Ohlberger J Yaragina N A Vikebo F B et al 2017 The effects
+of oil spills on marine fish Implications of spatial variation in natural mortality Marine Pollution Bulletin
+1191 102–109 httpsdoiorg101016jmarpolbul201703037 PMID 28389076
+3
+Nevalainen M Helle I and Vanhatalo J 2017 Preparing for the unprecedented–Towards quantita
+tive oil risk assessment in the Arctic marine areas Marine Pollution Bulletin 1141 90–101 httpsdoi
+org101016jmarpolbul201608064 PMID 27593852
+4
+Awosika LF 1995 Impacts of Global Climate Change and Sea Level Rise on Coastal Resources and
+Energy Development in Nigeria In Umolu JC ed Global Climate Change Impact on Energy Devel
+opment DAMTECH Nigeria Limited Nigeria
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+12  14
+5
+World Bank 1995 Environmental Economic Study of the Niger Delta A Report on the Niger Delta
+Nigeria Washington DC 22
+6
+World Bank 2011 Nigeria SocioEconomic Assessment AFCW2 Africa Region Washington DC
+7
+Iyayi F 2004 An integrated approach to development in the Niger Delta A paper prepared for the
+Centre for Democracy and Development CDD
+8
+Nwilo PC Badejo O T 2008 Oil Dispersion and Trajectories on Nigerian open sea The Conference
+Proceedings of the International Conference on the Nigeria State Oil Industry and the Niger Delta
+164–192
+9
+UNEP 2011 Environmental Assessment of Ogoniland United Nations Environment Programme P
+O Box 30552 Nairobi KENYA
+10
+Elum Z A Monini K HenriUkoha A 2016 Oil exploitation and its socioeconomic effects on the
+Niger Delta region of Nigeria Environmental Science and Pollution Research 23 13 1 July 2016
+12880–12889 httpsdoiorg101007s1135601668641 PMID 27194013
+11
+Paul I A 2015 A Historical Perspective of Petroleum on Nigeria’s Economic Crisis Since Indepen
+dence Global Journal of HumanSocial Science and Economics 152 17–24
+12
+Zabbey N Sam K Onyebuchi AT 2017 Remediation of contaminated lands in the Niger Delta
+Nigeria Prospects and Challenges Review Science of the Total Environment Vol 586 15 May
+2017 952–965 httpsdoiorg101016jscitotenv201702075 PMID 28214111
+13
+Food and Agricultural Organisation 2017 Fishery and Aquaculture Statistics Global Production by
+Production source 1950–2015 FishstatJ In FAO Fisheries and Aquaculture Department online
+Rome Updated 2017 wwwfaoorgfisherystatisticssoftwarefishstatjen
+14
+Food and Agricultural Organisation 2003 FAO Releases New Global Estimates of Mangroves Defor
+estation Continues but at Slower Rates online FAO
+15
+Inoni EO Omotor DG Adun FN 2006 The Effect of Oil Spillage on Crop Yield and Farm Income in
+Delta State Nigeria Journal of Central European Agriculture 1 41–48
+16
+Kadafa AA 2012 “Environmental Impacts of Oil Exploration and Exploitation in the Niger Delta of
+Nigeria” Global Journal of Science Frontier Research Environment and Earth Sciences 123 19–28
+17
+Adati A K 2012 Oil Exploration and Spillage in the Niger Delta of Nigeria Civil and Environmental
+Research 23 38–51
+18
+Ojimba TP 2012 Determining the Effects of Crude Oil Pollution on Crop Production Using Stochastic
+Translog Production Function in River State Nigeria Journal of Development and Agricultural Econom
+ics 4 13346–360
+19
+Ebegbulem J Ekpe D Adejumo T O 2013 Oil Exploration and Poverty in the Niger Delta Region of
+Nigeria A Critical Analysis International Journal of Business and Social Science 43 279–287
+20
+Sam K Coulton F Prpich G 2017 A multiattribute methodology for the prioritization of oil contami
+nated sites in the Niger Delta Science of the Total Environment Vol 579 1 February 2017 1323–
+1332 httpsdoiorg101016jscitotenv201611126 PMID 27916308
+21
+Akpokodje J Salau S 2015 Oil pollution and agricultural productivity in the Niger Delta of Nigeria
+Journal of Environmental Economics 6 4 68–75
+22
+Ogwu FA Salihat Badamasuiy S Joseph C 2015 Environmental Risk Assessment of Petroleum
+Industry in Nigeria International Journal of Scientific Research and Innovative Technology ISSN 2313
+3759 Vol 2 No 4 60–71
+23
+Ekpenyong NS Udeme U S 2015 Crude Oil Spills and its consequences on seafood safety in
+coastal area of Ibeno Akwa Ibom State Studies in Sociology of Science 6 1 1–6
+24
+Aminu U Abdulrahman A 2012 An empirical Analysis of the Contribution of Agriculture and Petro
+leum Sector to the Growth and Development of the Nigerian Economy from 1960 to 2010 International
+Journal of Social Science and Education 24 115–130
+25
+Ekanem J Nwachukwu I 2015 Sustainable Agricultural Production in Degraded Oil Producing and
+Conflict Journal of Agriculture and Sustainability 81 14–28
+26
+Atubi AO Ogbija TE Ojeh VN 2015 Effects of Environmental Degradation on Human Health in
+Selected Oil Communities in Delta State Journal of Environment and Earth Science 5972–88
+27
+Odalonu B H 2015 The Upsurge of Oil Theft and Illegal Bunkering in the Niger Delta Region of Nige
+ria Is There a Way Out Mediterranean Journal of Social Sciences Vol 6 No 3 S2
+28
+Aliyu A Ammani A 2011 Nigeria’s oil boom period 1973–1983 Was agriculture really Neglected
+International Journal of Statistics and Applications 25 120–135
+29
+Abdullahi U Madu I Abdullahi F 2010 Evidence of Petroleum Resources on Nigerian Economic
+Development 2000–2009 Business and Economics Journal 62 httpsdoiorg10417221516219
+1000149
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+13  14
+30
+Aluko M 2004 Sustainable Development Environmental Degradation and the Entrenchment of pov
+erty in the NigerDelta of Nigeria Journal of Human Ecology 15163–68
+31
+Department of Petroleum Resources Statistical Bulletin 2002
+32
+Department of Petroleum Resources Statistical Bulletin 2016
+33
+Plessl C Otachi E O Ko¨rner W AvenantOldewage A Jirsa F 2017 Fish as bioindicators for
+trace element pollution from two contrasting lakes in the Eastern Rift Valley Kenya spatial and tempo
+ral aspects Environmental Science and Pollution Research httpsdoiorg101007s113560179518
+z July 7 2017 PMID 28685334
+34
+Bronwen M 1999 “The Price of Oil” Human Rights Watch Online Available httpscholarship
+claremonteducgiviewcontentcgiarticle=1087context=pomonatheses
+35
+Baird J 2010 Oil Shame in Africa Newsweek 27
+36
+Dickey D A Fuller WA 1979 Distribution of the Estimators for Autoregressive Time Series with a Unit
+Root Journal of American Statistical Association 74 1979 427–431
+37
+Granger C 1981 Some Properties of Time Series Data and Their Use in Econometric Model Specifi
+cation Journal of Econometrics 16 121–130
+38
+Sam K Coulton F Prpich G 2017 Management of petroleum hydrocarbon contaminated sites in
+Nigeria Current challenges and future direction Land Use Policy Vol 64 1 May 2017 133–144
+39
+Agliardi E Pinar M Stengos T 2017 Air and water pollution over time and industries with stochastic
+dominance Stoch Environ Res Risk Assess 311389–1408 httpsdoiorg101007s004770161258y
+40
+Agahlino SO 2000 Petroleum Exploitation and Agitation for Compensation by Oil Producing Com
+munities in Nigeria Geo Studies Forum 1 1  2 11–20
+41
+Anejionu O Ahiarammunnah P Nriezedi C 2015 Hydrocarbon Pollution in the Niger Delta Geog
+raphies of Impacts and Appraisal of Lapses in Extent Legal Framework Journal of Resource Policy
+45 65–77
+42
+Ojakorotu V OkekeUzodike U 2006 Oil Arms Proliferation and Conflict in the Niger Delta of Nige
+ria African Journal on Conflict Resolution 2685–106
+43
+Akinleye S Akanni K Oladoja M 2005 An appraisal of the Agricultural Credit Guarantee Scheme in
+Nigeria Journal of Agricultural Management and Rural Development 2 51–58
+44
+Anetor F Ogechie C Kelikuwe I Ikpesu F 2016 Credit Supply and Agricultural Production in Nige
+ria A Vector Autoregressive VAR Approach Journal of Economics and Sustainable Development 7
+2 131–143
+45
+Nwosu F O Oguoma N N BenChendo N G HenriUkoha A 2010 The Agricultural Credit Guar
+antee Scheme its Roles Problems and Prospects in Nigeria’s Quest for Agricultural Development
+Researcher 2 87–90
+46
+Osabohien R Osuagwu E 2017 Social protection policies and agricultural output in Nigeria Empiri
+cal investigation using household survey data Presented at the 4th Covenant University International
+Conference on EGovernance in Nigeria CUCEN Covenant University Ota Nigeria 7–9 May 2017
+Effects of oil spills on fish production in the Niger Delta
+PLOS ONE | httpsdoiorg101371journalpone0205114
+October 25 2018
+14  14

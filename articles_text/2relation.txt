@@ -1,0 +1,1018 @@
+1242024
+1
+Relations
+2
+3
+4
+6
+7
+8
+9
+Wikipedia
+httpsenwikipediaorgwikiRelationmathematics
+httpsenwikipediaorgwikiBinaryrelation
+A relational database
+2
+translator id
+author id
+type
+Area
+title
+id
+33
+11
+original
+CS
+Intro to Python
+012
+െ
+14
+translated
+Math
+Discrete Math
+200
+32
+14
+original
+CS
+Algorithms
+053
+െ
+11
+original
+CS
+Deep Learning
+437
+31
+12
+translated
+CS
+Robotics
+525
+32
+15
+translated
+CS
+Intro to Java
+363
+31
+11
+translated
+CS
+Database Systems
+277
+Lastname
+Firstname
+id
+Writer
+Ellen
+11
+Dou
+Yao
+12
+Lopez
+Mario
+14
+Solver
+Olga
+15
+Lastname
+Firstname
+id
+Davies
+Ira
+31
+Jones
+Barbara
+32
+Edwards
+Roman
+33
+Books
+Authors
+Translators
+1
+2
+1242024
+2
+Training data in machine learning
+3
+25 year
+age
+Male 0
+gender
+70000
+annual salary
+15 months
+years in home
+8 months
+years in job
+27489
+current debt
+Applicant Information
+Applicant Information
+CustID
+Sauce
+Beans
+Dairy
+Rice
+Proteind
+7854
+mild
+black
+sour cream
+white
+beef
+7854
+medium
+black
+cheese
+cilantro
+beef
+3512
+hot
+black
+none
+brown
+chicken
+8701
+hot
+pinto
+cheese
+cilantro
+pork
+3512
+medium
+black
+cheese
+white
+chicken
+4
+Relations
+• A 𝑘‐ary relation over sets 𝐴ଵ 𝐴ଶ …  𝐴௞ is a subset of 𝐴ଵ ൈ 𝐴ଶ ൈ ⋯ ൈ 𝐴௞
+ Main data abstraction in relational database systems machine learning and more
+Example RGBCOLOR is a 4‐ary relation on  01 …  255 3 ൈ NAMES The tuple 
+255 255 0 yellow ∈ RGBCOLOR
+Example BETWEENNESS ⊂ ℝ ൈ ℝ ൈ ℝ is a ternary relation that 
+includes 347 and ሺ314 𝜋 315ሻ but not 437
+• We will focus on binary relations as many of the important results for 𝑘 ൌ 2
+generalize to 𝑘 ൒ 3
+Example COURSES is a 8‐ary relation on DEPARTMENT COURSE‐NUMBER ℕ CRN 
+INSTRUCTOR BUILDING ROOM and TIMES The tuple COMP 3200 4 1371 Lopez 
+ECS 301 MW 2pm ∈ COURSES
+ of credits
+usrshareX11rgbtxt
+3
+4
+1242024
+3
+5
+Binary relations
+Definition If 𝐴 and 𝐵 are sets a binary relation 𝑅 from 𝐴 to 𝐵 denoted 𝑅 ∶
+𝐴 → 𝐵 is a subset of the Cartesian product 𝐴 ൈ 𝐵 
+‒ The relation 𝑅 is a set of ordered pairs ሺ𝑎 𝑏ሻ with 𝑎 ∈ 𝐴 and 𝑏 ∈ 𝐵
+‒ If  𝑎 𝑏 ∈ 𝑅 we also write 𝑎𝑅𝑏 and say that 𝑎 is related to 𝑏
+‒ 𝐴 is the domain of 𝑅 and 𝐵 is the codomain of 𝑅
+Example An online retailer is interested in the relation purchased a subset of 
+Customers ൈ Products
+Example Given 𝑃 ൌ set of people and 𝐶 ൌ set of countries then 
+citizen‐of is a relation from 𝑃 to 𝐶
+• When 𝑘 ൌ 2 relations generalize the concept of a function
+ All functions are relations but not all relations are functions
+Example The relation written‐in ⊂ appsൈprogramming‐languages includes 
+tuples Instagram Python Uber Go Gmail Java Winamp C++
+• Binary relations are used in many branches of math and CS to model 
+a wide variety of useful concepts
+is‐adjacent‐to is a relation in graph theory
+is‐greater‐than is‐equal‐to etc are relations in arithmetic
+is‐orthogonal‐to is a relation in vector algebra
+is‐nearest‐to is a relation widely used in machine learning
+calls is a relation among functions in a software system
+is‐a‐friend‐of is a relation commonly used in social networks
+6
+Binary relations…
+𝑢
+𝑧
+𝑤
+𝑣
+5
+6
+1242024
+4
+• It is allowed and common for 𝐴 ൌ 𝐵 and in this case we simply say that 
+𝑅 is a relation on 𝐴
+7
+Relations on a single set
+Example Given 𝑃 ൌ set of people friend‐of is a relation on 𝑃
+• This includes various arithmetic relations defined on ℕ such as ൏ ൑ ൐
+൒ ൌ ് For example  37 ∈ ൑ while  37 ∉ ൌ
+Example Given 𝐶 ൌ set of courses and 𝑆 ൌ set of students 
+prerequisite‐of  is a relation on 𝐶 A student 𝑠 ∈ 𝑆 can register for 
+course 𝑐 if for every course 𝑝 such that  𝑝 𝑐 ∈ prerequisite‐of  𝑠 has 
+taken 𝑝 ⇒ DU stores the relation prerequisite‐of as well as the 
+relation taken ⊆ 𝑆 ൈ 𝐶
+• Given relations Prereq‐of ⊆ Courses ൈ Courses and Passed ⊆
+Students ൈ Courses we may want to compute
+1 Classes whose prerequisites you have satisfied but have not passed
+2 People with whom you have taken at least one class and have passed a 
+class that satisfies 1
+• Given the relation Purchased ⊆ Customer ൈ Products a retailer may 
+want to find for each user 𝑢 all products not purchased by 𝑢 that have 
+been purchased by other uses that share at least 𝑘 purchases with 𝑢
+8
+Examples
+7
+8
+1242024
+5
+• You may have noticed that a function 𝑋 is simply a special type of relation one 
+where each member of 𝑋 appears at most once as the first element of a pair 
+if every member of 𝑋 appears exactly once the function is total
+• Unlike functions which may only be one‐to‐one or many‐to‐one relations can 
+be one‐to‐one many‐to‐one or one‐to‐many
+9
+Relation vs function
+Example Given 𝑋 ൌ set of people and 𝑌 ൌ set of countries Then BORN‐IN is a 
+relation which is a function while CITIZENOF is a relation but not a function
+Relation 𝑅  𝑎 𝑏 ∈ 𝑅 if 𝑎 ൌ 𝑏ଶ
+Function 𝑓  𝑎 𝑏 ∈ 𝑓 if 𝑏 ൌ 𝑎ଶ
+• How do you define and represent a relation 𝑅 𝐴 → 𝐵 in a computer 
+program What operations would be useful to support 
+10
+Computer representation
+1 Set representation eg AVL tree hash table
+2 Boolean matrix
+3 Graph directed if 𝐴 ൌ 𝐵 bipartite if 𝐴 ് 𝐵
+4 Procedural representation  𝐴 ൈ 𝐵 ↦ Boolean
+Example Representation of 
+12  24  32  42  ሺ44ሻ
+0
+1
+2
+3
+4
+4 2
+4
+2
+3
+1
+4
+2
+2
+ሺ32ሻ
+ሺ12ሻ
+ሺ44ሻ
+ሺ24ሻ
+ሺ42ሻ
+9
+10
+1242024
+6
+• Teaches is a relation from Faculty to Classes that includes the 
+following tuples DasCOMP2300 DewriCOMP3361 AlbowCOMP2370 
+DasCOMP3361 LopezCOMP3371 DasCOMP3801 LopezCOMP3200
+11
+Example
+COMP 2300
+COMP 2370
+COMP 3200
+COMP 3361
+COMP 3371
+COMP 3801
+Dewri
+Albow
+Das
+Lopez
+COMP 3361
+Durso
+Let 𝑅 𝑋 → 𝑌 be a relation and 𝑍 ⊆ 𝑋
+• The image of 𝑍 under 𝑅 denoted 𝑅ሺ𝑍ሻ is 𝑅 𝑍 ൌ 𝑦 ∈ 𝑌  𝑧𝑅𝑦 for some 𝑧 ∈ 𝑍ሽ
+• The range of 𝑅 is the image of 𝑋
+• The inverse 𝑅ିଵ is the relation from 𝑌 to 𝑋 such that 𝑦𝑅ିଵ𝑥 iff 𝑥𝑅𝑦
+12
+Terminology
+Example The image of COMP3361 
+under TEACHESିଵ is Dewri Das
+COMP 2300
+COMP 2370
+COMP 3200
+COMP 3361
+COMP 3371
+COMP 3801
+Dewri
+Albow
+Das
+Lopez
+Exercise Let 𝑅 be the relation on ℝ defined as follows  𝑎 𝑏 ∈ 𝑅 iff 𝑏 ൌ |𝑎| 
+Draw the locus of points  𝑎 𝑏 ∈ 𝑅ିଵ
+COMP 3352
+Durso
+11
+12
+1242024
+7
+•A relation 𝑅 ∶ 𝑋 → 𝑌 is
+surjective or onto if 𝑅 𝑋 ൌ 𝑌 ie each 𝑦 ∈ 𝑌 is incident with at least one 𝑥 ∈ 𝑋
+injective or 1‐1 if every 𝑦 ∈ 𝑌 is incident with at most one 𝑥 ∈ 𝑋
+total if 𝑅ିଵ 𝑌 ൌ 𝑋 ie every 𝑥 ∈ 𝑋 is related to at least one 𝑦 ∈ 𝑌
+bijective if 𝑅 is total injective and surjective
+13
+Basic relation properties
+• A database schema may allow you to enforce a subset of these
+1
+2
+3
+4
+𝑎
+𝑏
+𝑐
+𝑑
+𝑒
+𝑅ଵ
+𝑎
+𝑏
+𝑐
+𝑑
+1
+2
+3
+4
+5
+𝑅ଶ
+𝑎
+𝑏
+𝑐
+𝑑
+1
+2
+3
+𝑅ଷ
+• Fill in the right column in the table below using the basic properties 
+that relations may satisfy surjective injective bijective total or 
+partial function
+ Recall that “function” includes both partial and total functions
+14
+Exercise
+iff 𝑹ି𝟏 is
+𝑹 is
+total
+surjective
+a function
+injective
+bijective
+Hint think about what is going on in terms of arrows from the domain 𝑋 to 
+the codomain 𝑌
+13
+14
+1242024
+8
+15
+Composition
+Example The US Senate has two senators per state each affiliated with 
+zero or one political party Given relations 𝑆 ⊂ States ൈ Senators and 
+𝑇 ⊂ Senators ൈ Parties then state party ∈ 𝑆 ⋅ 𝑇 iff ∃ senator s that 
+represents state such that s is affiliated with party
+Relations can be composed in the same way as functions Let 𝑅 ⊆ 𝑋 ൈ 𝑌
+and 𝑆 ⊆ 𝑌 ൈ 𝑍 Then 𝑅 ⋅ 𝑆 or simply 𝑅𝑆 is the relation 𝑇 ⊆ 𝑋 ൈ 𝑍 such 
+that 𝑥𝑇𝑧 iff there is 𝑦 ∈ 𝑌 such that 𝑥𝑅𝑦 and 𝑦𝑆𝑧
+Note If 𝑅 and 𝑆 are functions then 𝑅 ⋅ 𝑆 ≡ 𝑆 ∘ 𝑅
+1 Let 𝑆 be the relation is‐a‐sibling‐of and 𝐶 the relation is‐a‐child‐of 
+both on the set of people In other words  𝑥 𝑦 ∈ 𝑆 if 𝑥 is a sibling 
+of 𝑦 and  𝑎 𝑏 ∈ 𝐶 if 𝑎 is a child of 𝑏 
+2 What is the natural interpretation of 𝐶 ⋅ 𝑆 and of 𝑆 ⋅ 𝐶
+3 Let 𝑀ோ be the matrix representation of relation 𝑅 ∶ 𝐴 → 𝐵 and 𝑀ௌ
+the matrix representation of relation 𝑆 ∶ 𝐵 → 𝐶 How do you 
+compute the matrix representation of 𝑅 ⋅ 𝑆 ⊆ 𝐴 ൈ 𝐶 using 𝑀ோ and 
+𝑀ௌ
+16
+Exercise
+15
+16
+1242024
+9
+• A relation on 𝑋 is a relation 𝑅 ∶ 𝑋 → 𝑋
+• A relation 𝑅 𝑋 → 𝑋 is often represented with a directed graph
+Example 𝑋 ൌ ሼ12 …  12ሽ with the relation “divides” denoted |  
+Thus 3 | 9 while 3 ∤ 7
+17
+Relations on the Same Set
+Given the following relations 𝑅 on ℤஹଵ
+1 successor ൌ
+𝑛 𝑛 ൅ 1  𝑛 ∈ ℤஹଵ
+2 equals ൌ 
+𝑛 𝑛  𝑛 ∈ ℤஹଵ
+3 relPrime ൌ
+𝑛 𝑚 ∶ gcd 𝑛 𝑚 ൌ 1 𝑛 𝑚 ∈ ℤஹଵ
+18
+Exercise
+Describe in each case the relation 𝑅 ⋅ 𝑅
+17
+18
+1242024
+10
+19
+Properties of relations on the same set
+Definition We say that a relation 𝑅 on 𝑋 is
+reflexive if 𝑥𝑅𝑥 for all 𝑥 ∈ 𝑋
+irreflexive if ∄𝑥 ∈ 𝑋 such that 𝑥𝑅𝑥
+symmetric if 𝑥𝑅𝑦 ⇒ 𝑦𝑅𝑥 for all 𝑥 𝑦 ∈ 𝑋
+antisymmetric if  𝑥 𝑦 ∈ 𝑅 and 𝑥 ് 𝑦 ⇒ ሺ𝑦 𝑥ሻ ∉ 𝑅 ie if 
+𝑥 ് 𝑦 𝑥𝑅𝑦 and 𝑦𝑅𝑥 don’t hold simultaneously
+transitive if 𝑥𝑅𝑦 and 𝑦𝑅𝑧 ⇒ 𝑥𝑅𝑧 for all 𝑥 𝑦 𝑧 ∈ 𝑋
+• In terms of our matrix and graph representations
+ A relation 𝑅 is reflexive if the diagonal of its matrix 𝑀ோ consists entirely of 1’s
+ 𝑅 is symmetric if 𝑀ோ ൌ 𝑀ோ
+் ie if its matrix 𝑀ோ is equal to its transpose
+ In a symmetric relation the directed graph can be replaced by the simpler 
+undirected graph
+• A relation 𝑅 on 𝑋 is an equivalence if it is reflexive symmetric and 
+transitive
+• A relation 𝑅 on 𝑋 is a partial order if it is antisymmetric transitive 
+and reflexive
+A partial order corresponds to the notion of ൑
+• A relation 𝑅 on 𝑋 is a strict partial order if it is irreflexive 
+antisymmetric and transitive
+A strict order corresponds to the notion of ൏
+• A relation 𝑅 on 𝑋 is a linear or total ordering if  it is a partial or strict 
+partial order and for any distinct 𝑥 𝑦 ∈ 𝑋 either 𝑥𝑅𝑦 or 𝑦𝑅𝑥
+20
+Other relation types
+Exercise What type of relation is one that is irreflexive and transitive
+19
+20
+1242024
+11
+21
+Equivalence relations
+Note The equivalence classes of an equivalence relation on 𝑋
+constitute a partition of 𝑋
+Definition Let 𝑅 be an equivalence relation on set 𝑋 and 𝑥 ∈ 𝑋 The 
+equivalence class of 𝑥 denoted 𝑅ሾ𝑥ሿ is defined as 𝑅 𝑥 ൌ ሼ𝑦 ∈ 𝑋 ∶
+𝑥𝑅𝑦ሽ When 𝑅 is understood we simply write ሾ𝑥ሿ instead of 𝑅ሾ𝑥ሿ
+Claim For any equivalence 𝑅 on 𝑋 we have
+1 The equivalence class 𝑅ሾ𝑥ሿ is nonempty for all 𝑥 ∈ 𝑋
+2 For any two elements 𝑥 𝑦 ∈ 𝑋 either 𝑅 𝑥 ൌ 𝑅ሾ𝑦ሿ or 𝑅 𝑥 ∩ 𝑅 𝑦 ൌ ∅
+3 The equivalence classes uniquely determine the relation 𝑅
+• For each set and relation indicate the type of relation
+1 Set of people cousin‐of
+2 Set of people parent‐of
+3 Nodes of undirected graph 𝑥𝑅𝑦 if there is a path from 𝑥 to 𝑦
+4 Set ℕ of numbers  𝑥𝑅𝑦 if 𝑦 mod 𝑥 ൌ 0
+5 Set ℕ of numbers 𝑥𝑅𝑦 if 𝑥 െ 𝑦 is even
+6 Set ℚ of numbers 𝑥𝑅𝑦 if 𝑥 ൑ 𝑦
+7 Set ℚ of numbers 𝑥𝑅𝑦 if 𝑥 ൏ 𝑦
+8 Set of 2D vectors 𝑢𝑅𝑉 if 𝑢 ⊥ 𝑣 ⊥ means perpendicular
+9 Finite set of points in ℝଶ 𝑝𝑅𝑞 if 𝑝௫ ൑ 𝑞௫ and 𝑝௬ ൑ 𝑞௬
+22
+Exercise
+21
+22
+1242024
+12
+• Consider the following relation on ℕ
+𝑥𝑅𝑦 iff 𝑥 െ 𝑦 is divisible by 5
+1 Prove that 𝑅 is an equivalence relation
+2 What are the equivalence classes of 𝑅 
+23
+Exercise
+• A relation 𝑅 on a set 𝑋 is a partial order if 𝑅 is reflexive 
+antisymmetric and transitive
+• A relation 𝑅 on a set 𝑋 is a strict order if 𝑅 is irreflexive 
+antisymmetric and transitive
+• Partial orders are commonly denoted by the symbols ൑ or ≼ Once an 
+order ≼ is given other order relations such as ≺ ≽ and ≻ are 
+readily defined
+• Note that if ≼ is a partial order then ≺ is a strict partial order
+24
+Orderings
+23
+24
+1242024
+13
+Scientific journal devoted to original 
+research on partially ordered sets It 
+covers all theoretical aspects of the 
+subject and presents applications of 
+order‐theoretic methods in the areas of 
+mathematics and computing
+25
+• Two distinct elements 𝑎 𝑏 of 𝑋 are comparable under 𝑅 if either 
+𝑎𝑅𝑏 or 𝑏𝑅𝑎
+• A relation 𝑅 on 𝑋 is a total or linear order if it is a partial order and 
+every pair of elements of 𝑋 are comparable
+• A relation 𝑅 on 𝑋 is a strict total order if 𝑅 is a strict partial order 
+and every pair of elements of 𝑋 are comparable
+• If 𝑅 is an order total or not on a set 𝑋 then the pair ሺ𝑋 𝑅ሻ is called 
+a partially ordered set or poset
+• If 𝑅 is total we may emphasize this fact by calling ሺ𝑋 𝑅ሻ a totally 
+ordered set
+26
+Total Orders
+Exercise Give a non‐numeric example of a totally ordered set
+25
+26
+1242024
+14
+• Let 𝑋 be a set Then  2௑ ⊆ is a poset
+• Let 𝑎|𝑏 denote the relation “𝑎 divides 𝑏” and 𝑌 a set of natural 
+numbers Then  𝑌 | is a poset
+27
+Example
+Exercise Let 𝑋 denote the set of all finite strings of letters Which 
+of the following relations are partial orders total orders strict
+1 𝑥𝑅𝑦 if 𝑥 comes alphabetically no later than 𝑦
+2 𝑥𝑅𝑦 if 𝑥 ൒ 𝑦
+3 𝑥𝑅𝑦 if 𝑥 contains fewer A’s than 𝑦
+Exercise If 𝑌 ൌ 123456789 what is  𝑌 | 
+• The graph representation of a strict poset is a directed graph with no 
+cycles or self‐loops ie a directed acyclic graph DAG
+• Is the converse true In other words does every DAG correspond to a 
+strict poset
+28
+DAGs
+Answer No may violate transitivity
+Definition The transitive closure of digraph 𝐺 ൌ ሺ𝑉 𝐸ሻ is the digraph 
+𝐺ା ൌ ሺ𝑉 𝐸ାሻ where 𝑢 is connected to 𝑣 in 𝐺ା iff there is a directed 
+path from 𝑢 to 𝑣 in 𝐺 Conversely if 𝑅 is the relation corresponding to 
+a digraph 𝐺 the transitive closure of 𝑹 denoted 𝑅ା is the relation 
+corresponding to 𝐺ା ie the smallest transitive relation containing 𝑅
+27
+28
+1242024
+15
+• The transitive closure 𝑅ା of a relation 𝑅 is the relation obtained by 
+adding to 𝑅 any necessary pairs to satisfy transitivity
+29
+Transitive Closure
+• Consider the problem of scheduling a project consisting of a set of 
+interdependent activities 𝐴ଵ …  𝐴௡
+
+𝐴௜ ≼ 𝐴௝ if 𝐴௜ needs to be done no later than 𝐴௝
+30
+Example
+Exercise 
+• Is ሺ𝐴 ≼ a partial order
+• Is ሺ𝐴 ≼ total
+• If so what is the partial order 
+for the “project” of getting out 
+in the morning
+29
+30
+1242024
+16
+• The relation ൑ on ℕ possesses characteristics that allow us to sort 
+efficiently an array of numbers using algorithms such as QuickSort
+and MERGESORT 
+What are those characteristics 
+If we understand these characteristic perhaps we can apply them to 
+sort sets from other domains such as sets of words sets of points on 
+the plane sets of line segments intersecting a line etc
+31
+Implications to Computing
+• Provide a useful interpretation for  ℕଶ ≼
+32
+Exercise
+31
+32
+1242024
+17
+• How does a politician visit all zip codes while minimizing distance 
+traveled
+33
+A Total order on ℕଶ
+• The standard graphical representation of a poset using directed 
+graphs may be difficult to read
+34
+Poset Representation
+33
+34
+1242024
+18
+• We can omit from the diagram all self‐loops and all arrows that can 
+be reconstructed from transitivity ie the transitive closure
+• Only the “immediate predecessors” remain
+35
+Poset Representation…
+Definition Let ሺ𝑋 ≼ሻ be an ordered set We say that 𝑥 ∈ 𝑋 is an 
+immediate predecessor of 𝑦 ∈ 𝑋 denoted by 𝑥 ≺⋆ 𝑦 if
+1
+𝑥 ≺ 𝑦
+2
+There is no element 𝑡 ∈ 𝑋 such that 𝑥 ≺ 𝑡 ≺ 𝑦
+We call 𝑦 an immediate successor of 𝑥
+ Hasse diagram for  1234  ൑ 
+36
+Hasse Diagrams
+1
+2
+3
+4
+ For getting out in the morning
+1
+2
+3
+4
+5
+6
+7
+8
+9
+• A Hasse diagram is a graph of the immediate predecessor relation
+• We don’t need to draw the direction of the arrows by adopting the 
+convention that arrows are directed upwards 
+• We denote this relation by ≺⋆
+35
+36
+1242024
+19
+• Several hundred learning activities organized as a poset
+37
+Example Set of Activities
+• What do the following Hasse diagrams describe
+38
+Exercise
+37
+38
+1242024
+20
+Exercise Describe and analyze an algorithm to find a minimal 
+element of  𝑋 ≼  Hint This can be done very efficiently by choosing 
+the right data structure
+39
+Extreme Elements
+Definition Let ሺ𝑋 ≼ሻ be a poset An element 𝑎 ∈ 𝑋 is called minimal
+resp maximal if there is no 𝑏 ∈ 𝑋 such that 𝑏 ≺ 𝑎 resp 𝑎 ≺ 𝑏
+Theorem Every finite poset ሺ𝑋 ≼ሻ has at least one minimal element 
+Proof Choose an 𝑥 ∈ 𝑋 such that the set 𝐿௫ ൌ ሼ𝑦 ∈ 𝑋 ∶ 𝑦 ≼ 𝑥ሽ has the 
+smallest number of elements If  𝐿௫ ൌ 1 we are done and 𝑥 is minimal 
+otherwise the is 𝑦 ∈ 𝐿௫ 𝑦 ് 𝑥 But then  𝐿௬ ൏ |𝐿௫| a contradiction ∎
+40
+Minimal vs Minimum
+Definition Let ሺ𝑋 ≼ሻ be a poset An element 𝑎 ∈ 𝑋 is a minimum resp 
+maximum element of ሺ𝑋 ≼ሻ if for every 𝑥 ∈ 𝑋 we have 𝑎 ≼ 𝑥 resp 𝑥 ≼ 𝑎
+Note The term smallest resp largest is often used instead of minimum resp 
+maximum
+Exercise Provide an example of a poset that has a minimal but no 
+minimum element 
+39
+40
+1242024
+21
+• Similarly the down‐set or lower set of 𝑆 denoted ↓𝑆 is defined as       
+↓𝑆 ൌ 𝑥 ∈ 𝑋 𝑥 ≼ 𝑠 for some 𝑠 ∈ 𝑆 
+41
+Down‐Sets and Up‐Sets
+• Let 𝑃 ൌ ሺ𝑋 ≼ሻ be a poset and 𝑆 ⊆ 𝑋  
+• The upset of 𝑆 also called upper set of 𝑆 denoted ↑𝑆 is defined as
+Example 
+1234  ⊆  ↑ሼ1ሽ is shown
+in green and ↓ሼ234ሽ is shown in white
+↑𝑆 ൌ 𝑥 ∈ 𝑋 𝑠 ≼ 𝑥 for some 𝑠 ∈ 𝑆 
+• Consider a finite set 𝑃 ൌ ሼ𝑝ଵ …  𝑝௡ሽ of points in the plane with 𝑝௜ ൌ
+ሺ𝑥௜ 𝑦௜ሻ and define a poset as follows 𝑝௜ ≼ 𝑝௝ iff 𝑥௜ ൑ 𝑥௝ and 𝑦௜ ൑ 𝑦௝
+• Describe a practical application of this poset
+• Describe an efficient algorithm to find all maximal elements What do 
+maximal elements represent
+42
+Exercise
+41
+42
+1242024
+22
+• Given 𝑛 points in the plane how many lie inside an upright rectangle 𝑅ሺ𝑎 𝑏 𝑐 𝑑ሻ
+ Common query in databases
+43
+Range Counting
+𝑎
+𝑏
+𝑐
+𝑑
+𝑅
+• Let 𝐷ሺ𝑎 𝑏ሻ denote the size of the down set of ሺ𝑎 𝑏ሻ Then 
+𝑅 𝑎 𝑏 𝑐 𝑑 ൌ 𝐷 𝑎 𝑏 െ 𝐷 𝑎 𝑑 െ 𝐷 𝑏 𝑐 ൅ 𝐷ሺ𝑎 𝑐ሻ
+Exercise Design an efficient algorithm to compute 𝑅 𝑎 𝑏 𝑐 𝑑  Hint 
+This is easy with the right choice of data structure
+Years of experience
+Salary
+• Can we sort the elements of a poset in a manner consistent with its 
+partial order
+44
+Linear Extensions
+Theorem Let ሺ𝑋 ≼ሻ be a finite poset Then there exists a linear 
+ordering ൑ on 𝑋 such that 𝑥 ≼ 𝑦 implies 𝑥 ൑ 𝑦
+Proof by induction on |𝑋| The case  𝑋 ൌ 1 is trivially true Consider now the 
+case  𝑋 ൐ 1 and let 𝑥଴ be minimal Define 𝑋ᇱ ≔ 𝑋 െ ሼ𝑥଴ሽ and ≼ᇱ≔≼ restricted 
+to 𝑋′ Then by the inductive hypothesis ሺ𝑋ᇱ ≼ᇱሻ admits a linear ordering ൑ᇱ
+We now define ൑ on 𝑋 ቊ𝑥଴ ൑ 𝑦
+for every 𝑦 ∈ 𝑋 
+𝑥 ൑ 𝑦
+whenever 𝑥 ൑ᇱ 𝑦
+Clearly 𝑥 ≼ 𝑦 implies 𝑥 ൑ 𝑦 as required ∎
+Definition A linear ordering of a poset 𝑃 is called a linear extension of 𝑃
+43
+44
+1242024
+23
+• How many linear extensions does the poset ሺ𝑋 ≼ሻ shown below have
+• List all linear extensions of ሺ𝑋 ≼ሻ
+45
+Exercise
+𝑏
+𝑑
+𝑎
+𝑐
+𝐿ଵ
+𝑐
+𝑑
+𝑎
+𝑏
+𝑑
+𝑐
+𝑎
+𝑏
+𝑐
+𝑑
+𝑏
+𝑎
+𝑑
+𝑐
+𝑏
+𝑎
+𝐿ଶ
+𝐿ଷ
+𝐿ସ
+𝐿ହ
+𝑎
+𝑐
+𝑏
+𝑑
+ሺ𝑋 ≼ሻ
+• Show that the intersection of two linear orders is a poset
+• What is the intersection of the five linear extensions of the poset 
+ሺ𝑋 ≼ሻ in the previous slide with ≺⋆ൌ ሼ 𝑐 𝑎  𝑑 𝑏  ሺ𝑑 𝑎ሻሽ
+• What is the intersection of all the linear extensions of a poset
+46
+Exercise
+𝑎
+𝑐
+𝑏
+𝑑
+ሺ𝑋 ≼ሻ
+45
+46
+1242024
+24
+• Let  𝑋 ≼ denote a poset with  𝑋 ൌ 𝑛 and  ≺∗ ൌ 𝑚 An algorithm 
+that computes a linear extension of  𝑋 ≼ is called a topological sort
+• Below is an algorithm to topologically sort  𝑋 ≼
+• What is the running time of your algorithm
+47
+Topological Sorting
+• We can speed up the linear extension algorithm by associating with 
+each 𝑥 ∈ 𝑋 a list of immediate predecessors and a list of immediate 
+successors of 𝑥
+48
+A Fast Linear Extension Algorithm
+47
+48
+1242024
+25
+Chains and Antichains
+49
+•
+In a sense chains contain the most order information and 
+antichains contain the least
+•
+Chains can be sorted in only one way while any permutation 
+of its elements is a valid linear extension for an antichain
+Definition Let 𝑃 ൌ ሺ𝑋 ≼ሻ be a finite poset A subset 𝐴 ⊆ 𝑋 is said 
+to be independent or an antichain if 𝑥 ≼ 𝑦 does not hold for any 
+pair of distinct 𝑥 𝑦 ∈ 𝐴
+•
+Each pair 𝑥 𝑦 ∈ 𝐴 is said to be incomparable
+Definition Let 𝑃 ൌ ሺ𝑋 ≼ሻ be a finite poset A subset 𝐴 ⊆ 𝑋 is a 
+chain if 𝑥 ≼ 𝑦 or 𝑦 ≼ 𝑥 holds for every pair of distinct 𝑥 𝑦 ∈ 𝐴
+How much order does a poset have
+50
+Example 𝑤 𝑃ଵ ൌ 3
+ℎ 𝑃ଵ ൌ 3
+𝑤 𝑃ଶ ൌ 4
+ℎ 𝑃ଶ ൌ 2
+Two parameters of ሺ𝑋 ≼ሻ give us an idea of the “amount of order” 
+present in the relation
+•
+The width of ሺ𝑋 ≼ሻ denoted 𝑤ሺ𝑋 ≼ሻ is the size of a largest 
+independent set in ሺ𝑋 ≼ሻ
+•
+The height of ሺ𝑋 ≼ሻ denoted ℎሺ𝑋 ≼ሻ is the length of the longest 
+chain in ሺ𝑋 ≼ሻ
+49
+50
+1242024
+26
+51
+Large Implies Tall or Wide
+Theorem Every finite poset  𝑃 ൌ ሺ𝑋 ≼ሻ satisfies
+𝑤 𝑃 ⋅ ℎ 𝑃 ൒ |𝑋|
+Proof First define subsets 𝑋ଵ 𝑋ଶ …  𝑋௧ inductively
+Base case 𝑋ଵ is the set of minimal elements of 𝑋
+Inductive step Once 𝑋ଵ …  𝑋௞ have been defined consider the set 
+𝑌௞ ൌ 𝑋 െ ⋃
+𝑋௜
+௞
+௜ୀଵ
+of elements of 𝑋 not in any of the subsets so far 
+If 𝑌௞ is empty we are done with 𝑡 ൌ 𝑘 otherwise let ≼ᇱ represent 
+≼ restricted to 𝑌௞ and let 𝑋௞ାଵ be the set of minimal elements in 𝑌௞
+The subsets 𝑋ଵ 𝑋ଶ …  𝑋௧ constitute a partition of 𝑋 Furthermore from 
+above each 𝑋௜ is an independent set We construct a chain 
+〈𝑥ଵ 𝑥ଶ …  𝑥௧〉 inductively as follows
+52
+Proof…
+Base case Choose an arbitrary element 𝑥௧ ∈ 𝑋௧
+Inductive step Suppose 𝑥௜ାଵ has been chosen Since 𝑥௜ାଵ ∉ 𝑋௜ there 
+must be 𝑥௜ ∈ 𝑋௜ with 𝑥௜ ≼ 𝑥௜ାଵ
+Since we have a chain of length 𝑡 then ℎ 𝑃 ൒ 𝑡 Since the 𝑋௜’s 
+constitute a partition at least one of them must have |𝑋|𝑡 elements 
+Since each is an independent set 𝑤 𝑋 ൒ |𝑋|𝑡 It follows that
+𝑤 𝑃 ⋅ ℎ 𝑃 ൒ 𝑋
+∎
+51
+52
+1242024
+27
+• If the items of a poset are tasks and the partial order precedence 
+constraints topological sorting gives an execution schedule consistent 
+with the constraints
+• How do you schedule the tasks if you have enough processors 
+assume all tasks take unit time
+Partition the task into the sets 𝑋ଵ 𝑋ଶ …  𝑋௧ in the previous theorem 
+relating height and width
+ A task 𝑎 ∈ 𝑋௜ if the longest chain ending in 𝑎 has length 𝑖
+Execute the 𝑋௜ in ascending order and all the tasks in each 𝑋௜ in parallel
+The total parallel execution time is 𝑡
+53
+An Application Scheduling Tasks in Parallel
+Claim Every sequence 〈𝑎ଵ 𝑎ଶ …  𝑎௡మାଵ〉 of numbers contains an 
+increasing or decreasing subsequence of length 𝑛 ൅ 1
+54
+Example Paul Erdős
+Proof Suppose there’s no increasing subsequence of length 𝑛 ൅ 1
+We show there must be a decreasing sequence of length 𝑛 ൅ 1
+For each 𝑘 ൌ 1 …  𝑛ଶ ൅ 1 let 𝑚௞ be the length of the longest subsequence 
+that starts with  𝑎௞ Clearly 1 ൑ 𝑚௞ ൑ 𝑛
+From the generalized pigeonhole principle 𝑛 ൅ 1 of the values 
+𝑚ଵ …  𝑚௡మାଵ are equal ie 𝑚௞భ ൌ 𝑚௞మ ൌ ⋯ ൌ 𝑚௞೙శభ where 1 ൑ 𝑘ଵ ൏
+𝑘ଶ ൏ ⋯ ൏ 𝑘௡ାଵ ൑ 𝑛ଶ ൅ 1
+If 𝑎௞೔ ൑ 𝑎௞೔శభ then 𝑚௞೔ ൐ 𝑚௞೔శభ not possible Hence 𝑎௞೔ ൐ 𝑎௞೔శభ
+Conclusion either there is an increasing subsequence of length  𝑛 ൅ 1 or a 
+decreasing subsequence 𝑎௞భ ൐ 𝑎௞మ ൐ ⋯ ൐ 𝑎௞೙శభ
+53
+54
+1242024
+28
+Theorem A sequence  𝑥ଵ 𝑥ଶ …  𝑥௡మାଵ of distinct real numbers has an 
+ascending or descending subsequence of length 𝑛 ൅ 1
+55
+Erdős‐Szekeres Theorem
+Proof Let 𝑋 ൌ ሼ12 …  𝑛ଶ ൅ 1ሽ  Define an ordering ≼ on a permutation of 𝑋 as
+𝑖 ≼ 𝑗 iff 𝑖 ൑ 𝑗 and 𝑥௜ ൑ 𝑥௝
+Since 𝑤 𝑋 ≼ · ℎ 𝑋 ≼ ൒ 𝑛ଶ ൅ 1 then h 𝑋 ≼ ൐ 𝑛 or 𝑤 𝑋 ≼ ൐ 𝑛
+If ℎ 𝑋 ≼ ൐ 𝑛 then there is an ascending sequence of length ൐ 𝑛
+If 𝑤 𝑋 ≼ ൐ 𝑛 then there is a descending sequence of length ൐ 𝑛 why 
+• Is it possible to reconstruct a poset 𝑃 ൌ ሺ𝑋 ≼ሻ from a list ℰሺ𝑃ሻ of its 
+linear extensions total orders
+Yes as 𝑃 ൌ ⋂
+௅∈ℰሺ௉ሻ 𝐿
+why
+• A set ℛ of linear extensions of poset 𝑃 is a realizer of 𝑃 if 𝑃 ൌ ⋂
+௅∈ℛ 𝐿
+• The dimension of a poset 𝑃 is the size of a smallest realizer of 𝑃 ie 
+the minimum number of linear extensions whose intersection yields 𝑃
+• Realizers provide an alternative representation of a poset Its 
+dimension lower bounds the  of required total orders
+56
+Poset Dimension
+Theorem Hiraguchi Let 𝑑 be the dimension of a poset 𝑃 ൌ ሺ𝑋 ≼ሻ 
+Then if  𝑋 ൒ 4 𝑑 ൑ min ሺ𝑤 𝑃  𝑋 2ሻ
+55
+56
+1242024
+29
+• The poset ሺ𝑋 ≼ሻ below has 5 linear extensions How many are 
+needed ie what is the dimension of ሺ𝑋 ≼ሻ
+• dim 𝑋 ≼ ൒ 2 why
+57
+Example
+𝑎
+𝑐
+𝑏
+𝑑
+𝑏
+𝑑
+𝑎
+𝑐
+𝐿ଵ
+𝑑
+𝑐
+𝑏
+𝑎
+𝑐
+𝑑
+𝑎
+𝑏
+𝑑
+𝑐
+𝑎
+𝑏
+𝑐
+𝑑
+𝑏
+𝑎
+𝐿ଶ
+𝐿ଷ
+𝐿ସ
+𝐿ହ
+ሺ𝑋 ≼ሻ
+• ℛ ൌ ሼ𝐿ଵ 𝐿ହሽ is a realizer ⇒ dim 𝑋 ≼ ൌ 2
+• Find small realizers of the following posets Can you infer the 
+dimension of each poset
+58
+Exercise
+1
+5
+2
+6
+3
+7
+4
+8
+1
+5
+2
+6
+3
+7
+4
+8
+ሺ𝑋 ൑ሻ
+ሺ𝑋 ≼ሻ
+𝑋 ൌ ሼ12345678ሽ
+57
+58
+1242024
+30
+• Show that dim 𝑃 ൑ 3 for the poset 𝑃 below
+59
+Exercise
+1
+2
+3
+4
+5
+8
+9
+7
+6
+10
+11
+12
+13
+60
+Embedding of Posets
+• Is there a kind of “universal poset” that encodes all posets of a given 
+size  by containing embeddings of them
+Definition Let ሺ𝑋 ≼ሻ and ሺ𝑋ᇱ ≼ᇱሻ be finite posets A mapping 𝑓 𝑋 → 𝑋ᇱ
+is an embedding of ሺ𝑋 ≼ሻ into ሺ𝑋ᇱ ≼ᇱሻ if the following conditions hold 
+1
+𝑓 is one‐to‐one
+2
+𝑥 ≼ 𝑦 iff 𝑓ሺ𝑥ሻ ≼ᇱ 𝑓ሺ𝑦ሻ
+59
+60
+1242024
+31
+• Find an embedding of 𝑃ଵ in 𝑃ଶ
+61
+Exercise
+62
+A universal poset
+Theorem Every poset ሺ𝑋 ≼ሻ has an embedding into the poset ሺ2௑ ⊆ሻ 
+Proof Define the mapping 𝑓 ∶ 𝑋 → 2௑ by 𝑓 𝑥 ൌ ሼ𝑦 ∈ 𝑋 ∶ 𝑦 ≼ 𝑥ሽ 
+We now show this is an embedding
+1 𝑓 is injective as otherwise 𝑓 𝑥 ൌ 𝑓ሺ𝑦ሻ for two distinct elements 𝑥
+and 𝑦 Since 𝑥 ∈ 𝑓 𝑥 ൌ 𝑓ሺ𝑦ሻ and 𝑦 ∈ 𝑓 𝑦 ൌ 𝑓ሺ𝑥ሻ then 𝑥 ≼ 𝑦 and 
+𝑦 ≼ 𝑥 violating antisymmetry
+2 ⇒ Assume 𝑥 ≼ 𝑦 and let 𝑧 ∈ 𝑓ሺ𝑥ሻ Then 𝑧 ≼ 𝑥 and transitivity 
+implies 𝑧 ≼ 𝑦 ⇒ 𝑧 ∈ 𝑓ሺ𝑦ሻ ie 𝑓 𝑥 ⊆ 𝑓ሺ𝑦ሻ
+3 ⇐ Assume 𝑓 𝑥 ⊆ 𝑓ሺ𝑦ሻ Since 𝑥 ∈ 𝑓ሺ𝑥ሻ then 𝑥 ∈ 𝑓ሺ𝑦ሻ ie 𝑥 ≼ 𝑦
+61
+62
+1242024
+32
+Example
+• From the above we conclude that the posets 𝐵௞ ൌ 2ሼଵ…௞ሽ ⊆  
+𝑘 ൌ 1 2 3 … contain “copies” of all possible orderings of finite 
+sets
+63
+63

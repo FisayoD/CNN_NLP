@@ -1,0 +1,1690 @@
+272024
+1
+Counting Techniques
+or how to count without 
+explicitly counting
+1
+• What do the following problems have in common
+1
+Count the number of ways to select a dozen donuts when there are five 
+types available
+2
+Count the number of 16‐bit numbers with exactly 4 ones and 12 zeroes
+2
+Warmup
+Answer 1820 why
+1
+2
+272024
+2
+1 Determining the time and space required to solve a problem 
+always involves solving a counting problem size of data structures 
+number of iterations of a loop number of recursive calls etc
+2 Counting is the foundation of discrete probability theory which 
+plays a central role in the analysis of systems eg networks 
+cryptography and the design of randomized algorithms
+3 Two remarkable techniques the pigeonhole principle and 
+combinatorial proofs depend on counting
+3
+Why do we care
+ADDITION RULE If an object must be selected either from a pile of 𝑝 items 
+or from another pile of 𝑞 items then the selection can be made in 𝑝 ൅ 𝑞
+different ways 
+4
+Basic Principles
+MULTIPLICATION RULE If two objects must be chosen the first one from a 
+pile of 𝑝 items and the second one from a pile of 𝑞 items then the 
+selection can be made in 𝑝 ൈ 𝑞 different ways 
+Example A lunch special includes soup or salad If there are 4 types of soups 
+and 3 types of salad then you have 𝟒 ൅ 𝟑 ൌ 𝟕 options to choose from
+Example A dinner special includes soup and salad If there are 4 types of soups 
+and 3 types of salad then you have 𝟒 · 𝟑 ൌ 𝟏𝟐 options to choose from
+3
+4
+272024
+3
+ADDITION RULE If 𝐴 and 𝐵 are disjoint sets then  𝐴 ∪ 𝐵 ൌ 𝐴 ൅ 𝐵
+5
+In Terms of Sets…
+MULTIPLICATION RULE The number of pairs of the form ሺ𝑥 𝑦ሻ where 
+𝑥 ∈ 𝐴 and 𝑦 ∈ 𝐵 is  𝐴 ൈ 𝐵 ൌ 𝐴 ⋅ 𝐵
+Exercise What is |𝐴 ∪ 𝐵| if 𝐴 and 𝐵 are not necessarily disjoint
+𝑨
+𝑩
+𝑨 ∩ 𝑩
+• The addition and multiplication rules can of course be 
+generalized to any number of sets
+6
+Generalization
+If a set 𝑆 of objects is partitioned into subsets 𝑆ଵ 𝑆ଶ …  𝑆௠ then
+An object can be chosen from 𝑆 in  𝑆ଵ ൅ 𝑆ଶ ൅ ⋯ ൅ 𝑆௠ ways
+An 𝑚‐tuple  𝑥ଵ 𝑥ଶ …  𝑥௠  where 𝑥௜ ∈ 𝑆௜ can be built in       
+𝑆ଵ ൈ 𝑆ଶ ൈ ⋯ ൈ 𝑆௠ different ways
+5
+6
+272024
+4
+Example You want to recommend an intro programming book to a 
+friend Since you have four books on Java and three on Python then 
+you have 4 ൅ 3 ൌ 7 choices for your recommendation If on the 
+other hand you want to recommend both a book on Java and one on 
+Python then the number choices is 4 ൈ 3 ൌ 12
+7
+Examples
+Example The number of entries in the look‐up‐table LUT of a frame 
+buffer with eight bits per pixels driving a true color display is 2଼ ൌ 256 
+This is the number of different colors that can be displayed at a time in 
+a single frame of animation each chosen from a palette of 256ଷ colors
+Example The number of vectors that can be constructed to be incident 
+on a set of four points in general position is at most 13 why
+BIJECTION RULE Let X and Y be finite sets If there is a bijection 
+𝑓 𝑋 → 𝑌 then  𝑋 ൌ 𝑌 
+8
+Bijection Rule how to count one thing by counting another
+• This principle as obvious as it appears when applied to infinite sets 
+plays a fundamental role in logic and computability theory
+Exercise How many subsets of 𝑋 ൌ ሼ1 …  𝑛ሽ have an even 
+number of elements and how many have and odd number 
+Use the bijection rule
+7
+8
+272024
+5
+• Consider a hash table of size 𝑚 a prime number
+• Each key 𝑥 is interpreted as consisting of 𝑟 ൅ 1 “digits” in base 𝑚
+9
+Universal Hashing
+•
+The set ℋ ൌ ℎ௔ of hash functions satisfies for all keys 𝑥 ് 𝑦 if 𝑎 is 
+chosen at random then Pr ℎ௔ 𝑥 ൌ ℎ௔ሺ𝑦ሻ ൌ 1𝑚 proven COMP 3371
+𝑥 ൌ ⟨𝑥௥ ⋯ 𝑥ଵ𝑥଴⟩
+𝑎 ൌ ⟨𝑎௥ ⋯ 𝑎ଵ𝑎଴⟩
+ℎ௔ 𝑥 ൌ ෍ 𝑎௜𝑥௜
+௥
+௜ୀ଴
+ mod 𝑚
+• The hash function is built using random ሺ𝑟 ൅ 1ሻ‐digit base‐𝑚 number 𝑎
+Exercise How many different hashing functions are there
+Exercises
+10
+1 Let 𝑋 be a set of size 𝑛 and 𝑌 a set of size 𝑚 How many 
+different mappings 𝑓 𝑋 → 𝑌 are there
+2 Let 𝑋 be a set of size 𝑛 and 𝑌 a set of size 𝑚 How many 
+different injective mappings 𝑓 𝑋 → 𝑌 are there
+3 Let 𝑋 be a set of size 𝑛 and 𝑌 a set of size 𝑚 How many 
+different surjective mappings 𝑓 𝑋 → 𝑌 are there
+4 Describe a bijection between the set of 12‐packs of donuts 
+selected from 5 varieties and the set of 16‐bit binary 
+sequences with exactly four ones
+9
+10
+272024
+6
+• A generalization of the bijection rule
+• A function 𝑓 𝑋 → 𝑌 is 𝑘‐to‐1 if it is surjective and for every 𝑦 ∈ 𝑌 the 
+relation 𝑓ିଵሺ𝑦ሻ contains exactly 𝑘 points of 𝑋
+11
+Division Rule
+Example Let 𝐺ሺ𝑉 𝐸ሻ be a simple undirected graph What is the relation 
+between the number of edges and the sum of degrees of all vertices
+Example The number of segments of length ൐ 0 that can be constructed 
+to be incident on a set of 4 points is 6
+DIVISION RULE Let 𝑋 and 𝑌 be finite sets If 𝑓 𝑋 → 𝑌 is 𝑘‐to‐1 then 
+𝑋 ൌ 𝑘 ⋅ 𝑌
+Reinterpretation if each element of a set 𝑌 is counted 𝑘 times then 
+𝑌 ൌ ሺtotal countሻ𝑘
+Permutations The goal is to count ordered arrangements or ordered 
+selections of objects with or without repetition of objects
+Arrangement 𝑎 𝑏 𝑐 𝑏 is different from arrangement 𝑏 𝑏 𝑎 𝑐
+12
+Common Problem Types
+Combinations The goal is to count unordered arrangements or 
+unordered selections of objects with or without repetition of objects
+Arrangement 𝑎 𝑏 𝑐 𝑏 is the same as arrangement 𝑏 𝑏 𝑎 𝑐
+Since repetitions may be allowed we distinguish between arrangements 
+or selections from a set or from a multiset also called a bag For the 
+case of multisets we specify the number of times an object occurs as 
+illustrated in this example 𝑀 ൌ 3 ⋅ 𝑎 1 ⋅ 𝑏 2 ⋅ 𝑐 denotes the multiset 
+𝑀 ൌ ሼ𝑎 𝑎 𝑎 𝑏 𝑐 𝑐ሽ Infinity ∞ is allowed as a repetition count
+11
+12
+272024
+7
+Example
+• How many numbers between 1000 and 9999 have distinct 
+digits
+• Order is important ⇒ problem is of the permutation type
+• 9 different values can appear in the thousands 10 in the 
+hundreds 10 in the tens and 10 in the units
+ Is 9 ൈ 10 ൈ 10 ൈ 10 ൌ 9000 the correct answer
+• There are 9 different choices for the thousands 9 for the 
+hundreds 8 for the tens 7 for the units
+ The correct answer is 9 ൈ 9 ൈ 8 ൈ 7 ൌ 4536
+13
+Example
+• How many odd numbers between 1000 and 9999 have distinct 
+digits 
+• Order is important ⇒ problem is of the permutation type
+• There are 9 possibilities for the thousands 8 for the hundreds and 
+7 for the tens In how many ways can you choose the units         
+9 ൈ 9 ൈ 8 ൈ 
+• The correct answer is 8 ൈ 8 ൈ 7 ൈ 5 ൌ 2240 Why
+ We have 5 different choices for the units 8 for the thousands  
+8 for the hundreds 7 for the tens
+14
+Exercise How many even numbers are there between 1000 and 9999
+13
+14
+272024
+8
+• Let 𝑟 ∈ ℕ An r‐permutation of a set S of n elements is an ordered 
+arrangement of r of the n elements 
+• A permutation of S is simply an n‐permutation of S
+• 𝑃 𝑛 𝑟 ൌ the number of r‐permutations of n elements
+15
+Permutations
+𝑃ሺ𝑛 𝑟ሻ ൌ
+𝑛
+𝑛 െ 𝑟 
+Theorem For 𝑛 and 𝑟 positive integers with 𝑟 ൑ 𝑛 𝑃 𝑛 𝑟 ൌ
+𝑛 𝑛 െ 1 ሺ𝑛 െ 2ሻ ⋯ ሺ𝑛 െ 𝑟 ൅ 1ሻ
+Example If 𝑆 ൌ 𝑎 𝑏 𝑐  then 𝑎𝑏 𝑎𝑐 𝑏𝑎 𝑏𝑐 𝑐𝑎 𝑐𝑏 are the six 
+2‐permutations of 𝑆 and 𝑎𝑏𝑐 𝑎𝑐𝑏 𝑏𝑎𝑐 𝑏𝑐𝑎 𝑐𝑎𝑏 𝑐𝑏𝑎 are the 
+six permutations of 𝑆
+1 The number of 4‐letter variable names that can be formed using 
+each of the letters c a r e and s at most once is 𝑃 54 ൌ 120
+What is the number of 5‐letter variable names using the same letters
+2 The “15‐puzzle” consists of 15 sliding squares labeled 1 through 15 
+and mounted on a 44 square frame The number of different input 
+puzzles is 𝑃 1616 ൌ 16 ie ൐20 trillion possibilities
+16
+Examples
+15
+16
+272024
+9
+• The permutations considered so far are linear
+• If 𝑛 objects are arranged in a circle the number of permutations decreases as 
+two circular permutations are equal if one can be brought to the other by a 
+rotation 
+17
+Circular Permutations
+Example Suppose we arrange 10 children in a circle
+Since each linear permutation gives rise to 9 other equivalent ones the number 
+of circular permutations is 
+ଵ଴
+ଵ଴ ൌ 9
+Theorem The number of circular r‐permutations of a set of 𝑛 elements is 
+given by
+𝑃ሺ𝑛 𝑟ሻ
+𝑟
+ൌ
+𝑛
+𝑟 𝑛 െ 𝑟 
+• What is the number of different 5‐letter variables names with at least 
+one upper‐case letter  
+• What is the number of necklaces that can be made from 17 different 
+spherical beads
+18
+Exercises
+17
+18
+272024
+10
+• Let 𝑟 be a non‐negative integer An 𝑟‐combination of a set 𝑆 of size 𝑛
+is an 𝑟‐element subset of 𝑆
+• The number of 𝑟‐combinations of a set of size 𝑛 is denoted by 
+𝐶ሺ𝑛 𝑟ሻ or  𝑛
+𝑟
+• In particular 𝐶 𝑛 0 ൌ 𝐶 𝑛 𝑛 ൌ 1 𝐶 𝑛 1 ൌ 𝑛 and if 𝑟 ൐ 𝑛 then 
+𝐶 𝑛 𝑟 ൌ 0
+• For convenience we define 𝐶 00 ≔ 0
+19
+Combinations
+Theorem For 𝑟 ൑ 𝑛 𝐶 𝑛 𝑟 ൌ
+௡
+௥ ௡ି௥ 
+20
+Basic formula
+Proof Follows from 𝑃 𝑛 𝑟 ൌ 𝑟 𝐶 𝑛 𝑟
+Example Let 𝑆 be a set of 25 distinct points on the plane The 
+maximum number of lines through pairs of points of 𝑆 is 
+𝐶 252 ൌ
+ଶହ
+ଶଷଶ ൌ 300
+On the other hand the number of triangles with vertices from 𝑆 is 
+𝐶 253 ൌ
+ଶହ
+ଶଶଷ ൌ 2300
+Corollary For 𝑟 ൑ 𝑛 𝐶 𝑛 𝑟 ൌ 𝐶ሺ𝑛 𝑛 െ 𝑟ሻ
+19
+20
+272024
+11
+How many 8‐letter variable names can be constructed using the 26 
+lower‐case letters of the alphabet if each word contains 4 or 5 vowels
+Solution Consider 2 cases as follows
+1 The number of words with 4 vowels is 𝐶 84 5ସ21ସ ൌ
+଼
+ସସ 5ସ21ସ ൌ 8508543750
+2 The number of words with 5 vowels is 𝐶 85 5ହ21ଷ ൌ
+଼
+ହଷ 5ହ21ଷ ൌ 1620675000
+Answer  8508543750+1620675000 = 10129218750
+21
+Exercise
+The numbers 𝐶ሺ𝑛 𝑖ሻ are called binomial coefficients because they 
+appear as the coefficients in the expansion of the 𝑛‐th power of 
+the binomial 𝑥 ൅ 𝑦
+Binomial Theorem Let 𝑛 be a positive integer Then for all 𝑥 and 𝑦
+ൌ ෍ 𝑛
+𝑖
+𝑥௜𝑦௡ି௜
+௡
+௜ୀ଴
+Proof Either by induction on n or use a combinatorial argument
+22
+Binomial Coefficients
+𝑥 ൅ 𝑦 ௡ ൌ 𝑛
+0 𝑦௡ ൅ 𝑛
+1 𝑥𝑦௡ିଵ ൅ 𝑛
+2 𝑥ଶ𝑦௡ିଶ ൅ ⋯ ൅ 𝑛
+𝑛 𝑥௡
+21
+22
+272024
+12
+Theorem Pascal’s formula For integer 𝑛 and 𝑘 with 1 ൑ 𝑘 ൏ 𝑛
+𝐶 𝑛 𝑘 ൌ 𝐶 𝑛 െ 1 𝑘 െ 1 ൅ 𝐶ሺ𝑛 െ 1 𝑘ሻ
+23
+Pascal’s Triangle
+Proof By induction on n or by combinatorial argument partition 1…n 
+into two subsets depending on whether they contain n or not and apply 
+the Addition Rule
+When the coefficients are computed bottom‐up using Pascal’s formula 
+and displayed for increasing values of n one row per value of n the 
+resulting diagram is called Pascal’s Triangle appearing in Blaise Pascal’s 
+Traité du triangle arithmétique 1653
+Traité du triangle arithmétique 1653
+24
+23
+24
+272024
+13
+Pascal’s Triangle
+25
+𝑛
+𝑘 ൌ
+𝑛 െ 1
+𝑘 െ 1
+൅ 𝑛 െ 1
+𝑘
+Exercise Can you provide a combinatorial proof of this identity
+• What other properties can you find
+A Few Binomial Identities
+26
+1ሻ   𝑛
+𝑘
+ൌ 𝑛
+𝑘
+𝑛 െ 1
+𝑘 െ 1
+2ሻ    2௡ ൌ 𝑛
+0 ൅ 𝑛
+1 ൅ 𝑛
+2 ൅ ⋯ ൅
+𝑛
+𝑛 െ 1 ൅ 𝑛
+𝑛
+3ሻ  𝑛
+1 ൅ 𝑛
+3 ൅ 𝑛
+5 ൅ ⋯ ൌ 𝑛
+0 ൅ 𝑛
+2 ൅ 𝑛
+4 ൅ ⋯
+4ሻ    𝑛2௡ିଵ ൌ 1 𝑛
+1 ൅ 2 𝑛
+2 ൅ 3 𝑛
+3 ⋯ ൅ 𝑛 𝑛
+𝑛
+5ሻ   2𝑛
+𝑛
+ൌ ෍ 𝑛
+𝑘
+ଶ
+௡
+௞ୀ଴
+25
+26
+272024
+14
+• If 𝑆 is a multiset an 𝑟‐permutation of 𝑆 is an ordered arrangement of 
+𝑟 of the elements of 𝑆
+• If  𝑆 ൌ 𝑛 an 𝑛‐permutation is simply called a permutation of 𝑆
+27
+Permutations of multisets
+Example If 𝑆 ൌ 2 · 𝑎 1 · 𝑏 3 · 𝑐 then acbc and cbcc are 4‐permutations 
+of 𝑆 while abccca is a permutation of 𝑆
+Theorem Let 𝑆 be a multiset with an unlimited supply of each of 𝑘
+distinct objects Then the number of 𝑟‐permutations of S is 𝑘௥
+Theorem Let 𝑆 be a multiset of size 𝑛 consisting of 𝑘 distinct elements 
+with finite repetition counts 𝑛ଵ 𝑛ଶ …  𝑛௞ Let 𝑛 ൌ 𝑛ଵ ൅ 𝑛ଶ ൅ ⋯ ൅ 𝑛௞ 
+Then the number of permutations of 𝑆 equals
+28
+Permutations of multisets…
+Example The number of permutations of the letters in the word 
+MISSISSIPPI is the same as the number of permutations of the multiset 
+1 ⋅ 𝑀 4 ⋅ 𝐼 4 ⋅ 𝑆 2 ⋅ 𝑃  which equals 11ሺ1 4 4 2ሻ
+𝑛
+𝑛ଵ 𝑛ଶ ⋯ 𝑛௞
+27
+28
+272024
+15
+• A secretary works in a building located 9 
+blocks east and 7 blocks north of his home 
+Every day he walks the 16 blocks to work 
+He promised to himself that he would 
+retire once he has tried every single 
+shortest route When would that be 
+29
+Example
+Solution A valid path can be viewed as a permutation of the 
+multiset 𝑆 ൌ 9 · 𝐸 7 · 𝑁  Therefore there are 16ሺ9 7ሻ ൌ
+11440 At 251 work days per year exploring all would take 
+4558 years
+home
+work
+• Consider the product of three matrices 𝐴 𝐵 𝐶 of sizes 10ൈ100 100ൈ5 
+and 5ൈ50 respectively
+• Which one of 
+𝐴𝐵 𝐶 or as  𝐴 𝐵𝐶
+requires fewer scalar 
+multiplications  Does it matter 
+The number of scalar multiplications is 5000 + 2500 =7500 for 
+𝐴𝐵 𝐶  
+and 25000 + 50000 =75000 for  𝐴 𝐵𝐶
+• More generally when multiplying 𝑛 matrices in what order should the 
+partial products be computed
+30
+Matrix Chain Multiplication
+• Number of ways 𝑃ሺ𝑛ሻ
+to perform the product
+𝑃 𝑛 ൌ ቐ
+1                                     if 𝑛 ൌ 1
+෍
+𝑃ሺ𝑘ሻ𝑃ሺ𝑛 െ 𝑘ሻ
+௡ିଵ
+௞ୀଵ
+ if 𝑛 ൒ 2
+29
+30
+272024
+16
+3 How many different binary search trees can be built on a set of keys   
+𝑥ଵ ൏ 𝑥ଶ ൏ ⋯ ൏ 𝑥௡
+1 Given matrices 𝐴ଵ 𝐴ଶ …  𝐴௡ in what order should the partial products be 
+computed How many different choices are there                     
+ሺ𝐴ଵሺ𝐴ଶሺ𝐴ଷ𝐴ସሻሻሻ 𝐴ଵ
+𝐴ଶ𝐴ଷ 𝐴ସ
+ ሺ 𝐴ଵ𝐴ଶ  ሺ𝐴ଷ𝐴ସሻሻ ሺ
+𝐴ଵ𝐴ଶ 𝐴ଷ 𝐴ସሻ
+𝐴ଵ 𝐴ଶ𝐴ଷ
+𝐴ସ
+2 Given a regular grid how many different shortest paths are there from 00 
+to ሺ𝑛 𝑛ሻ that remain below the line 𝑦 ൌ 𝑥 
+31
+Four Related Problems
+4 What is the number of triangulations of a convex ሺ2 ൅ 𝑛ሻ‐polygon
+32
+𝑛 ൌ 4
+𝑛 ൌ 1
+𝑛 ൌ 2
+𝑛 ൌ 3
+Triangulations of  𝒏 ൅ 𝟐 ‐gon
+𝐴ଵ𝐴ଶ
+𝒏 applications of a binary operator
+𝑛 ൌ 1
+𝐴ଵ 𝐴ଶ𝐴ଷ
+   
+𝐴ଵ𝐴ଶ 𝐴ଷ
+𝑛 ൌ 2
+𝐴ଵ 𝐴ଶ 𝐴ଷ𝐴ସ
+ 𝐴ଵ
+𝐴ଶ𝐴ଷ 𝐴ସ
+ 
+𝐴ଵ𝐴ଶ
+𝐴ଷ𝐴ସ
+𝐴ଵ 𝐴ଶ𝐴ଷ
+𝐴ସ   
+𝐴ଵ𝐴ଶ 𝐴ଷ 𝐴ସ
+𝑛 ൌ 3
+𝐴ଵ𝐴ଶ 𝐴ଷ 𝐴ସ 𝐴ହ   
+𝐴ଵ 𝐴ଶ𝐴ଷ
+𝐴ସ 𝐴ହ   
+𝐴ଵ𝐴ଶ
+𝐴ଷ𝐴ସ 𝐴ହ
+ 
+𝐴ଵ
+𝐴ଶ𝐴ଷ 𝐴ସ
+𝐴ହ   
+𝐴ଵ 𝐴ଶ𝐴ଷ
+𝐴ସ𝐴ହ
+ 𝐴ଵ
+𝐴ଶ 𝐴ଷ𝐴ସ
+𝐴ହ
+𝐴ଵ
+𝐴ଶ𝐴ଷ 𝐴ସ 𝐴ହ
+  𝐴ଵ
+𝐴ଶ𝐴ଷ
+𝐴ସ𝐴ହ
+ 𝐴ଵ 𝐴ଶ
+𝐴ଷ𝐴ସ 𝐴ହ
+𝐴ଵ𝐴ଶ
+𝐴ଷ 𝐴ସ𝐴ହ
+  
+𝐴ଵ𝐴ଶ 𝐴ଷ
+𝐴ସ𝐴ହ
+ 𝐴ଵ 𝐴ଶ 𝐴ଷ 𝐴ସ𝐴ହ
+𝐴ଵ𝐴ଶ
+𝐴ଷ𝐴ସ
+𝐴ହ   
+𝐴ଵ 𝐴ଶ 𝐴ଷ𝐴ସ
+𝐴ହ
+𝑛 ൌ 4
+𝑛 ൌ 1
+𝑛 ൌ 2
+𝑛 ൌ 3
+𝑛 ൌ 4
+BST for 𝒏 keys
+𝑛 ൌ 1
+𝑛 ൌ 2
+𝑛 ൌ 3
+Shortest path in 𝒏 ൈ 𝒏 grid
+𝑛 ൌ 4
+31
+32
+272024
+17
+• Non‐crossing partitions of n items
+• Concurrent handshakes of 𝒏 pairs people
+33
+And Two More…
+• Goal  of shortest paths from ሺ00ሻ to ሺ𝑛 𝑛ሻ that avoids locations 
+above the line 𝑦 ൌ 𝑥
+• A path can be viewed as a von Dyck word of length 2𝑛 ie a 
+permutation of  𝑛 · 𝐸 𝑛 · 𝑁 whose prefixes contain at least as many 
+𝐸’s as 𝑁’s ie at all times 𝐸’s ൒ 𝑁’s
+34
+Shortest Constrained Paths on a Grid
+33
+34
+272024
+18
+• Notation
+𝑈௠௡ set of unconstrained paths from ሺ00ሻ to ሺ𝑚 𝑛ሻ
+𝐶௡௡ set of valid constrained paths from ሺ00ሻ to ሺ𝑛 𝑛ሻ
+𝐼௡௡ set of invalid constrained paths from ሺ00ሻ to ሺ𝑛 𝑛ሻ
+• Answer can be easily computed if we know the number of invalid paths
+35
+Shortest Constrained Paths…
+ valid paths ൌ  unconstrained paths െ  invalid paths ie
+𝐶௡௡ ൌ 𝑈௡௡ െ 𝐼௡௡
+• We establish a bijection 𝑓 𝐼௡௡
+𝑈௡ିଵ௡ାଵ and use the Bijection Rule 
+to find  𝐼௡௡
+• Our bijection 𝑓 transforms an invalid path by flipping every symbol 
+after the first violation
+Example With 𝑛 ൌ 5 the path ENNNEEENNE becomes ENNENNNEEN
+• In general an invalid path to  𝑛 𝑛 becomes an unconstrained path 
+to  𝑛 െ 1 𝑛 ൅ 1
+Exercise Verify 1 if 𝑥 ∈ 𝐼௡௡ then 𝑓 𝑥 ∈ 𝑈௡ିଵ௡ 2 f is one‐to‐one and 
+3 f is onto
+36
+A Useful Transformation
+Theorem  𝐶௡௡ ൌ 𝑈௡௡ െ 𝐼௡௡ ൌ
+ଶ௡ 
+௡௡ െ
+ଶ௡ 
+௡ିଵ  ௡ାଵ  ൌ
+஼ሺଶ௡௡ሻ
+௡ାଵ
+35
+36
+272024
+19
+• The Catalan numbers are defined by the sequence
+37
+Catalan Numbers
+𝐶௡ ൌ
+1
+𝑛 ൅ 1
+2𝑛
+𝑛
+ൌ ෑ 𝑛 ൅ 𝑖
+𝑖
+௡
+௜ୀଶ
+ 𝑛 ൌ 012 …
+• The first few are 1 1 2 5 14 42 132 429 1430 4862 16796 58786 
+208012 742900 2674440 9694845 …
+• Named after the Belgian mathematician Eugène Catalan 1814‐1894 
+who used them to express the number of grouping 𝑛 applications of 
+an associative binary operator
+• We with to show that 𝑃 𝑛 ൌ 𝐶௡ିଵ where
+38
+Matrix Chains Revisited
+𝑃 𝑛 ൌ ቐ
+1                                     if 𝑛 ൌ 1
+෍
+𝑃ሺ𝑘ሻ𝑃ሺ𝑛 െ 𝑘ሻ
+௡ିଵ
+௞ୀଵ
+ if 𝑛 ൒ 2
+• We establish a bijection between constrained paths and possible 
+ordering of 𝑛 െ 1 applications of a binary operator matrix multiplication
+37
+38
+272024
+20
+• Let 𝑏௡ denote the number of distinct binary search trees on 𝑛
+keys Prove that 𝑏௡ ൌ 𝐶௡
+39
+Exercise
+• 𝑟‐permutations of 𝑛 elements
+40
+Summary so far
+𝑃ሺ𝑛 𝑟ሻ ൌ
+𝑛
+𝑛 െ 𝑟 
+𝑃ሺ𝑛 𝑟ሻ
+𝑟
+ൌ
+𝑛
+𝑟 𝑛 െ 𝑟 
+• Circular 𝑟‐permutations of 𝑛 elements
+• 𝑟‐combinations of 𝑛 elements
+𝐶 𝑛 𝑟 ൌ 𝑛
+𝑟
+ൌ
+𝑛
+𝑟 𝑛 െ 𝑟 
+𝑘௥
+• 𝑟‐permutations of multiset with unlimited supply of 𝑘 classes
+𝑛
+𝑛ଵ 𝑛ଶ ⋯ 𝑛௞
+• If the 𝑘 classes have repetition counts 𝑛ଵ …  𝑛௞ with 𝑛 ൌ ∑𝑛௜
+𝐶௡ ൌ
+1
+𝑛 ൅ 1
+2𝑛
+𝑛
+• 𝑛‐th Catalan number
+39
+40
+272024
+21
+• Order unimportant repetitions allowed
+Example  1343117
+41
+Combinations of multisets
+• If 𝑆 is a multiset then an 𝑟‐combination of 𝑆 is an unordered 
+selection of 𝑟 of the elements of 𝑆
+Thus an 𝑟‐combination is itself a multiset
+If 𝑆 has 𝑛 elements then there is only one 𝑛‐combination of 𝑆 namely 
+𝑆 itself
+If 𝑆 contains 𝑘 distinct elements then there are 𝑘 1‐combinations of 𝑆
+Example If 𝑆 ൌ ሼ2 ⋅ 𝑎 1 ⋅ 𝑏 3 ⋅ 𝑐ሽ then the following are all the 2‐
+combinations of 𝑆  𝑎 𝑎   𝑎 𝑏   𝑎 𝑐   𝑏 𝑐  and  𝑐 𝑐
+Theorem Let 𝑆 be a multiset with 𝑘 distinct object types each with 
+unlimited multiplicity Then the number of 𝑟‐combinations of 𝑆 is 
+𝐶ሺ𝑘 െ 1 ൅ 𝑟 𝑟ሻ
+42
+Proof Let the distinct objects of S be 𝑎ଵ 𝑎ଶ …  𝑎௞ An r‐combination has the form 
+𝑥ଵ · 𝑎ଵ 𝑥ଶ · 𝑎ଶ …  𝑥௞𝑎௞
+where 𝑥௜ ∈ ℕ and 𝑥ଵ ൅ 𝑥ଶ ൅ ⋯ ൅ 𝑥௞ ൌ 𝑟
+Thus there is a 1‐1 correspondence between the r‐combinations and non‐negative 
+integer solutions to 𝑥ଵ ൅ 𝑥ଶ ൅ ⋯ ൅ 𝑥௞ ൌ 𝑟 
+This is the same as the number of permutations of the set 𝑇 ൌ
+𝑘 െ 1 · 0 𝑟 · 1  
+The 0’s divide the 1’s into k groups of 1’s The size of the 𝑖‐th group is the value of 𝑥௜
+Example Assuming 𝑘 ൌ 4 𝑟 ൌ 5 the permutation of  3 · 05 · 1 given by 01110011 
+corresponds to the solution 𝑥ଵ ൌ 0 𝑥ଶ ൌ 3 𝑥ଷ ൌ 0 𝑥ସ ൌ 2 a solution to 𝑥ଵ ൅ 𝑥ଶ ൅
+𝑥ଷ ൅ 𝑥ସ ൌ 5
+Thus the number of r‐combinations of 𝑆 is the same as the number of permutations 
+of 𝑇 ie 𝐶ሺ𝑘 െ 1 ൅ 𝑟 𝑟ሻ
+41
+42
+272024
+22
+• A bakery offers 8 varieties of doughnuts If a box contains 1 dozen 
+how many different boxes can you buy
+• A sequence 𝑥ଵ 𝑥ଶ 𝑥ଷ … is monotonically increasing if 𝑥௜ିଵ ൑ 𝑥௜ for all 
+𝑖 What is the number of monotonically increasing sequences of 
+length 12 whose terms are taken from  123 …  8 
+43
+Exercises
+44
+Theorem Let 𝑆 be a multiset with k distinct object types each with 
+unlimited multiplicity Then the number of 𝑟‐combinations of 𝑆 in which 
+each of the 𝑘 different types occurs at least once equals 𝐶ሺ𝑟 െ 1 𝑘 െ 1ሻ
+Proof 
+We seek the number of solutions to 𝑥ଵ ൅ 𝑥ଶ ൅ ⋯ ൅ 𝑥௡ ൌ 𝑟 with positive integers
+Take a sequence of 𝑟 1’s and let the 𝑟 െ 1 positions between the 1’s be 𝑇 ൌ ሼ𝑝ଵ …  𝑝௥ିଵሽ
+Then the number of solutions sought is the number of ሺ𝑘 െ 1ሻ‐combinations of 𝑇
+Choose a combination and insert a 0 in each of the chosen 𝑝௜’s The number of 1’s 
+between consecutive 0’s is strictly positive and gives the number of repetitions of the 
+corresponding object type
+This number equals 𝐶ሺ𝑟 െ 1 𝑘 െ 1ሻ as claimed  ∎
+Example If 𝑟 ൌ 6 and 𝑘 ൌ 4 then 110110101 corresponds to the solution 
+𝑥ଵ ൌ 𝑥ଶ ൌ 2 𝑥ଷ ൌ 𝑥ସ ൌ 1
+43
+44
+272024
+23
+Problem Given 𝑛 generate all permutations of  1 …  𝑛
+• Component of many algorithms
+The basis of many “brute force” algorithms
+ Reasonable for small n ൑ 20ሻ
+ Processing a permutation takes longer than generating it
+Structural backbone of backtracking algorithms
+Get useful insight average worst case behavior into algorithms for 
+various combinatorial problems
+ Sorting spanning forest traveling salesman etc
+• More than 30 different algorithms have been published
+45
+Generating Permutations
+Goal Low average time per permutation low auxiliary memory 
+requirements simple state allows you to generate next permutation
+• Evaluate the following with respect to our goals
+46
+Algorithm 1
+45
+46
+272024
+24
+Exercise Why is the algorithm correct
+47
+Algorithm 2
+• Based on recursive definition 𝑛 ൌ 𝑛 െ 1  · 𝑛
+Claim  Permute requires ൎ 2ሺ𝑒 െ 1ሻ swapsperm
+• Based on the fact that deleting an element from a permutation 𝜋 of 
+ሼ1 …  𝑛ሽ results in a permutation 𝜎 of ሼ1 …  𝑛 െ 1ሽ
+ 𝑛 different permutations of ሼ1 …  𝑛ሽ result in the same permutation 𝜎
+• Basic Idea Fix an arbitrary element 𝑥 For each  𝑛 െ 1 ‐permutation 𝜋
+of the remaining elements generate 𝑛 new permutations by inserting 
+𝑥 in all possible positions of 𝜋
+Starting with the single permutation of 1 the algorithm generates the 
+permutations of  1 …  𝑛 recursively in 𝑛 െ 1 rounds
+Round 𝑘 ൌ 2 …  𝑛 proceeds by listing every permutation  of 
+1 …  𝑘 െ 1 and inserting 𝑘 into  at each possible position
+• Only one swap per permutation
+48
+Algorithm 3
+47
+48
+272024
+25
+Algorithm 3 Example
+49
+Round 2 write each permutation of 1 twice and interlace 2
+Round 3 write each permutation of  ሼ12ሽ thrice and interlace 3
+50
+Round 4 write each 
+permutation of 123 four 
+times and interlace 4
+Pros 
+•
+Each permutation requires 
+only 1 swap
+Cons 
+•
+finding the right swap is not easy
+•
+A naïve implementation requires 
+large amounts of storage
+49
+50
+272024
+26
+• In order to determine the next swap each element is 
+assigned an “intended” direction of movement eg 
+2 6 3 1 5 4
+• An element is movable if its neighbor in its intended 
+direction has a smaller value 
+In the example above 6 3 and 5 are movable
+ Element 1 is never movable
+Element 𝑛 is not movable if it is the leftmost resp rightmost 
+element and points to the left resp right
+51
+An efficient implementation
+1 Output 1 2 3 … 𝑛
+2 while some element is movable do
+a Swap the largest movable element 𝑚 with the neighbor it points to
+b Switch the intended direction of all integers 𝑝 ൐ 𝑚
+52
+An efficient implementation…
+Example If the current permutation is 2 3 1 5 6 4 the next 
+two are 2 3 1 5 4 6 and 2 3 1 4 5 6
+Exercise What data structures can be used to keep track of 
+directions movable elements and for choosing the pair to swap
+51
+52
+272024
+27
+Example 𝑛 ൌ 4
+53
+2  3  1  4
+2  3  4  1
+2  4  3  1
+4  2  3  1
+4  2  1  3
+2  4  1  3
+2  1  4  3
+2  1  3  4
+3  1  2  4
+3  1  4  2
+3  4  1  2
+4  3  1  2
+4  3  2  1
+3  4  2  1
+3  2  4  1
+3  2  1  4
+1  2  3  4
+1  2  4  3
+1  4  2  3
+4  1  2  3
+4  1  3  2
+1  4  3  2
+1  3  4  2
+1  3  2  4
+• Generating all combinations ie subsets of 𝑆 ൌ 012 …  𝑛 െ 1
+is straightforward Using an 𝑛‐bit vector 𝑎 ൌ 𝑎௡ିଵ 𝑎௡ିଶ …  𝑎ଵ 𝑎଴
+with 𝑎௜ ൌ 1 iff 𝑖 ∈ 𝑆 each of the 2௡ possible bit sequences can be 
+interpreted as a subset of 𝑆
+54
+Generating Combinations
+𝒂𝟎
+𝒂𝟏
+𝒂𝟐
+0
+0
+0
+∅
+1
+0
+0
+𝟎
+0
+1
+0
+𝟏
+1
+1
+0
+𝟎 𝟏
+0
+0
+1
+𝟐
+1
+0
+1
+𝟎 𝟐
+0
+1
+1
+𝟏 𝟐
+1
+1
+1
+𝟎 𝟏 𝟐
+• Starting with 𝑎 ൌ 𝟎 
+generate all sequences by 
+repeatedly incrementing 
+a by 1 The case 𝑛 ൌ 3 is 
+illustrated on the right
+53
+54
+272024
+28
+• When 𝑟 ൏ 𝑛 it is more efficient to generate r‐combinations 
+lexicographically
+We are making use of a total order on the set of permutations
+Example The 4‐combinations of 𝑆 ൌ 1 …  6
+in lexicographic 
+order are
+55
+Generating r‐Combinations
+56
+Generating r‐Combinations
+Claim Let 𝑆 ൌ ሼ1 …  𝑛ሽ The first 𝑟‐combination of 𝑆 in lexicographic 
+order is 1 2 …  𝑟 and the last is 𝑛 െ 𝑟 ൅ 1 𝑛 െ 𝑟 ൅ 2 …  𝑛 Let 𝐴 ൌ
+𝑎ଵ 𝑎ଶ …  𝑎௥ be an 𝑟‐combination of 𝑆 different from the last one 
+Let 𝑗 be the largest integer such that 𝑎௝ ൏ 𝑛 and 𝑎௝ ൅ 1 is not one of 
+𝑎௝ାଵ …  𝑎௥ no repetitions allowed Then the 𝑟‐combination that 
+follows 𝐴 in lexicographic order is
+𝑎ଵ …  𝑎௝ିଵ 𝑎௝ ൅ 1 𝑎௝ ൅ 2 …  𝑎௝ ൅ ሺ𝑟 െ 𝑗 ൅ 1ሻ
+Remark This result can be easily used to derive an algorithm that 
+systematically generates all 𝑟‐combinations of 𝑆 ൌ ሼ1 …  𝑛ሽ
+Remark If we combine the algorithm for generating 𝑟‐combinations of an 
+𝑛‐element set with the algorithm for generating permutations  of a set we 
+obtain an algorithm for generating 𝑟‐permutations of an 𝑛‐element set
+55
+56
+272024
+29
+• Design an efficient algorithm that generates a permutation of 
+〈12 …  𝑛〉 uniformly at random
+Each of the 𝑛 permutations should be equally likely to be selected
+You may assume access to a function RANDINTab that generates a 
+random integer between a and b
+• How long in terms of number of calls to RANDINT does your 
+algorithm require
+57
+Exercise
+• Explain how the following algorithm works
+58
+Exercise
+• How many times on average do you call the random function
+57
+58
+272024
+30
+• Technique to count the number of objects in a union of sets 
+indirectly by counting how many are not in the union
+Useful when direct counting is difficult or impossible
+• Basis for many “fast” exponential algorithms for NP‐hard problems 
+such as determining if a graph contains a Hamiltonian path or 
+whether 𝑛 items of sizes 𝑠ଵ 𝑠ଶ …  𝑠௡ can be packed into 𝑘 bins of 
+capacity 𝐶 each
+Algorithms based on inclusion‐exclusion need to consider all subsets of 
+a set resulting in Ω 2௡ operations 
+Expensive but significantly faster than a 𝛩 𝑛 algorithm
+59
+Inclusion‐Exclusion Principle
+• Sometimes in order to find how many elements belong to a set 𝐴 it is 
+easier to find how many do not belong to 𝐴
+60
+Motivation
+Example Count the number of integers between 1 and 600 that are not 
+divisible by 6
+𝑆 ൌ 1 …  600
+𝐴 ൌ integers in S not divisible by  6
+𝐴̅ ൌ integers in S divisible by  6
+A
+𝑺
+𝐴 ൌ 𝑆 െ 𝐴̅
+𝐴 ൌ 𝑆 െ 𝐴̅ ൌ 600 െ 100 ൌ 500
+59
+60
+272024
+31
+Let 𝑆 ൌ all polygons 𝐴ଵ ൌ set of triangles 𝐴ଶ= set of red polygons 
+We want  𝐴ଵ ∪ 𝐴ଶ ൌ 𝐴ଵ ∩ 𝐴ଶ 
+61
+Motivation…
+Example We have a collection 𝑆 of 𝑛 ൌ 100 polygons Suppose that 35 
+polygons are triangles 40 are rectangles and 25 are pentagons 
+Furthermore suppose that 30 are red out of which 9 are also triangles 
+How many polygons are neither triangles nor red
+ൌ 100 െ 35 ൅ 30 ൅ 9 ൌ 44
+A1
+A2
+S
+𝐴ଵ ∪ 𝐴ଶ ൌ
+𝐴ଵ ൅ 𝐴ଶ
+െ 𝐴ଵ ∩ 𝐴ଶ
+A1
+A2
+S
+A3
+𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ൌ 𝑆 െ ሺ|𝐴ଵ| ൅ 𝐴ଶ ൅ 𝐴ଷ ሻ
++1
++1
++1
++1
++1
++1
++1
++1
+൅ሺ|𝐴ଵ ∩ 𝐴ଶ| ൅ 𝐴ଵ ∩ 𝐴ଷ ൅ 𝐴ଶ ∩ 𝐴ଷ ሻ െ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+61
+62
+272024
+32
+A1
+A2
+S
+A3
+𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ൌ 𝑆 െ ሺ|𝐴ଵ| ൅ 𝐴ଶ ൅ 𝐴ଷ ሻ
+0
+0
+0
+1
+1
+ 1
+2
++1
+൅ሺ|𝐴ଵ ∩ 𝐴ଶ| ൅ 𝐴ଵ ∩ 𝐴ଷ ൅ 𝐴ଶ ∩ 𝐴ଷ ሻ െ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+A1
+A2
+S
+A3
+𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ൌ 𝑆 െ ሺ|𝐴ଵ| ൅ 𝐴ଶ ൅ 𝐴ଷ ሻ
+0
+0
+0
+0
+0
+0
++1
++1
+൅ሺ|𝐴ଵ ∩ 𝐴ଶ| ൅ 𝐴ଵ ∩ 𝐴ଷ ൅ 𝐴ଶ ∩ 𝐴ଷ ሻ െ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+63
+64
+272024
+33
+A1
+A2
+S
+A3
+𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ൌ 𝑆 െ ሺ|𝐴ଵ| ൅ 𝐴ଶ ൅ 𝐴ଷ ሻ
+0
+0
+0
+0
+0
+0
+0
++1
+൅ሺ|𝐴ଵ ∩ 𝐴ଶ| ൅ 𝐴ଵ ∩ 𝐴ଷ ൅ 𝐴ଶ ∩ 𝐴ଷ ሻ െ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+𝐴ଵ ∪ 𝐴ଶ ∪ 𝐴ଷ ൌ ሺ|𝐴ଵ| ൅ 𝐴ଶ ൅ 𝐴ଷ ሻ
+െሺ|𝐴ଵ ∩ 𝐴ଶ| ൅ 𝐴ଵ ∩ 𝐴ଷ ൅ 𝐴ଶ ∩ 𝐴ଷ ሻ ൅ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+• More generally let 𝑐ଵ …  𝑐௧ be 𝑡 propertiesconditions which each object in 𝑆
+may or may not satisfy Let 𝐴௜ denote the subset of objects of 𝑆 which satisfy 
+condition 𝑖 and possibly some of the other conditions as well The following 
+theorem tells us how many objects satisfy none of the conditions
+66
+Generalization
+Theorem
+where the first sum is over all 1‐combinations the second is over all  2‐
+combinations the third over all 3‐combinations of ሼ1 …  𝑡ሽ and so on
+𝐴ଵ ∩ 𝐴ଶ ∩ ⋯ ∩ 𝐴௧ ൌ 𝑆 െ ෍ 𝐴௜ ൅
+෍
+𝐴௜ ∩ 𝐴௝ െ
+ଵஸ௜ழ௝ஸ௧
+ଵஸ௜ஸ௧
+෍
+𝐴௜ ∩ 𝐴௝ ∩ 𝐴௞ ൅ ⋯ ൅ െ1 ௧ 𝐴ଵ ∩ ⋯ ∩ 𝐴௧
+ଵஸ௜ழ௝ழ௞ஸ௧
+65
+66
+272024
+34
+Corollary The number of objects of 𝑆 which satisfy at least one of the 
+conditions 𝑐ଵ …  𝑐௧ is given by
+67
+Generalization…
+In other words the size  𝐴ଵ ∪ 𝐴ଶ ∪ ⋯ ∪ 𝐴௧ of a union of sets is computed as 
+follows add up the sizes of all the individual sets the subtract the sizes of all 
+pairwise intersections now add the sizes of all 3‐way intersections then 
+subtract the sizes of all 4‐way intersections and so on
+In the last step either add for 𝑡 odd or subtract for 𝑡 even the size of the 
+intersection of all the 𝑡 sets
+𝐴ଵ ∪ 𝐴ଶ ∪ ⋯ ∪ 𝐴௧ ൌ ෍ 𝐴௜ െ
+෍
+𝐴௜ ∩ 𝐴௝ ൅
+ଵஸ௜ழ௝ஸ௧
+ଵஸ௜ஸ௧
+෍
+𝐴௜ ∩ 𝐴௝ ∩ 𝐴௞ െ ⋯ ൅ െ1 ௧ିଵ 𝐴ଵ ∩ ⋯ ∩ 𝐴௧
+ଵஸ௜ழ௝ழ௞ஸ௧
+• A certain town has 3 clubs The tennis club has 20 members the 
+stamp collectors club 15 members and the Egyptology club numbers 
+8 There are 2 tennis players and 3 stamp collectors among the 
+Egyptologists 6 people both play tennis and collect stamps and there 
+is even one busy person that belongs to all three clubs How many 
+people are engaged in the club life
+68
+Example
+𝐶 ∪ 𝑇 ∪ 𝐸 ൌ 𝐶 ൅ 𝑇 ൅ 𝐸
+െ 𝐶 ∩ 𝑇 െ 𝐶 ∩ 𝐸 െ 𝐸 ∩ 𝑇 ൅ 𝐶 ∩ 𝑇 ∩ 𝐸
+ൌ 15 ൅ 20 ൅ 8 െ 2 ൅ 3 ൅ 6 ൅ 1 ൌ 33
+67
+68
+272024
+35
+Notation
+and in general
+69
+where the selection is made over all 𝑡
+𝑘 kcombinations of 
+the set of t conditions Then
+Find the number of integers between 1 and 1000 inclusive which are divisible 
+by none of 5 6 and 8
+70
+Example
+• 𝑐ଵ property of being divisible by 5
+• 𝑐ଶ property of being divisible by 6
+• 𝑐ଷ property of being divisible by 8
+• 𝑆 ൌ ሼ12 …  1000ሽ
+• 𝐴௜ subset of S
+satisfying 𝑐௜
+We wish to find  𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ
+𝑁ഥ ൌ 𝑆଴ െ 𝑆ଵ ൅ 𝑆ଶ െ 𝑆ଷ ൌ 1000 െ 200 ൅ 166 ൅ 125 ൅ 33 ൅ 25 ൅ 41 െ 8 ൌ 600
+69
+70
+272024
+36
+Find the number of non‐negative integer solutions to 𝑥ଵ ൅ 𝑥ଶ ൅ 𝑥ଷ ൅ 𝑥ସ ൌ
+20 subject to 𝑥௜ ൑ 8 1 ൑ 𝑖 ൑ 4
+71
+Example
+• 𝑆 ൌ nonnegative integers solutions to 𝑥ଵ ൅ 𝑥ଶ ൅ 𝑥ଷ ൅ 𝑥ସ ൌ 20
+⇒ 𝑆 ൌ permutations of 20 · 13 · 0 ൌ 𝐶 2320 ൌ 𝐶ሺ233ሻ
+• 𝑐௜ ൌ property that 𝑥௜ ൐ 8 ⇒ 𝐴௜ ൌ solutions satisfying 𝑐௜
+• What is 𝐴௜ 
+– Bijection from solutions of 𝑥ଵ ൅ 𝑥ଶ ൅ 𝑥ଷ ൅ 𝑥ସ ൌ 11 to solutions in 𝐴௜
+– Then 𝐴௜ ൌ 𝐶 11 ൅ 311
+• Similarly 𝐴௜ ∩ 𝐴௝ ൌ solutions to 𝑥ଵ ൅ 𝑥ଶ ൅ 𝑥ଷ ൅ 𝑥ସ ൌ 2 ie 𝐶ሺ2 ൅ 32ሻ
+Consider a region with five villages You wish to build a system of roads so that 
+no village is completely isolated although it may remain disconnected from 
+specific villages ie the resulting graph may not be connected In how many 
+ways can this be done
+72
+Example
+• 𝑆 set of all graphs on 𝑉 ൌ ሼ12345ሽ  How many
+•
+𝑆 ൌ 2
+ఱ
+మ ൌ 2ଵ଴ ൌ 1024
+• 𝑐௜ village i is isolated 𝐴௜ graphs in S satisfying 𝑐௜
+• We want 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ∩ 𝐴ସ ∩ 𝐴ହ
+• Can you find 𝑆ଵ 𝑆ଶ 𝑆ଷ 𝑆ସ 𝑆ହ 
+2ଵ଴ െ 5
+1 2଺ ൅ 5
+2 2ଷ െ 5
+3 2ଵ ൅ 5
+4 2଴ െ 5
+5 1 ൌ 768
+𝑁ഥ ൌ 𝑆଴ െ 𝑆ଵ ൅ 𝑆ଶ െ 𝑆ଷ ൅ 𝑆ସ െ 𝑆ହ ൌ
+71
+72
+272024
+37
+In how many ways can six married couples be seated at a circular table 
+so that no one sits next to their spouse
+73
+Example
+• 𝑆 set of all sitting arrangements How many
+𝑆 ൌ 11
+•
+𝑐௜ members of couple i sit together  𝑁ሺ𝑐ଵሻ 
+• Previously we computed the number 𝐶ሺ𝑛 𝑟ሻ of r‐combinations of a set S
+and the number 𝐶ሺ𝑟 ൅ 𝑘 െ 1 𝑟ሻ of r‐combinations of a multiset with k
+classes of unlimited multiplicity 
+• We now look at multisets with finite repetition counts
+74
+r‐Combinations of multisets with finite repetition counts
+Exercise Compute the number of 10‐combinations of the multiset 
+3 · 𝑟 4 · 𝑔 5 · 𝑏 
+We can do this by imposing additional conditions on the 10‐combinations 
+of  ∞ · 𝑟 ∞ · 𝑔 ∞ · 𝑏
+73
+74
+272024
+38
+• Given t properties 𝑐ଵ …  𝑐௧ and a set 𝑆 let 𝐸௠ resp 𝐿௠ denote the 
+number of elements of 𝑆 that satisfy exactly resp at least 𝑚 of the 
+properties 
+Note so far we have only considered the cases 𝐸଴ and 𝐿ଵ
+75
+Generalized Inclusion‐Exclusion
+Corollary
+Theorem Under the same hypothesis as the inclusion‐exclusion principle for 
+each 1 ൑ 𝑚 ൑ 𝑡 the number of elements of 𝑆 that satisfy exactly 𝑚 of the 
+properties 𝑐ଵ …  𝑐௧ is
+• Verify the special case 𝐸௠ for 𝑡 ൌ 3 𝑚 ൌ 1 using Venn diagrams 
+each region has been numbered for easy reference
+76
+Example
+• 𝑆ଵ overestimates the actual number 
+as regions 3 5 6 are counted twice 
+and region 7 is counted 3 times
+• If we subtract 2𝑆ଶ we end with  a net 
+loss of 3 for region 7 which needs to 
+be added back
+• Correct formula is 𝑆ଵ െ 2𝑆ଶ ൅ 3𝑆ଷ
+75
+76
+272024
+39
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+2
+1
+3
+2
+3
+4
+3
+2
+2
+3
+2
+1
+2
+1
++S1
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+2
+1
+3
+2
+3
+4
+3
+2
+2
+3
+2
+1
+2
+1
++S1 – 2S2
+77
+78
+272024
+40
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+0
+1
+–3
+0
+–3
+–8
+–3
+0
+0
+–3
+0
+1
+0
+1
++S1 – 2S2
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+0
+1
+–3
+0
+–3
+–8
+–3
+0
+0
+–3
+0
+1
+0
+1
++S1 – 2S2 + 3S3
+79
+80
+272024
+41
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+0
+1
+0
+0
+0
+4
+0
+0
+0
+0
+0
+1
+0
+1
++S1 – 2S2 + 3S3
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+0
+1
+0
+0
+0
+4
+0
+0
+0
+0
+0
+1
+0
+1
++S1 – 2S2 + 3S3 – 4S4
+81
+82
+272024
+42
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
++S1 – 2S2 + 3S3 – 4S4
+Generalized Inclusion Exclusion 𝐸ଵ with t=4
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+–1
+83
+84
+272024
+43
+• Eight CDs lie on a table outside their case next to the eight empty 
+cases Each CD is placed on a case at random one CD per case What 
+is the probability that no CD is returned to its case
+• Is it more or less likely that no CD is returned to its case when instead 
+of 8 CDs we have 80 CDs
+85
+Warmup Nothing in its Place
+• If we view a permutation as a mapping a derangement is a 
+permutation in which no element maps to itself such as 31254 
+23451 54321 etc
+• Examples
+In how many ways can you place bets on the arriving positions of 8 race 
+cars so that you lose all your bets
+ In how many ways can you return 8 CDs to their cases so that no CD is 
+in the right case
+ Eight couples arrive at a party In how many ways can they choose 
+dancing partners so that no one dances with their spouse
+86
+Derangements
+85
+86
+272024
+44
+• We denote by 𝑑௡ the number of derangements of ሼ12 …  𝑛ሽ
+87
+Derangements…
+We get the sequence of 𝑑௜’s  0 1 2 9 44 265 1854 14833 133496 …
+𝑛 ൌ 1  𝑑ଵ ൌ 0 as 1 is the only permutation
+𝑛 ൌ 2  𝑑ଶ ൌ 1 as 21 is the only derangement
+𝑛 ൌ 3  𝑑ଷ ൌ 2 from 231 and 312
+𝑛 ൌ 4  𝑑ସ ൌ 9 from the following permutations
+𝟐𝟒𝟏𝟑
+𝟐𝟑𝟒𝟏
+𝟐𝟏𝟒𝟑
+𝟑𝟒𝟐𝟏
+𝟑𝟒𝟏𝟐
+𝟑𝟏𝟒𝟐
+𝟒𝟑𝟐𝟏
+𝟒𝟑𝟏𝟐
+𝟒𝟏𝟐𝟑
+Theorem For 𝑛 ൒ 1 
+88
+The number of derangements
+𝑑௡ ൌ 𝑛 1 െ 1
+1 ൅ 1
+2 െ 1
+3 ൅ ⋯ ൅ െ1 ௡ 1
+𝑛
+Proof Here 𝑆 is the set of permutations of 1 …  𝑛 so 𝑆଴ ൌ 𝑛
+For 𝑗 ൌ 1 …  𝑛 𝑐௝ is the condition that in a permutation 𝑗 is in its natural position     
+For example a permutation 𝑖ଵ𝑖ଶ … 𝑖௡ satisfies 𝑐ଵ if it has the form 1𝑖ଶ … 𝑖௡ ie if 𝑖ଵ ൌ 1
+Thus 𝑁 𝑐ଵ ൌ 𝑛 െ 1  and 𝑆ଵ ൌ 𝐶 𝑛 1
+𝑛 െ 1  ൌ 𝑛
+Similarly permutations in 𝐴ଵ ∩ 𝐴ଶ are of the form 12𝑖ଷ … 𝑖௡ and 𝑁 𝑐ଵ𝑐ଶ ൌ 𝑛 െ 2  
+Therefore 𝑆ଶ ൌ 𝐶 𝑛 2
+𝑛 െ 2  ൌ 𝑛2
+More generally for any 1 ൑ 𝑘 ൑ 𝑛 the permutations in 𝐴ଵ ∩ 𝐴ଶ ∩ ⋯ ∩ 𝐴௞ have the 
+form 12 … 𝑘𝑖௞ାଵ … 𝑖௡ where 𝑖௞ାଵ … 𝑖௡ is an arbitrary permutation of 𝑘 ൅ 1 …  𝑛
+Thus 𝑁 𝑐ଵ𝑐ଶ ⋯ 𝑐௞ ൌ 𝑛 െ 𝑘  and 𝑆௞ ൌ 𝐶 𝑛 𝑘
+𝑛 െ 𝑘 
+A direct application of the inclusion‐exclusion principle yields
+𝑑௡ ൌ 𝑆଴ െ 𝑆ଵ ൅ ⋯ ൅ െ1 ௡𝑆௡ ൌ 𝑛 1 െ 1
+1 ൅ 1
+2 െ 1
+3 ൅ ⋯ ൅ െ1 ௡ 1
+𝑛   ∎  
+87
+88
+272024
+45
+• Recall from basic calculus
+89
+How does 𝑑௡ change as 𝑛 grows
+• In particular for 𝑥 ൌ െ1
+𝑒ିଵ ൌ 1 െ 1
+1 ൅ 1
+2 െ 1
+3 ൅ 1
+4 െ 1
+5 ൅ ⋯
+• Therefore
+lim
+௡→ஶ
+ௗ೙
+௡ ൌ 𝑒ିଵ
+and  
+ௗ೙
+௡ െ
+ଵ
+௘ ൑
+ଵ
+௡ାଵ 
+𝑒௫ ൌ 1 ൅ 𝑥 ൅ 𝑥ଶ
+2 ൅ 𝑥ଷ
+3 ൅ 𝑥ସ
+4 ൅ ⋯ ൅ 𝑥௞
+𝑘 ൅ ⋯
+• Since 𝑑௡ is the  of permutations of ሼ1 …  𝑛ሽ that are derangements 
+then the probability that a random permutation is a derangement is
+90
+Derangements in Random Permutations
+𝑑௡
+𝑛 ൎ 𝑒ିଵ ൎ 03679
+• This probability is largely independent of 𝑛
+89
+90
+272024
+46
+Theorem 𝑑௡ ൌ 𝑛 െ 1
+𝑑௡ିଵ ൅ 𝑑௡ିଶ for 𝑛 ൌ 345 …
+91
+Recursive Structure
+Proof Euler The 𝑑௡ derangements of ሼ1 …  𝑛ሽ can be partitioned into 𝑛 െ 1 classes 
+depending on which of 23 …  𝑛 appears in the first position Since each class “looks the 
+same” 𝑑௡ ൌ 𝑛 െ 1 𝑡௡ where 𝑡௡ is the number of derangements of the form 2𝑖ଶ𝑖ଷ … 𝑖௡
+Further partition the 𝑡௡ derangements into two types 𝑡௡ᇱ derangements of the form 
+21𝑖ଷ𝑖ସ … 𝑖௡ and 𝑡௡ᇱᇱ derangements of the form 2𝑖ଶ𝑖ଷ𝑖ସ … 𝑖௡ with 𝑖ଶ ് 1 𝑖ଷ ് 3 𝑖ସ ്
+4 … 𝑖௡ ് 𝑛 But 𝑡௡ᇱ ൌ 𝑑௡ିଶ and by relabeling we can see that 𝑡௡ᇱᇱ ൌ 𝑑௡ିଵ which 
+concludes the proof
+92
+By iterating this recurrence you get an alternative proof of
+𝑑௡ ൌ 𝑛 െ 1
+𝑑௡ିଵ ൅ 𝑑௡ିଶ
+91
+92
+272024
+47
+A class of n children takes a walk every day in a single file every child 
+except the first is preceded by another child Since it is not very 
+interesting to always see the same person in front of you on the 
+second day they decide to switch positions so that no child is 
+preceded by the same child from the previous day In how many ways 
+can the children switch positions
+93
+Exercise
+Hint we want the permutations that do not contain any of the patterns 
+12 23 34 …  𝑛 െ 1 𝑛
+• The number of permutations of ሼ1 …  𝑛ሽ that do not contain any of the 
+patterns 12 23 34 …  𝑛 െ 1 𝑛 is denoted by 𝑞௡
+94
+Relative Forbidden Positions
+𝑞௡ ൌ 𝑛 െ 𝑛 െ 1
+1
+𝑛 െ 1  ൅ 𝑛 െ 1
+2
+𝑛 െ 2  െ 𝑛 െ 1
+3
+𝑛 െ 3  ൅ ⋯ ൅ െ1 ௡ 𝑛 െ 1
+𝑛 െ 1 1
+Theorem For 𝑛 ൒ 1
+Theorem  𝑞௡ ൌ 𝑑௡ ൅ 𝑑௡ିଵ
+93
+94
+272024
+48
+• In how many ways can you place 
+8 rooks in a 8 ൈ 8 chessboard so 
+that no two of them can take 
+each other
+• How about if some positions 
+shaded blocks are forbidden
+95
+Rook polynomials Warmup
+• Many problems that have nothing to do with chess can be modeled 
+using arrangements of rooks on a board
+Example Professor Rook has to grade five finals and has five students to 
+help with grading Each grader should get exactly one exam in a topic 
+they know In how many ways can this be done
+Model as 5 ൈ 5 chessboard with forbidden rook positions
+96
+Rook polynomials
+a forbidden position
+95
+96
+272024
+49
+• Let 𝐶 denote a specific 𝑚 ൈ 𝑛 board Then 𝑟௞ሺ𝐶ሻ denotes the number of 
+ways in which 𝑘 rooks can be placed in 𝐶 so that no two attack each 
+other ie no two occupy either the same row or the same column 
+• For convenience we define 𝑟଴ 𝐶 ൌ 1
+• The rook polynomial of 𝐶 denoted 𝑟 𝐶 𝑥  is defined as
+97
+Notation
+𝑟 𝐶 𝑥 ൌ ෍ 𝑟௞ 𝐶 𝑥௞
+ஶ
+௞ୀ଴
+Note the coefficient of 𝑥௞ is the number of ways in which 𝑘 non‐attacking 
+rooks can be placed in 𝐶
+• Consider a chessboard 𝐶 of size 𝑛 ൈ 𝑛 with rook polynomial 
+ℛ௡ 𝑥 ൌ 𝑟ሺ𝐶 𝑥ሻ Then
+98
+Example
+Exercise What is ℛସ 𝑥 
+ℛଵ 𝑥 ൌ 1 ൅ 𝑥
+ℛଶ 𝑥 ൌ 1 ൅ 4𝑥 ൅ 2𝑥ଶ
+ℛଷ 𝑥 ൌ 1 ൅ 9𝑥 ൅ 18𝑥ଶ ൅ 6𝑥ଷ
+Exercise What is ℛ௡ 𝑥 
+Exercise What is ℛ௠௡ 𝑥 
+97
+98
+272024
+50
+• In this example the board contains forbidden positions marked with ൈ
+99
+Example
+𝑟 𝐶 𝑥 ൌ 1 ൅ 6𝑥 ൅ 8𝑥ଶ ൅ 2𝑥ଷ
+• The case‐by‐case analysis used so far quickly becomes unmanageable 
+for large boards
+• Two techniques decomposition and reduction make the analysis 
+simpler
+If a large board 𝐶 can be partitioned into 𝑘 independent sub‐boards 
+𝐶ଵ 𝐶ଶ …  𝐶௞ decomposition allows you to compute the polynomial of 
+𝐶 by multiplying the polynomials of  𝐶ଵ 𝐶ଶ …  𝐶௞
+Reduction uses the Addition Rule to compute the polynomial of 𝐶 from 
+the polynomials of two smaller boards that result from either placing a 
+rook or not at a arbitrarily chosen cell of 𝐶
+100
+Analysis Techniques
+99
+100
+272024
+51
+• Given a board 𝐶 two sub‐boards are independent if they share no 
+open cells in the same row or same column
+101
+Decomposition
+𝐶ଵ
+𝐶ଶ
+𝑟 𝐶ଵ 𝑥 ൌ 1 ൅ 3𝑥 ൅ 𝑥ଶ
+𝑟 𝐶ଶ 𝑥 ൌ 1 ൅ 9𝑥 ൅ 18𝑥ଶ ൅ 6𝑥ଷ
+𝑟 𝐶 𝑥 ൌ 𝑟 𝐶ଵ 𝑥 · 𝑟 𝐶ଶ 𝑥 ൌ 1 ൅ 12𝑥 ൅ 46𝑥ଶ ൅ 69𝑥ଷ ൅ 36𝑥ସ ൅ 6𝑥ହ
+Theorem  If 𝐶 is a board made up of pairwise independent sub‐boards 𝐶ଵ …  𝐶௞
+then 𝑟 𝐶 𝑥 ൌ 𝑟 𝐶ଵ 𝑥 · 𝑟 𝐶ଶ 𝑥 ⋯ 𝑟ሺ𝐶௞ 𝑥ሻ
+• Uses the addition rule by deciding whether to place a rook or not on a 
+given cell of 𝐶
+102
+Reduction
+• Since the two cases cover all possibilities and are mutually disjoint 
+by the addition rule 𝑟௞ 𝐶 ൌ 𝑟௞ିଵ 𝐶௔ ൅ 𝑟௞ሺ𝐶௕ሻ
+𝐶௔
+𝐶௕
+101
+102
+272024
+52
+• Compute the rook polynomial of the board
+103
+Example
+• If 𝐵 is a board 𝐵 denotes 𝑟ሺ𝐵 𝑥ሻ
+• Back to Prof Rook example He needs to 
+assign exactly one  grader to each exam 
+104
+Example
+• After rearranging columns first and then rows we get
+103
+104
+272024
+53
+• Once again we use inclusion‐exclusion
+ Let 𝑆 ൌ unconstrained assignments one grader per exam
+ Let 𝑐௜ ൌ 𝑖‐th grader is assigned to a forbidden exam
+ We want 𝑁 𝑐ଵഥ 𝑐ଶഥ 𝑐ଷഥ 𝑐ସഥ 𝑐ହഥ
+ൌ 𝐴ଵ ∩ 𝐴ଶ ∩ 𝐴ଷ ∩ 𝐴ସ ∩ 𝐴ହ ൌ 𝑆଴ െ 𝑆ଵ ൅ 𝑆ଶ െ 𝑆ଷ ൅ 𝑆ସ െ 𝑆ହ
+• Clearly 𝑆଴ ൌ 5 ൌ 120
+105
+Counting  of Valid Assignments
+𝑁 𝑐ଵ𝑐ଶ ൅ 𝑁 𝑐ଵ𝑐ଷ ൅ 𝑁 𝑐ଵ𝑐ସ ൅ 𝑁 𝑐ଵ𝑐ହ ൅ 𝑁 𝑐ଶ𝑐ଷ ൅ 𝑁 𝑐ଶ𝑐ସ ൅ 𝑁 𝑐ଶ𝑐ହ
+൅ 𝑁 𝑐ଷ𝑐ସ ൅ 𝑁 𝑐ଷ𝑐ହ ൅ 𝑁 𝑐ସ𝑐ହ
+• 𝑆ଶ is given by
+• 𝑆ଵ is given by
+𝑆ଵ ൌ 𝑁 𝑐ଵ ൅ 𝑁 𝑐ଶ ൅ 𝑁 𝑐ଷ ൅ 𝑁 𝑐ସ ൅ 𝑁 𝑐ହ
+• Proceed similarly for 𝑆ଷ 𝑆ସ 𝑆ହ
+• Therefore 𝑆ଵ ൌ 8 4 ൌ 192
+106
+Computing 𝑆ଵ
+Graders
+Exams
+• 𝑁 𝑐ଵ ൌ 4 ൅ 4 assigning Sam to each of List or Fortran
+• 𝑁 𝑐ଶ ൌ 4 ൅ 4 assigning Jane to each of List or Fortran
+• 𝑁 𝑐ଷ ൌ 4 assigning Pete to Java
+• 𝑁 𝑐ସ ൌ 4 assigning Chuck to C
+• 𝑁 𝑐ହ ൌ 4 ൅ 4 assigning Tom to each of C or Python
+105
+106
+272024
+54
+• 𝑁 𝑐ଵ𝑐ଶ ൌ 2 ⋅ 3 as there are 2 ways to assign Sam 
+and Jane to two different exams with both occupying 
+a forbidden position and 3 ways to assign the rest 
+to different exams without regard to constraints
+107
+Computing 𝑆ଶ
+• Thus 𝑆ଶ ൌ 22 3 ൌ 132
+• 𝑁 𝑐ଵ𝑐ହ ൌ ሺ2 ⋅ 2ሻ ⋅ 3 as Sandra and Tom can be 
+assigned freely to any of their forbidden positions
+• For the remaining 2‐combinations we get
+• There is a relationship between the 𝑆௜’s and the rook polynomial for 
+the complement board 𝐶௙ of forbidden positions obtained by 
+swapping the state of each cell
+• Each permutation in 𝑆௜ consists of 𝑖 forbidden choices followed by 
+𝑛 െ 𝑖 arbitrary choices
+• Thus 𝑆ଵ ൌ 𝑟ଵ 𝐶௙
+5 െ 1  𝑆ଶ ൌ 𝑟ଶ 𝐶௙
+5 െ 2  and in general 𝑆௜ ൌ
+𝑟௜ 𝐶௙
+5 െ 𝑖 
+108
+Complement Board
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+𝑪௙
+𝑪
+107
+108
+272024
+55
+• We can greatly simplify our work and expedite the solution by first 
+computing the polynomial 𝑟ሺ𝐶௙ 𝑥ሻ
+• Using the decomposition principle we can partition 𝐶௙ into three 
+independent sub‐boards 𝑪𝟏 𝑪𝟐 𝑪𝟑
+109
+Complement Board…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+𝑟 𝐶ଵ 𝑥 ൌ 1 ൅ 4𝑥 ൅ 2𝑥ଶ
+𝑟 𝐶ଶ 𝑥 ൌ 1 ൅ 𝑥
+𝑟 𝐶ଷ 𝑥 ൌ 1 ൅ 3𝑥 ൅ 𝑥ଶ
+Let 𝐴 ൌ ሼ1234ሽ and 𝐵 ൌ ሼ𝑢 𝑣 𝑤 𝑥 𝑦 𝑧ሽ How many 1‐1 functions 
+𝑓 𝐴 → 𝐵 satisfy
+𝑓 1 ∈ 𝑤 𝑥 𝑦 𝑧 
+𝑓 2 ∈ 𝑢 𝑣 𝑥 𝑦 𝑧  
+𝑓 3 ∈ 𝑢 𝑣 𝑥  
+𝑓 4 ∈ ሼ𝑢 𝑣 𝑥ሽ
+110
+Exercise
+109
+110

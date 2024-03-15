@@ -1,0 +1,570 @@
+International Journal of Energy Economics and Policy | Vol 9 • Issue 2 • 2019
+283
+International Journal of Energy Economics and 
+Policy
+ISSN 21464553
+available at http wwweconjournalscom
+International Journal of Energy Economics and Policy 2019 92 283287
+Causes and Terrain of Oil Spillage in Niger Delta Region of 
+Nigeria The Analysis of Variance Approach
+Ifeoma Christy Mba1 Emmanuel Ikechukwu Mba2 Jonathan Emenike Ogbuabor3 
+Winnie Ogochukwu Arazu4
+134Department of Economics University of Nigeria Nsukka Nigeria 2Department of Statistics University of Nigeria Nsukka 
+Nigeria Email Ifeomambaunnedung
+Received 31 October 2018 
+Accepted 01 February 2019 
+DOI httpsdoiorg1032479ijeep7332
+ABSTRACT
+Oil spillage in Niger Delta region of Nigeria has been on an increase and almost on a regular basis The objective of this study is on the causes and 
+terrain of oil spillage in the Niger Delta with emphasis on which causes have significant effect on the volume of oil spillage the terrain that is most 
+affected The two way analysis of variance statistical tool was employed and it was discovered that the “sabotage” cause was significant at a 5 
+level of significance and from the pairwise multiple comparison the “sabotage” cause was seen as the major causes of oil spillage in the Niger Delta 
+followed by the “operational” and “mystery spill” causes respectively It was also discovered that the incident site that was most affected was the 
+swamp terrain with 82 while water was 46 and land with 65 The study concluded that to reduce or manage oil spillage in Nigeria the Federal 
+government and Federal environmental management agency should enforce the laws governing oil spill incident in Nigeria
+Keywords Terrain Causes Niger Delta 
+JEL Classifications P28 Q53 Q56
+1 INTRODUCTION
+Oil was first discovered on commercial basis in the Niger Delta 
+region of Nigeria at Oloibiri the present day Bayelsa state in the 
+year 1956 more discoveries were made after that of Olobiri and 
+exports began in the year 1958 almost 2 years after discovery at 
+Olobiri Although the quantities only became significant in the 
+year 1965 and this was because the terminal at Bonny Island 
+in Rivers State and the necessary pipelines to feed the terminal 
+were completed The Nigerian export was put at an average of 
+25 million barrels each day in the year 2004 and its reserve at 
+35 billion barrels CAB 2005
+Niger Delta is an area with strong cultural diversity The Niger 
+delta occupies a total land mass of 75 it has 9 states and 186 
+local government areas housing at least 25 million people The 
+Niger Delta to the southern part of Nigeria is 70000 km2 through 
+which the two rivers Niger and Benue these rivers bare into 
+the Atlantic Ocean all it possesses There are other main rivers 
+rivers like Benin Brass Bonny Cross Kwaibo Forcados Nun 
+and other streams and creeks or brooks which are linked and 
+interwoven by a network of creeks NDES 1997
+The Niger Delta according to Nwilo and Badejo 2005 is an area in 
+which the main river that is River Niger reaches the base level and 
+further branches into different tributaries releasing distributing 
+and thus disposing of the water discharge and the water sediment 
+load The Niger Delta has the shape of the Nile Delta Sexton and 
+Murday 1994 The Delta according to Nwilo and Badejo 2005 
+is regarded in the world as one of the largest wetlands
+Man’s environment can be called also his immediate family this 
+is because just as his immediate family are close to him so also 
+his environment Man’s environment has also experienced some 
+This Journal is licensed under a Creative Commons Attribution 40 International License
+Christy Mba et al Causes and Terrain of Oil Spillage in Niger Delta Region of Nigeria The Analysis of Variance Approach
+International Journal of Energy Economics and Policy | Vol 9 • Issue 2 • 2019
+284
+levels of attack from activities of man himself These activities 
+in one way or the other have impacted negatively on man hence 
+results from these activities are majorly pollutions of all manner 
+of degree Pollution can be said to be an introduction or discharge 
+of substance into the environment that is very poisonous and thus 
+harmful Thus terrain such as land water air can also be polluted 
+likewise one can have noise pollution amongst others It can be said 
+in a jiffy that the release of toxins in the atmosphere contaminates 
+or pollutes the air poisonous substance also introduced in the 
+hydrosphere contaminates water and finally poisonous substance 
+in the lithosphere pollutes or contaminates the land Thus land 
+water and air are basically the three major types of pollution 
+the interesting part of this story is that these three components 
+once affected will definitely affect the fourth which is called the 
+biosphere that is an artificial enclosure that is an ecosystem 
+thus life can exist there Oil spillage is a form of pollution it is a 
+process whereby liquid petroleum hydrocarbon is been discharged 
+or one can say released into the environment Oil spillage though 
+a form of pollution is not good for the environment
+Oil spill a common outcome of oil exploration and exploitation 
+in the Niger delta region has an estimated spillage incident of over 
+7000 over a 50year period UNDP 2006
+Oil spillage occurs usually from activities of humans in their 
+environment and witnessed especially in the marine ecosystem 
+but oil spillages can also happen on land Whatever the terrain is 
+whether land water or swamp its effect is not encouraging its 
+health threatening it is harmful and should be avoided
+In Nigeria there are serious environmental issues ranging from 
+drought to flood to oil spillages to illegal refining and so on but it 
+is interesting to note that the major environmental issues hinging 
+around the Niger Delta are from the petroleum industry Oil 
+theft operations illegal refining mystery spills and sabotage are 
+amongst major causes of oil spills in our environment Whatever 
+the cause may be be it sabotage or mystery spills or whatever 
+there must be a joint investigation followed by the cleanup and 
+remediation processes which is done by the shell petroleum 
+development company of Nigeria limited joint venture SPDC JV
+The thrust of this paper is on the causes and terrain of oil spillage 
+in the Niger Delta with emphasis on which causes have significant 
+effect on the volume of oil spillage the terrain that is most affected 
+The two way analysis of variance would be employed to capture 
+the objectives of the work
+11 Causes of Oil Spillage in Nigeria
+Oil spillage in Nigeria can be of a natural cause or of a human 
+cause Although a third cause can be said to be the Mysterious 
+cause The natural spill causes are those spills that come naturally 
+that is they occur naturally examples are those that happen due 
+to natural disasters shift of tectonic plates these plates are seen 
+beneath the ocean floor once there is a shift oil is thus released 
+thereby causing a natural seepage and spillage occurs There are 
+also cases of inadequate trap system
+Human causes are manmade causes usually done by humans 
+Examples include vandalization of oil pipe which could bring 
+about spillage carelessness on the side of both workers this 
+cause is what is referred to as operational carelessness on the 
+side of the tanker drivers accidents can happen during delivery 
+or production operations which can cause spillage carelessness 
+that could also lead to oil bunkering sabotage and oil siphoning
+Mysterious causes are those causes that aren’t known that is one 
+cannot pin down the exact cause of the spillage Wang et al 2001 
+reported a case of mystery spill which was from Quebec in the year 
+1999 seen at the river banks of St Laurence river directly in front 
+of Thermex Company Investigation as regards where the spill was 
+from was carried on but the interesting part of the investigation 
+was that their earlier on suspicion that the spill was from a nearby 
+factory though was true but the chemical composition wasn’t the 
+same The mystery spill had less amount of diesel relatively to the 
+oil found in the factory and elsewhere The one from the mystery 
+spill was fresh to compare with Wang et al 2001
+In Nigeria there are also causes of mystery spill which according 
+to shell data on the second of July 2017 the estimated volume 
+of oil in barrels bbl was put at 01 sixteenth of august 2016 
+the estimated volume was 5 bbl On sixth of November 2015 
+05 bbl on twenty ninth of September 2015 the estimated spill 
+volume was 30 bbl and so on
+12 Oil Spill Incidents
+In Nigeria there are numbers of oil spill incidents which have 
+occurred in different part of the country at different or same time 
+period Over the years Nigeria had experienced a lot of oil spill 
+incident but the most striking one is that of January 17th 1980 
+which was publicised as having an estimated spill volume of 
+370 million litres which was caused by a blow out at Funiwa 5 
+offshore station Nwilo and Badejo 2005 Table 1 shows some 
+prominent oil spill incident in nigeria the date of the spillage the 
+terrain the site the estimated spill volume and the causes of the 
+oil spill Although from the table below one would discover that 
+some of the estimated spill volume are much bigger than what 
+was seen in the eighties
+2 LITERATURE REVIEW
+Smith et al 1982 developed oil spill risk analysis model to help in 
+estimating the hazards caused by oil spill in the environment The 
+model though computerized was used in analysing the probability 
+of spill occurrences and also the paths where the spill occurred 
+They used sample of 500 spills per season and the resulting 
+model output included conditional impact probability tables and 
+probability for oil spill occurrences Their model is still in use in 
+the United States under the oil spill risk assessments Smith et al 
+1982 Another research on oil spill was that carried out by Olujobi 
+et al 2018 they adopted a development strategy that was also 
+sustainable it was sustainable in the sense that it could maintain 
+prudent management of oil resources Olujobi et al 2018 also 
+applied an enduring model that could aid in natural environment 
+conservation The aforementioned terms according to them 
+Christy Mba et al Causes and Terrain of Oil Spillage in Niger Delta Region of Nigeria The Analysis of Variance Approach
+International Journal of Energy Economics and Policy | Vol 9 • Issue 2 • 2019
+285
+prudent management sustainable development strategies and 
+environment conservation were imperative and necessities for the 
+Nigerian economy Olujobi et al 2018 employed the descriptive 
+legal analysis and secondary data sources and concluded that the 
+oil spills in Nigeria should be addressed and that positive attitude 
+should be put in place by the oil operators and the government 
+alike so as to reduce the health hazard caused by these spillage 
+Olujobi et al 2018
+Another group of researchers employed a multiresolution analysis 
+of polarimetric SAR data by the use of wavelet frames in observing 
+the sea oil spill Gambardella et al 2008 Gambardella et al 
+2008 obtained a vector of covariance matrix elements from the 
+set of polarimetric data and the corresponding variances were also 
+obtained They concluded that wind speed can affect sensitivity to 
+polar dependency and that their analysis can aid in oil description 
+Gambardella et al 2008
+Wegeberg et al 2017 described techniques for combating main 
+oil spills The chemical dispersants the mechanical recovery and 
+in situ burning and also looked at their possible application in the 
+Arctic the Arctic according to them were described as part I and in 
+their part II the description of the techniques used in ascertaining 
+the environmental effects was investigated and in Part III they 
+monitored the effect of the spills and its responses and so on 
+They concluded by saying that wildlife shouldn’t be exposed 
+to these oil spillage likewise humans Wegeberg et al 2017 
+Bayesian supervised and unsupervised segmentation algorithm 
+and markov random field were applied by BioucasDias and 
+Pelizzari 2010 although they first applied the Markov random 
+field prior to the Bayesian on the oceanic segmentation of SAR 
+images BioucasDias and Pelizzari 2010 later considered the 
+least squares fit methods and it was discovered that with the 
+Bayesian surpervised algorithm higher accuracies of the observed 
+algorithm was achieved while the unsupervised algorithm was 
+seen as an improvement to algorithm 1 and II Consequently three 
+researchers applied 3 salinity values and 3 different oil that is 
+light refined oil light crude oil and medium crude oil since the 
+effectiveness of dispersant application on oil slick would give 
+rise to factors such as salinity temperature and wavemixing 
+Chandrasekar et al 2006 Chandrasekar et al 2006 used a 
+full factorial experiment and discovered that the impact of salinity 
+was significant only at different weather for light crude oil with 
+dispersant Subsequently still on oil spill but with emphasis on 
+oil classification Vogt and Sjoegren 1989 investigated both 
+statistical methods and chemical compositions ie fluorescence 
+spectrometry infrared spectrometry liquid chromatography with 
+flame ionization GCFID for oil spill classification They further 
+employed 5 procedures for 23 oil groups from 4 geographic regions 
+considering their discriminating power thus applying ANOVA 
+and some other statistical test and concluded that the fluorescence 
+spectrometry sulphur nickel and vanadium contents are useful 
+for oil classifications Vogt and Sjoegren 1989 Ndeh et al 
+2017 identified oil spillage in Upenekang village in Ibeno local 
+government area of Akwa Ibom state in Nigeria They used water 
+samples from spill site they also looked at the effects of these 
+spillage and also investigated the oil spillage site Their concerns 
+were on the chemical content water conductivity pH temperature 
+etc they concluded that the pH of all the samples used for the 
+underground and surface stream displayed that the spill site was 
+acidic and the ANOVA results showed that there is insignificant 
+influence of distance away from spill Ndeh et al 2017 Other 
+researches done were on impact of crude oil researchers such 
+as Almawali et al 2016 Moreira et al 2004 Ohanmu et al 
+2018 but the works of Gingerich 2018 was totally different 
+from all others since her focus was on how to maintain and store 
+clean renewable energies irrespective of the climate change like 
+drought flood to mention but a few She also looked at how less 
+developed countries could become major global exporters of these 
+renewable energies Gingerich 2018
+Ohanmu et al 2018 aimed at ascertaining the changes in the 
+physicochemical properties and heavy metals level of crude oil 
+polluted soil using the randomized block design it was discovered 
+that crude oil affects soil properties irrespective of seasons 
+Ohanmu et al 2018 Moreira et al 2004 evaluated both the 
+spatial and temporal impact of oil spill on the shore different 
+laboratory test on toxicity were performed and it was concluded 
+that the biomarkers were sensitive to exposures with respect to 
+these kind of pollutions Almawali et al 2016 constructed a 
+simple macroeconomic model that modelled the impact of oil 
+sector on the Sultanate of Oman’s economy They discovered 
+that the oil sector displayed large and strong positive impact on 
+the Oman’s GDP and the impact was also felt on all other nonoil 
+sectors of the economy According to them the major influence 
+of oil was on the gas sector and finally they disclosed that the 
+Oman’s economy cannot be diversified
+3 METHODOLOGY
+The statistical tool used for the analysis is a two way analysis of 
+variance with replication that is with more than one observation 
+Table 1 Oil spill incident in Nigeria September 2018
+Date reported
+Incident site
+Terrain
+Cause
+Estimated spill volume bbl
+September 03 2018
+24” NkpokuBomu Pipeline at Bera
+Land
+Sabotage
+19
+September 04 2018
+Imo River 2 Well 31L Flowline at 
+OdagwaUmuadeokwara
+Land
+Sabotage
+01
+September 06 2018
+14” OkordiaRumuekpe Pipeline at Akaramini
+Land
+Sabotage
+81
+September 08 2018
+20” Otumara  Escravos Pipeline at Ugboegungun
+Swamp
+Sabotage
+172
+September 09 2018
+36” Nkpoku  Bomu Pipeline at Rumuesara Eneka
+Land
+Sabotage
+622
+September 11 2018
+Imo River Well 59T Flowline at IgiriukwuOwaza
+Land
+Sabotage
+02
+September 14 2018
+6’’ Obigbo North  Ogale Pipeline at Ogale
+Land
+Sabotage
+72
+September 15 2018
+16’’ Egbema  Assa Rumuekpe Pipeline at Assa
+Land
+Sabotage
+34
+Source Shell Nigeria oil spill data the data above is the most current
+Christy Mba et al Causes and Terrain of Oil Spillage in Niger Delta Region of Nigeria The Analysis of Variance Approach
+International Journal of Energy Economics and Policy | Vol 9 • Issue 2 • 2019
+286
+per cell The data for this study is from a secondary source it is 
+sourced from shell Nigeria oil spill incident ranging from January 
+2015 to September 2018 The data included date of the oil spill 
+incident oil spill site estimated oil spill volume bbl the joint 
+investigation findings and dates of remediation and finally pictures 
+of affected areas
+The two way ANOVA model is given as
+ 
+ 
+Xijk = μ+αi+βj+αβij+εijk 
+1
+Where i measures the observation per row
+j measures the observation per column and k measures how many 
+observations per cell
+Xijk means the observation jth level of factor A and ith level of 
+factor B
+μ is the universal constant or observations when the factors are 
+absent or treatments not applied
+αi is the average effect of ith level of factor A
+βj is the average effect of jth level of factor B
+αβij is the interaction effect of ith level of factor A and jth level 
+of factor B
+εijk is the error term associated with the observation Xijk
+Thus from our study the factors A and B are Causes and Terrain 
+respectively while the kth observation measures the number 
+of times of oil spillage estimated oil spill volume associated 
+with the jth terrain and the ith causes Here ith causes runs 
+from one to four where respectively they are sabotage as 1 
+operational as 2 mystery spill as three and others ie other 
+causes as 4 The jth terrain also runs from one to three and 
+thus respectively they are swamp as 1 water as 2 and land as 
+3 Finally the interaction effect is the interaction of the two 
+factors that is causes and terrain respectively The layout of 
+the study is seen below
+Causes 1 2 3 4
+terrain
+kth
+1
+2
+3
+1 2
+  …
+    
+
+
+
+
+
+
+
+
+
+
+From the layout the entry 12…kth are just positions for the 
+estimated spill volume and not necessary data
+Assumptions of analysis of variance
+1 Normality assumption
+2 Constant variance homoscedasticity
+3 Independence
+4 ANALYSIS AND INTERPRETATION OF 
+RESULTS
+The stated hypothesis for the study is given as
+ 
+H0  There is no significant difference amongst the causes of 
+oil spillage in the Niger delta versus
+ 
+H1  There is more spillage due to some causes more than 
+others
+From the null hypothesis it means that the causes of oil spillage 
+are all equal
+Table 2 shows the ANOVA table and the associated results From 
+the table below it can be seen that the causes are significant with 
+the value 0047 that is there is significant difference at an α = 005 
+level of significance thus the causes of oil spillage in Nigerai are 
+not equal our concern is on which of the causes actually have more 
+impact than the others Is it sabotage operational mystery spill 
+or others To achieve this a multiple pairwise comparison would 
+be done and thus the cause that is more significant would be seen 
+From the table above with 0830 and 0837 it can be seen that the 
+terrain isn’t significant and has nothing to do with the oil spillage 
+and the interaction ie causes and terrain isn’t significant either 
+at an α = 005 level of significance
+Table 3 shows the multiple pairwise comparisons from the table 
+one can see that the mean differences amongst some of the causes 
+are significant For instance the mean difference between sabotage 
+and operational causes are significant with the values 0026 and 
+the mean difference of 947090 likewise sabotage and mystery 
+spill but for sabotage and others there is no significant difference 
+This implies that the major causes of oil spill incident are sabotage 
+Table 2 Two way ANOVA table
+Source
+Degree of freedom df
+Mean squares MS
+F
+Significant
+Causes
+3
+2314274
+2671
+0047
+Terrain
+2
+161963
+0187
+0830
+Causes Terrain
+4
+31143
+0359
+0837
+Error
+390
+866552
+
+Author’s computation Means significant at α = 005 level of significance
+Table 3 Multiple comparisons of the causes of oil spillage
+i Causes j causes
+Mean difference
+Significant
+Sabotage
+Operational
+947090
+0026
+Mystery spill
+2527447
+0016
+Others
+1727447
+0310
+Operational
+Sabotage
+−947090
+0026
+Mystery spill
+1580357
+0155
+Others
+780357
+0654
+Mystery spill
+Sabotage
+−2527447
+0016
+Operational 
+−1580357
+0155
+Others
+−800000
+0687
+Others
+Sabotage
+−1727447
+0310
+Operational
+−780357
+0654
+Mystery spill
+800000
+0687
+Author’s computation The mean difference is significant at the α=005 level of significance
+Christy Mba et al Causes and Terrain of Oil Spillage in Niger Delta Region of Nigeria The Analysis of Variance Approach
+International Journal of Energy Economics and Policy | Vol 9 • Issue 2 • 2019
+287
+operational and mystery spill to some extent because the mean 
+differences between sabotage and operational operational and 
+sabotage sabotage and mystery spill and finally mystery spill and 
+sabotage shows that the sabotage causes are more pronounced than 
+the operational and finally the mystery spill
+Table 4 shows the terrain that is most affected and from the table 
+it can be seen that Swamp is the most affected thus the swamp 
+terrain is the incident site with the highest frequency of 328 and 
+percentage of 82 followed by water with 46 as its frequency and 
+115 and lastly land with 26 and 65 respectively This implies 
+that most of the spillages that occurred in the Niger Delta were 
+majorly on swampy areas
+5 CONCLUSION AND RECOMMENDATION
+It is pertinent to note that oil spillage in Nigeria has created and 
+caused a lot of environmental and health problems and from the 
+twoway ANOVA it can be seen that sabotage majorly is the 
+cause of oil spillage in the Niger Delta irrespective of the terrain 
+or incident site Sabotage can be in form of vandalization of oil 
+pipes siphoning and so on The issue of oil spillage isn’t a current 
+case since as far back as the eighties oil spill incident had been 
+on the news and headlines of prominent newspapers
+Niger Delta residents can testify that they don’t have access 
+to clean water and thus it isn’t drinkable either because their 
+streams or rivers are polluted The chemicals released into the 
+environments are slowly killing the occupants and indigenes of the 
+Niger Delta Thus the federal government of Nigeria and federal 
+environmental agencies should enforce the already existing laws 
+as regards oil spill management and thus bring to book all the 
+perpetrators of these criminal act except this is done and some 
+persons are used as scape goats for others to learn The criminal 
+act may not stop
+REFERENCES
+Almawali N Hasim HM Albusaidi K 2016 Modeling the impact 
+of the oil sector on the economy of sultanate of Oman International 
+Journal of Energy Economics and Policy 61 120127
+BioucasDias MJ Pelizzari S 2010 Bayesian Segmentation of 
+Oceanic SAR Images Application to Oil Spill Detection Conference
+CAB 2005 US Energy Information Administration Nigeria Country 
+Analysis Brief
+Chandrasekar S Sorial GA Weaver JW 2006 Dispersant 
+effectiveness on oil spills e impact of salinity ICES Journal of Marine 
+Sciences 63 14181431
+Gambardella A De Grandi G Ainsworth T Migliaccio M 2008 
+Sea Oil Spill Observation by Means of Analysis of Spatial 
+Statistics in Polarimetric Sar Data Using Wavelet Signatures In the 
+2nd International workshop on Advances in Sar oceanography from 
+envisat and Ers mission 2125 p121
+Gingerich E 2018 Generation and storage of renewable energy Rising 
+parity of emerging economies International Journal of Energy 
+Economics and Policy 81 1726
+Moreira SM MoreiraSantos R Ribeiro R Guilhermino L 2004 
+The “coral bulker” fuel oil spill on the north coast of portugal Spatial 
+and temporal biomarker responses in mytilus galloprovincialis 
+Ecotoxicology 13 619630
+Ndeh ES Okafor JO Akpan GU Olutoye MA 2017 
+Environmental impacts of crude oil spillages on water in ibeno local 
+government area of Akwa Ibom state Nigeria Bayero Journal of 
+Pure and Applied Sciences 101 315319
+NDES 1997 Niger Delta Environmental Survey Final Report Phase 
+I Vol I Environmental and Socio Economic Characteristics Lagos 
+Environmental Resources Mangers Ltd Niger Delta Environmental 
+Survey
+Nwilo PC Badejo OT 2005 Oil spill problems and management in 
+the Niger delta In International oil Spill Conference Proceedings 
+Vol 2005 Mexico IOSC p567570
+Ohanmu EO Igiebor FA Bako SP Danazumi IB 2018 Impact 
+of crude oil on physicochemical properties and trace metals of soil 
+before and after planting of two pepper species Capsicum annum L 
+and C frutescens L Journal of Applied Sciences and Environmental 
+Management 225 765768
+Olujobi OJ Oyewunmi OA Oyewunmi AE 2018 Oil spillage in 
+Nigeria s upstream petroleum sector Beyond the legal frameworks 
+International Journal of Energy Economics and Policy 81 220226
+Sexton WJ Murday M 1994 The morphology and sediment character 
+of the coastline of Nigeriathe Niger delta Journal of Coastal 
+Research 104 959977
+Smith RA Slack RJ Wyant T Lanfear KJ 1982 The Oilspill 
+Risk Analysis Model of the US Geological Survey Geological 
+Survey Professional Paper
+UNDP 2006 United Nations Development Programme Niger Delta 
+Human Development Report Abuja Nigeria
+Vogt NB Sjoegren CE 1989 Investigation of chemical and statistical 
+for oilspill classification methods Analytica Chimica Acta 222 
+135150
+Wang Z Fingas M Sigouin L 2001 Characteristics and 
+identification of a “mystery oil spill” from Quebec 1999 Journal 
+of Chromatograghy A 909 155169
+Wegeberg S FrittRasmussen J Baertmann D 2017 Oil Spill 
+Response in Greenland Net Environmental Benefit Analysis Neba 
+and Environmental Monitoring Scientific Report from DCEDanish 
+Centre for Environment and Energy No 221
+Table 4 Frequency table on the most affected terrain in 
+the Niger Delta
+Terrain
+Frequency 
+Swamp
+328 820
+Water
+46 115
+Land
+26 65
+Total
+400 100

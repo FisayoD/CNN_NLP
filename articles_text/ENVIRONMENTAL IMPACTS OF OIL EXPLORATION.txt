@@ -1,0 +1,719 @@
+ 
+Impacts and Management of Oil Spill Pollution along the 
+Nigerian Coastal Areas 
+ 
+Peter C Nwilo and Olusegun T Badejo 
+ 
+ 
+Abstract 
+ 
+Nigeria has a coastline of approximately 853km facing the Atlantic Ocean This coastline 
+lies between latitude 4o 10’ to 6o 20’ N and longitude 2o 45’ to 8o 35’ E The Nigerian coast 
+is composed of four distinct geomorphology units namely the BarrierLagoon Complex 
+the Mud Coast the Arcuate Niger Delta and the Strand Coast In 1956 Royal Dutch Shell 
+discovered crude oil at Oloibiri a village in the Niger Delta and commercial production 
+began in 1958 Today there are about 606 oil fields in the Niger Delta of which 360 are 
+onshore and 246 offshore Nigeria is now the largest oil producer in Africa and the sixth 
+largest in the world averaging 27 million barrels per day bbld in 2006 Nigerias 
+proven oil reserved is 352 billion barrels Nigeria’s economy is heavily dependent on 
+earnings from the oil sector which provides 20 of GDP 95 of foreign exchange 
+earnings and about 65 of budgetary revenues Since the discovery of oil in Nigeria in 
+1956 the country has been suffering the negative environmental consequences of oil 
+exploration and exploitation Between 1976 and 1996 a total of 4647 incidents resulted in 
+the spill of approximately 2369470 barrels of oil into the environment In addition 
+between 1997 and 2001 Nigeria also recorded a total number of 2097 oil spill incidents 
+In 1998 40000 barrels of oil from Mobil platform off the Akwa Ibom coast were spilt into 
+the environment causing severe damage to the coastal environment Several oil spill 
+management policy and efforts are in place to reduce the menace of oil spill incidents in 
+the country Some of these policies and efforts were made by the Federal Government Non 
+governmental agencies and oil firms in the country The use of oil trajectory and fate 
+models is also incorporated in oil spill management policy in the country We have 
+developed a new oil spill trajectory model The results from a hypothetical simulation with 
+the model from a point around OPL 250 located about 150km off the Nigerian coastline 
+shows that the simulated oil spill for wet season reached the shore around Penington 
+River after 104hours about 45 days Also during the dry season the results from the 
+model indicate that the oil spill reached the shore at the entrance of Benin River after 
+162hours 65days  
+ 
+1 INTRODUCTION 
+ 
+Nigeria is bordered to the North by the Republics of Niger and Chad to the West by the 
+Republic of Benin to the East by the Republic of Cameroon and to the South by the 
+Atlantic Ocean Dublin Green et al 1999 Nigeria has a coastline of approximately 853km 
+facing the Atlantic Ocean This coastline lies between latitude 4o 10’ to 6o 20’N and longitude 
+2o 45’ to 8o 35’ E The terrestrial portion of this zone is about 28000 km2 in area while the 
+surface area of the continental shelf is 46300km2 Figure 1 below is the Map of the Nigerian 
+Coastal Areas 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11 Climate of Nigeria’s Coastal Areas  
+ 
+The coastal area is low lying with heights of not more than 30 m above sea level and is 
+generally covered by fresh water swamp mangrove swamp lagoonal mashes tidal 
+channels beach ridges and sand bars Dublin Green et al 1997 Nigeria’s total land and 
+water area is 923768 sq km with the area of the land being 910768 sq km while that of 
+water is 13000 sq km CIA World Fact Book 2005  
+ 
+The Nigerian coastal zone experiences a tropical climate consisting of rainy season April 
+to November and dry season December to March High temperatures and humidity as 
+well as marked wet and dry seasons characterize the Nigerian climate The coastal areas 
+have an annual rainfall ranging between 1 500 and 4000 mm Kuruk 2004  
+ 
+The Nigerian coastal area experiences mainly the south westerlies which are onshore and 
+confined generally to azimuths of 215o266o with velocities of 25ms During the rainy 
+season wind speed increases to about 10ms especially during heavy rainfalls and 
+thunderstorms 
+ 
+Temperatures in the coastal areas are moderated by the cloud cover and by the generally 
+damp air However mean monthly temperature vary between 24o C and 32o C throughout 
+the year  
+Figure 1 Map of Nigerian Coastal Areas 
+ 
+The surface water of the Nigerian coast is basically warm with temperature generally 
+greater than 24oC Sea surface temperatures show double peaked cycles which match 
+quantitatively the cycle of solar heights Between October and May Sea surface 
+temperatures range from 27o28oC while during the rainy season of June to October the 
+range is between 24o and 25oC Dublin Green et al 1999 The surface water is typically 
+oceanic surface water of the Gulf of Guinea with salinity generally less than 3500 
+Dublin Green et al 1999 
+ 
+12 Hydrology of Nigeria 
+ 
+The hydrology of Nigeria is dominated by two great river systems the NigerBenue and 
+the Chad systems With the exception of a few rivers that empty directly into the Atlantic 
+Ocean all other flowing waters ultimately find their way into the Chad basin or down the 
+lower Niger to the sea Kuruk 2004 
+ 
+The inland water system includes thirteen lakes and reservoirs with a surface area of 
+between 4000 hectares and 550000 hectares and has a total surface area of 853600 
+hectares which represents about one percent of the total area of Nigeria They include 
+lakes Chad Kainji Jebba Shiroro Goronyo Tiga Chalawa Gorge Dadin Kowa Kiri 
+Bakolori Lower Anambra Zobe and Oyan With the exception of Lake Chad all the lakes 
+are manmade Kuruk 2004 
+ 
+The Lagos lagoon is one of several lagoon systems in the West African sub region and 
+most extensive The lagoon is part of the barrier lagoon coasts of Nigeria The water is 
+shallow and covers an area of about 208km2 Ekundayo and Akpata 1978 The lagoon is 
+fed mainly by the rivers of Ogun Shasha Oshun Agboyi and Majidun the Ogudu creeks 
+and waters of Epe and Lekki lagoons The Lagoon empties into the Atlantic Ocean via 
+Lagos harbour The southern margin of the Lagos Lagoon is bounded by the Five Cowrie 
+Creek the eastern margin by the Palavar Islands and its northern border by Ikorodu The 
+lagoon is 40 – 64km long and has two arms one connects the Lekki Lagoon while the 
+other leads northward into the hinterland Allen 1965 The lagoon is shallow with depths 
+of 15 – 3m Ibe 1988 and made up of muddy and sandy bottom Its bottom relief is 
+negligible  
+ 
+Deltas and estuaries with their saline wetlands have a total surface area of 858000 
+hectares while freshwaters cover about 3221500 hectares Other water bodies including 
+small reservoirs fish ponds and miscellaneous wetlands suitable for rice cultivation cover 
+about 4108000 hectares Kuruk 2004  
+The entire Gulf of Guinea is highly stratified with a thin surface layer of warm fresh 
+tropical water Longhurst 1964 The stratification of the upper water column along the 
+Gulf of Guinea is generally very strong except in areas subject to upwelling events 
+13 Geology of Nigeria’s Coast 
+ 
+The Nigerian coastal geology is basically sedimentary and is dominated by the geology of 
+arcuate Niger delta The Niger delta is composed of an overall classic sequence which reaches 
+a maximum thickness of 912 kilometers lbe 1988 The Nigerian continental shelf is narrow 
+ 
+in the west less than 30km but relatively broad off the Niger Delta and the eastern flank 
+where it measures 4580 km in width The shelf is interrupted by several submarine canyons 
+which include Avon Mahin and Calabar Canyons  
+ 
+14 Geomorphological Units of Nigerian Coastal Areas 
+ 
+The Nigerian coast in composed of four distinct geomorphological units namely the Barrier
+Lagoon complex the Mud coast the Arcuate Niger delta and the Strand coast lbe 1988 
+The geomorphology of the Lagos Lagoon is classified under the BarrierLagoon Complex 
+which extends for about 250km from the NigerianBenin Republic border to Ajumo village 
+The Complex consists of narrow beach ridges which are aligned parallel to the coast The 
+beach sediments varied from medium to coarsegrained sand 
+ 
+15 Vegetation of Nigeria’s Coastal Areas 
+ 
+The vegetation of the Nigerian coastal area is characterised by mangrove forests brackish 
+swamp forests and rain forests The country’s extensive mangrove ecosystem a great 
+proportion of which lies within the Niger Delta and found mainly in the Rivers Delta 
+Cross River Akwa lbom Lagos and Ondo states is estimated to cover between 500000 
+and 885000 hectares Freshwaters start at the northern limit of the mangrove ecosystems 
+and extend to the Sahelian region Kuruk 2004 
+ 
+16 Oil Exploration and Exploitation 
+ 
+In 1956 Shell British Petroleum now Royal Dutch Shell discovered crude oil at Oloibiri 
+a village in the Niger Delta and commercial production began in 1958 Today there are 
+606 oil fields in the Niger Delta of which 360 are onshore and 246 offshore Nigeria 
+Country Analysis Brief 2005 Nigeria is now the largest oil producer in Africa and the 
+sixth largest in the world averaging 27 million barrels per day bbld in 2006 Nigeria’s 
+economy is heavily dependent on earnings from the oil sector which provides 20 of 
+GDP 95 of foreign exchange earnings and about 65 of budgetary revenues CIA 
+World Fact Book 2005 
+Nigerias stateheld refineries Port Harcourt I and II Warri and Kaduna have a combined 
+capacity of 438750 bbld but problems including sabotage fire poor management and 
+lack of regular maintenance contribute to a low current capacity of around 214000 bbld 
+according to World Markets Research Center Plans for several small independently
+owned refineries are also being developed with the Nigerian government planning for 
+three new refineries to come onstream by 2008 Nigeria Country Analysis Brief 2005 
+161 Oil and Gas Reserves in Nigerian Coastal Areas 
+ 
+Oil and Gas Journal 2005 estimates Nigerias proven oil reserved at 352 billion barrels 
+The Nigerian government plans to expand its proven reserves to 40 billion barrels by 2010 
+In February 2005 Nigeria announced the award of five oil blocks in the Joint Development 
+Zone JDZ shared by Nigeria and neighboring Sao Tome and Principe STP The JDZ 
+reportedly holds reserves of 11 billion barrels and could potentially yield up to 3 million 
+bbld in the next 23 years Development is also occurring in the waters surrounding the 
+ 
+JDZ Nigeria Country Analysis Brief 2005 Oil and Gas Journal 2005 further stated 
+that Nigeria has an estimated 176 trillion cubic feet Tcf of proven natural gas reserves 
+giving the country one of the top ten natural gas endowments in the world and the largest 
+endowment in Africa  
+ 
+162 Oil Spill Incidents in Nigeria 
+ 
+Oil spill incidents have occurred in various parts and at different times along our coast 
+Some major spills in the coastal zone are the GOCON’s Escravos spill in 1978 of about 
+300000 barrels SPDC’s Forcados Terminal tank failure in 1978 of about 580000 barrels 
+and Texaco Funiwa5 blow out in 1980 of about 400000 barrels Other oil spill incidents 
+are those of the Abudu pipe line in 1982 of about 18818 barrels The Jesse Fire Incident 
+which claimed about a thousand lives and the Idoho Oil Spill of January 1998 of about 
+40000 barrels The most publicised of all oil spills in Nigeria occurred on January 17 1980 
+when a total of 370 million litres of crude oil got spilled into the environment This spill 
+occurred as a result of a blow out at Funiwa 5 offshore station Nigerias largest spill was an 
+offshore wellblow out in January 1980 when an estimated 200000 barrels of oil 
+84million US gallons spilled into the Atlantic Ocean from an oil industry facility and 
+that damaged 340 hectares of mangrove Nwilo and Badejo 2005 
+ 
+According to the Department of Petroleum Resources DPR between 1976 and 1996 a 
+total of 4647 incidents resulted in the spill of approximately 2369470 barrels of oil into 
+the environment Of this quantity an estimated 18204105 barrels 77 were lost to the 
+environment A total of 549060 barrels of oil representing 2317 of the total oil spilt into 
+the environment was recovered The heaviest recorded spill so far occurred in 1979 and 1980 
+with a net volume of 69411713 barrels and 60051102 barrels respectively 
+ 
+Available records for the period of 1976 to 1996 indicate that approximately 6 25 and 
+69 respectively of total oil spilled in the Niger Delta area were in land swamp and 
+offshore environments Also between 1997 and 2001 Nigeria recorded a total number of 
+2097 oil spill incidents 
+ 
+Thousands of barrels of oil have been spilt into the environment through our oil pipelines and 
+tanks in the country This spillage is as a result of our lack of regular maintenance of the 
+pipelines and storage tanks Some of these facilities have been in use for decades without 
+replacement About 40000 barrels of oil spilled into the environment through the offshore 
+pipeline in Idoho  
+ 
+Sabotage is another major cause of oil spillage in the country Some of the citizens of this 
+country in collaboration with people from other countries engage in oil bunkering They 
+damage and destroy oil pipelines in their effort to steal oil from them SPDC claimed in 
+1996 that sabotage accounted for more than 60 percent of all oil spilled at its facilities in 
+Nigeria stating that the percentage has increased over the years both because the number 
+of sabotage incidents has increased and because spills due to corrosion have decreased 
+with programs to replace oil pipelines SPDC 1996  
+ 
+Pirates are stealing Nigerias crude oil at a phenomenal rate funneling nearly 300000 
+barrels per day from our oil and selling it illegally on the international trade market 
+ 
+Nigeria lost about N77 billion in 2002 as a result of vandalisation of pipelines carrying 
+petroleum products The amount according to the PPMC a subsidiary of NNPC 
+represents the estimated value of the products lost in the process 
+ 
+Illegal fuel siphoning as a result of the thriving black market for fuel products has 
+increased the number of oil pipeline explosions in recent years In July 2000 a pipeline 
+explosion outside the city of Warri caused the death of 250 people An explosion in Lagos 
+in December 2000 killed at least 60 people The NNPC reported 800 cases of pipeline 
+vandalization from January through October 2000 In January 2001 Nigeria lost about 4 
+billion in oil revenues in 2000 due to the activities of vandals on our oil installations The 
+government estimates that as much as 300000 bbld of Nigerian crude is illegally 
+bunkered freighted out of the country 
+ 
+In Nigeria fifty percent 50 of oil spills is due to corrosion twenty eight percent 28 to 
+sabotage and twenty one percent 21 to oil production operations One percent 1 of oil 
+spills is due to engineering drills inability to effectively control oil wells failure of machines 
+and inadequate care in loading and unloading oil vessels 
+ 
+2 IMPACTS OF OIL SPILL INCIDENTS ON NIGERIAN COASTAL 
+AREAS 
+ 
+Since the discovery of oil in Nigeria in the 1950s the country has been suffering the 
+negative environmental consequences of oil development The growth of the countrys oil 
+industry combined with a population explosion and a lack of enforcement of 
+environmental regulations has led to substantial damage to Nigerias environment 
+especially in the Niger Delta region 
+ 
+When there is an oil spill on water spreading immediately takes place The gaseous and 
+liquid components evaporate Some get dissolved in water and even oxidize and yet some 
+undergo bacterial changes and eventually sink to the bottom by gravitational action The 
+soil is then contaminated with a gross effect upon the terrestrial life As the evaporation of 
+the volatile lower molecular weight components affect aerial life so the dissolution of the 
+less volatile components with the resulting emulsified water affects aquatic life Akpofure 
+et al 2000 
+ 
+The harmful effects of oil spill on the environment are many Oil kills plants and animals in 
+the estuarine zone Oil settles on beaches and kills organisms that live there It also settles on 
+ocean floor and kills benthic bottomdwelling organisms such as crabs Oil poisons algae 
+disrupts major food chains and decreases the yield of edible crustaceans It also coats birds 
+impairing their flight or reducing the insulative property of their feathers thus making the 
+birds more vulnerable to cold Oil endangers fish hatcheries in coastal waters and as well 
+contaminates the flesh of commercially valuable fish  
+ 
+In the Nigerian coastal environment a large areas of the mangrove ecosystem have been 
+destroyed The mangrove was once a source of both fuel wood for the indigenous people 
+and a habitat for the areas biodiversity but is now unable to survive the oil toxicity of its 
+habitat 
+ 
+ 
+Oil spills in the Niger Delta have been a regular occurrence and the resultant degradation 
+of the surrounding environment has caused significant tension between the people living in 
+the region and the multinational oil companies operating there It is only in the past decade 
+that environmental groups the Federal Government and the foreign oil companies 
+operating in the Niger Delta began to take steps to mitigate the impacts Large areas of the 
+mangrove ecosystem have also been destroyed The mangrove forest was in the past a 
+major source of wood for the indigenous people In some places it is no longer in a healthy 
+state to sustain this use Nwilo Badejo 2005  
+ 
+The Idoho oil spill traveled all the way from Akwa Ibom state to Lagos state dispersing oil 
+through the coastal states up to the Lagos coast This culminated in the presence of sheen of 
+oil on the coastal areas of Cross river state Akwa Ibom state Rivers state Bayelsa state 
+Delta state Ondo state and Lagos state  
+ 
+In many villages near oil installations even when there has been no recent spill an oily 
+sheen can be seen on the water which in fresh water areas is usually the same water that 
+the people living there use for drinking and washing In April 1997 samples taken from 
+water used for drinking and washing by local villagers were analyzed in the US A sample 
+from Luawii in Ogoni where there had been no oil production for four years had 18 ppm 
+of hydrocarbons in the water 360 times the level allowed in drinking water in the 
+European Union EU A sample from Ukpeleide Ikwerre contained 34 ppm 680 times 
+the EU standard  
+ 
+Following the major Texaco spill of 1980 it was reported that 180 people died in one 
+community as a result of the pollution On several occasions people interviewed by 
+Human Rights Watch said that spills in their area had made people sick who drank the 
+water especially children  
+ 
+3 MANAGEMENT OF OIL SPILL IN NIGERIA 
+ 
+Several laws and policies have been taken in managing oil spill incidents at the 
+international and national levels These laws and policies are given in the following 
+sections  
+ 
+31 Oil Pollution Act OPA of 1990 
+ 
+The Oil Pollution Act of 1990 OPA 1990 is responsible for many of the nations 
+improvements in oil spill prevention and response OPA 1990 provides guidance for 
+government and industry on oil spill prevention mitigation cleanup and liability The 
+majority of OPA 1990 provisions were targeted at reducing the number of spills followed 
+by reducing the quantity of oil spilled OPA 1990 also created a comprehensive scheme to 
+ensure that sufficient financial resources are available to clean up a spill and to compensate 
+persons damaged by a spill It also ensures that the federal response system is adequately 
+prepared to manage the impacts of oil spills that do occur and mandates that industry 
+implement prevention and preparedness measures The OPA also mandates that tankers 
+and inland oil facilities develop individual response plans Furthermore the OPA also 
+mandates enhancements to the national response system and development of Area 
+Contingency Plans  
+ 
+32 National Oil Spill Detection and Response Agency NOSDRA 
+ 
+A National Oil Spill Detection and Response Agency NOSDRA has been approved by 
+the Federal Executive Council of Nigeria The Ministry of Environment which initiated 
+the Agency has also forwarded to the Federal Executive Council for approval the 
+reviewed draft National Oil Spill Contingency Plan NOSCP which the Agency would 
+manage Alexandra Gas and Oil Connections 2006  
+ 
+The establishment of the contingency plan and the agency was in compliance with the 
+International Convention on Oil Pollution Preparedness Response and Cooperation 
+OPRC90 to which Nigeria is a signatory The draft bill on the NOSDRA has been 
+forwarded to the National Assembly for deliberation and enactment into law Alexandra 
+Gas and Oil Connections 2006  
+ 
+Apart from intensifying efforts towards compliance monitoring and enforcement of oil and 
+gas regulations and standards the ministry is also mounting pressure on the oil and gas 
+operators for a gas flareout Effort is also being made according to the sources to ensure 
+the use of environmentalfriendly drilling fluid and mud systems Alexandra Gas and Oil 
+Connections 2006  
+ 
+33 The Niger Delta Development Commission NDDC 
+ 
+To reduce the rate of oil incidents along the Nigerian Coast particularly as a result of 
+vandalisation the Federal Government through an act of the National Assembly in 2000 
+passed into law the Niger Delta Development Commission NDDC The Act among other 
+things established a Commission to carry out among other things the following tasks  
+a Cause the NigerDelta area to be surveyed in order to ascertain measures which are 
+necessary to promote its physical and socioeconomic development  
+b Prepare plans and schemes designed to promote the physical development of the Niger
+Delta area  
+c Identify factors inhibiting the development of the NigerDelta and assist the member 
+states in the formation and implementation of policies to ensure sound and efficient 
+management of the resources of the NigerDelta  
+d Assess and report on any project funded or carried out in the NigerDelta area by oil 
+and gas producing companies and any other company including nongovernmental 
+organisations and ensure that funds released for such projects are properly utilised  
+e Tackle ecological and environmental problems that arise from the exploration of oil in 
+the NigerDelta area  
+f Liaise with the various oil mineral and gas prospecting and producing companies on all 
+matters of pollution prevention and control  
+ 
+Essentially items e and f deal with issues pertaining to oil exploration and production 
+and the NNDC act is a strategic way of dealing with all forms of pollution from these 
+activities in the Niger Delta 
+ 
+ 
+34 Petroleum Related Laws and Regulations 
+ 
+Part of the means of managing the environment is to have in place the necessary laws 
+regulations and guidelines According to the Federal Environmental Protection Agency 
+Lagos Nigeria the following relevant national laws and international agreements are in 
+effect  
+a 
+Endangered Species Decree Cap 108 LFN 1990 
+b 
+Federal Environmental protection Agency Act Cap 131 LFN 1990 
+c 
+Harmful Waste Cap 165 LFN 1990 
+d 
+Petroleum Drilling and Production Regulations 1969 
+e 
+Mineral Oil Safety Regulations 1963 
+f 
+International Convention on the Establishment of an International Fund for 
+Compensation for Oil Pollution Damage 1971 
+g 
+Convention on the Prevention of Marine pollution Damage 1972 
+h 
+African Convention on the Conservation of Nature and Natural Resources1968 
+i 
+International Convention on the Establishment of an International Fund for the 
+Compensation for Oil Pollution Damage 1971 
+ 
+35 The Environmental Impact Assessment EIA decree No 86 of 1992 
+ 
+The Environmental Impact Assessment EIA decree No 86 of 1992 was promulgated to 
+protect and sustain our ecosystem The law makes the development of an EIA compulsory 
+for any major project that may have adverse effects on the environment Ntukekpo 1996 
+Olagoke 1996 It sought to assess the likely or potential environmental impacts of 
+proposed activities including their direct or indirect cumulative short term and long term 
+effects and to identify the measures available to mitigate adverse environmental impacts 
+of proposed activities and assessment of those measuresOzekhome 2001 The carrying 
+out of EIAs is policed by the Federal Environmental Protection Agency and by state 
+environmental protection agencies  
+ 
+36 Federal and State Agencies 
+A number of Federal and State agencies deal with the problems of oil spill in Nigeria The 
+agencies include the Department of Petroleum Resources DPR the Federal Ministry of 
+Environment the State Ministries of Environment and the National Maritime Authority  
+ 
+37 Efforts of the Oil Companies and Non Governmental Agencies 
+ 
+Due to increasing awareness in preventing and controlling spills in Nigeria the Clean 
+Nigeria Associates CNA was formed in November 1981 The CNA is a consortium of 
+eleven oil companies operating in Nigeria including Nigeria National Petroleum 
+Corporation NNPC The primary purpose of establishing the CNA is to maintain a 
+capability to combat spills of liquid hydrocarbons or pollutants in general Nwilo  Badejo 
+2005 
+ 
+As a result of the focus on Shell’s activities in Nigeria Shell in collaboration with all the 
+members of Oil Producers Trade Section OPTS of the Lagos Chambers of Commerce 
+established the Niger Delta Environmental Survey NDES Shell the OPTS and the 
+ 
+Rivers and Delta States governments provided the necessary funding for the activities of 
+NDES 
+ 
+The NDES was expected to provide  
+a A comprehensive description of the area ecological zones boundaries and different 
+uses of renewable and nonrenewable natural resources  
+b An integrated view on the state of the environment and its relationship to local people  
+c An analysis of the causal relationships between land use settlement patterns industry 
+and the environment to provide a base line for future development planning  
+d An indicative plan for the development and management of the Niger Delta NDES 
+1996  
+ 
+38 Oil Trajectory and Fate Models for Oil Spill Disaster Monitoring 
+ 
+Oil spill simulation model is used in oil response and contingency planning and as a tool in oil 
+fate and impact assessment Rossouw 1998 In the event of an oil spill taking place 
+predictions of the slick can be supplied provided that the necessary meteorological 
+information is available Rossouw 1998 Oil spillage can also be treated or removed by 
+natural means mechanical systems absorbents burning gelling sinking and dispersion Oil 
+spillage can be removed by natural means through the process of evaporation photochemical 
+oxidation and dispersions WardleySmith 1977 Bioremediation can also be used for 
+managing oil spill problems Hoff 1993 Prince 1993 Atlas 1995  
+ 
+39 Nigerian Sat 1 
+ 
+The Nigerian Sat 1 Satellite has joined the Disaster Monitoring Constellation an 
+international earlywarning satellite network transmitting realtime information about 
+droughts earthquakes deforestation and manmade disasters observable from space The 
+Nigeria Sat1 an Orbit Satellite for geographical mapping would also help to check the 
+perennial problem of oil pipeline vandalisation and assist in combating and managing oil 
+spill incidents The Nigeria Sat1 would help in monitoring oil spill by providing the spill 
+position which would serve as input data into the oil spill model It would also give the 
+extent of coastal water and coastal areas polluted These information are vital for quick 
+clean up of oil impacted areas 
+ 
+310 International Cooperation 
+ 
+To shore up the fight against oil smugglers in Nigeria the US has donated three 56 metre 
+180ft refitted World War twoera patrol oats to the navy United Nations has also said 
+that United States would donate additional four vessels The Pentagon is funding each 
+boat’s refurbishment to the tune of 35m The efforts of the Federal Government with the 
+assistance of the US are already yielding fruits The Nigerian Navy has intercepted several 
+tankers  
+ 
+311 Geographic Information System for Managing Oil Spill Incidents  
+ 
+A successful combating operation to a marine oil spill is dependent on a rapid response 
+from the time the oil spill is reported until it has been fully combated In order to reduce 
+ 
+the response time and improve the decisionmaking process application of Geographic 
+Information Systems GIS as an operational tool is very essential Information on the 
+exact position and size of the oil spill can be plotted on maps in a GIS environment GIS 
+offers opportunities for integration of oil drift forecast models prediction of wind and 
+current influence on the oil spill in the computer program framework Milaka1995 
+ 
+Required information for oil spill sensitivity mapping can be depicted on a set of thematic 
+maps using GIS even though they can in theory be depicted onto a single sheet With the 
+use of a GIS all the relevant information or themes can be stored in the system and 
+produced onto maps in a format that befits the needs of the day Alternatively modelling 
+exercises using the GIS can be conducted to assess the adequacy of any given oil spill 
+contingency plan Parthiphan 1994  
+ 
+The creation of regional spill response centres along coastlines will help in managing oil spill 
+problems Smith and Loza 1994 The centres will use oil spill models for combating oil spill 
+problems Using data collected with an airborne system to input one or several new starting 
+points into the model will improve the accuracy of the further predictions Sandberg 1996  
+ 
+312 Environmental Sensitive Index ESI Mapping 
+ 
+ESI maps are basemaps that show the sensitivity of given locations or areas to a particular 
+stress factor such as exposure to petroleum products on a scale of 1 to 10 10 being most 
+sensitive The maps may contain physical and geomorphic features eg shorelines 
+biological features and socioeconomic features such as agricultural fields Some ESI maps 
+contain features of particular interest to oil spill planning and response such as the 
+recommended positions of booms or skimmers The sensitivity of a given feature to a 
+stress factor may be indicated by the color given the symbol or pattern used to represent it  
+ 
+Standards for the development of the environmental sensitivity index maps for the coast of 
+Nigeria have been developed by the Environmental Systems Research Institute ESRI 
+These standards are used by all the oil companies to prepare ESI maps for their areas of 
+operations in Nigeria  
+ 
+313 Creating of Awareness 
+ 
+Awareness creation on the impacts of oil spill is an integral part of management 
+programme for oil spill along the coast of Nigeria This is being carried out by government 
+at different levels and agencies such as the Niger Delta Development Commission 
+NDDC  
+ 
+4 SIMULATION OF OIL SPILL ALONG THE NIGERIAN COAST 
+ 
+We have developed a new oil spill trajectory model The results from a hypothetical 
+simulation with the model from a point around OPL 250 located about 150km off the 
+Nigerian coastline shows that the simulated oil spill for wet season reached the shore 
+around Penington River after 104hours about 45 days Also during the dry season the 
+results from the model indicate that the oil spill reached the shore at the entrance of Benin 
+River after 162hours 65days Figures 2 and 3 below show the oil spill trajectories for 
+ 
+the wet and dry seasons respectively It is obvious from the figures below that the season 
+of occurrence of an oil spill is a major in determining the oil spill trajectory for an area 
+The wet season trajectory went eastwest wise while the dry season trajectory went 
+northwards Areas to be affected by an oil spill to a reasonable extent depend on the period 
+of the oil spill 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 2 Oil Spill Trajectory for Wet Season on Nigerian Coastal Waters 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 CONCLUSION AND RECOMMENDATIONS 
+ 
+51 Conclusion 
+ 
+Since the discovery of oil in Nigeria in the 1956 the country has been suffering the 
+negative environmental consequences of oil development Sabotage has been a major cause 
+of oil spillage in the country Oil spill incidents have destroyed the coastal vegetation 
+polluted drinkable water and led to ethnic and regional crises in the Niger Delta Several 
+oil spill management policy and efforts are in place to reduce the menace of oil spill 
+incidents in the country Some of these policies and efforts include 
+a 
+The formation of the National Oil Spill Detection and Response Agency NOSDRA by 
+the Federal Executive Council of Nigeria  
+b 
+The putting in place of relevant acts and regulations on oil spill pollution 
+c 
+The passing into law of the Niger Delta Development Commission NDDC 
+d 
+The establishment of the Niger Delta Environmental Survey 
+e 
+The incorporating oil trajectory and fate models into oil spill management policy in the 
+country 
+f 
+The development of standards for the development of the environmental sensitivity 
+index maps for the coast of Nigeria 
+ 
+All these efforts have assisted in detection and management of oil spills along the Nigerian 
+coast 
+ 
+Results from a hypothetical simulation with the model from a point around OPL 250 
+located about 150km off the Nigerian coastline shows that the simulated oil spill for wet 
+season reached the shore around Penington River after 104hours about 45 days Also 
+Figure 3 Oil Spill Trajectory for Dry Season on Nigerian Coastal Waters 
+ 
+ 
+during the dry season the results from the model indicate that the oil spill reached the shore 
+at the entrance of Benin River after 162hours 65days 
+ 
+52 Recommendations 
+ 
+The Nigeria Sat1 would help in monitoring oil spill by providing the spill position which 
+would serve as input data into the oil spill model It would also give the extent of coastal 
+water and coastal areas polluted These information are vital for quick clean up of oil 
+impacted areas 
+ 
+In order to reduce the response time and qualify the decisionmaking process application 
+of Geographic Information Systems GIS as an operational tool has been suggested 
+Information on the exact position and size of the oil spill can be plotted on maps in GIS 
+and a priority of the combat efforts and means according to the identified coastal sensitive 
+areas can be carried out 
+ 
+The creation of regional spill response centres along coastlines would help in managing oil 
+spill problems The centres will use oil spill models for combating oil spill problems Data 
+collected with an airborne system could serve as inputs in the model  
+ 
+The petroleum industry should work closely with government agencies universities and 
+research centers to combat the menace of oil spill incidents 
+ 
+More funds should be provided by all the stakeholders in the oil industry for further 
+research in the development and use of oil spill models in the country The adoption of the 
+model developed in this research work and the procurement of other oil spill models would 
+serve as a basis in carrying out more research in this area 
+ 
+The creation of NDDC by the Federal Government would go a long way in reducing the 
+tension in the oil rich communities However the Federal Government State Governments 
+and other nongovernmental agencies should ensure that the social amenities and needed 
+infrastructures are provided for the oil rich communities 
+ 
+REFERENCES 
+ 
+Akpofure EA ML Efere and P Ayawei 2000 The Adverse Effects of Crude Oil 
+Spills in the Niger Delta Urhobo Historical Society 
+Alexandra Gas and Oil Connections 2006 Nigeria Forms Oil Spill Detection Agency 
+httpwwwgasandoilcomgocnewsnta40213htm 
+Allen JR 1965 Late Quaternary of the Niger Delta and Adjacent Areas Sedimentary 
+Environments and Lithofacies AAPG V 49 p 547 – 600 
+Atlas RM 1995 Petroleum Biodegradation and Oil Spill Bioremediation Marine 
+Pollution Bulletin 31 178182 
+CIA 2005 The World Fact book  Nigeriahtm 
+ 
+DublinGreen CO LF Awosika and R Folorunsho 1999 Climate Variability 
+Research Activities In Nigeria Nigerian Institute for Oceanography and Marine 
+Research Victoria Island Lagos Nigeria 
+Ekundayo JA and TVI Akpata 1978 Faecal Pollution of the Lagos Lagoon Nig J Sci 
+12 3953 
+Hoff R 1993 Bioremediation An Overview of its Development and use for Oil Spill 
+Clean up Mar POLLUT Bull 26 476481  
+Ibe AC 1988 Coastline Erosion in Nigeria Ibadan University Press Ibadan Nigeria 
+Kuruk 
+P 
+2004 
+Customary 
+Water 
+Laws 
+and 
+Practices 
+Nigeria 
+httpwwwfaoorglegaladvservFAOIUCNcsNigeriapdf 
+Longhurst AR 1964 The Coastal Oceanography of Western Africa Bull Inst Afr 
+Noire Ser No 2 p337  402 
+Milaka K 1995 Use of GIS as a Tool for Operational Decision Making 
+Implementation of a National Marine Oil Spill Contingency Plan for EstoniaCarl 
+Bro International as Glostrup Denmark 
+NDES 1996 The Niger Delta Environmental Survey Terms of Reference April 3 
+1996  
+Nigeria Country Analysis Brief 2005 Nigeria Country Analysis Briefhtm 
+Ntukekpo DS 1996 Spillage Bane of Petroleum Ultimate Water Technology  
+Environment 
+Nwilo PC  OT Badejo 2005 Oil Spill Problems and Management in the Niger 
+Delta International Oil Spill Conference Miami Florida USA 
+Olagoke W 1996 Niger Delta Environmental Survey Which Way Forward Ultimate 
+Water Technology  Environment  
+Ozekhome M 2001 Legislation for Growth in the Niger Delta Midweek Pioneer 
+Parthiphan K 1994 Oil Spill Sensitivity Mapping Using a Geographical Information 
+System Department of Geography University of Aberdeen EGIS Foundation  
+Prince R 1993 Petroleum Spill Nioremediation in Marine Environments Critical Rev 
+Micobiol 194 217242 
+Rossouw M 1998 Oil Spill Simulation Reducing the Impact STARTIOCLOICZ 
+Workshop on Climate Change and Coastal Process in Cotonou Benin West Africa 
+Sandberg 
+EC 
+1996 
+Development 
+of 
+Remote 
+Sensing 
+for 
+Coast 
+Guard 
+ApplicationsRemote Sensing No 28 pp 12  
+Smith LA  L Loza 1994 Texas Turns to GIS For Oil Spill Management Geo Info 
+Systems pp 48  
+SPDC 1996 People and the Environment SPDC Annual Report 
+WardleySmith J 1977 The Control of Oil Pollution on the Sea and Inland Waters Graham 
+and Trotman Ltd United Kingdom 
+ 

@@ -1,0 +1,275 @@
+1 
+ 
+Analysis of oil spill impacts along pipelines and the fate of 
+sensitive environments in Nigeria 
+ 
+Mahmoud I Mahmoud 
+ 
+ ICTGIS Unit National Oil Spill Detection and Response Agency NOSDRA NAIC Building 5th Floor Plot 590 CBD PMB 145 
+Garki Abuja Nigeria emailsalammahmoudiiigmailcom 
+ 
+This study shows how mapping postoil spill incidents can provide insights into the fate of 
+sensitive ecosystems and serve as a decisionsupport tool for reducing the negative socio
+environmental impacts of oil spills The incidence of oil spills along pipelines have expanded in 
+extent into habitats of sensitive natural ecosystems and threatens biodiversity conservation in 
+Nigeria These oil spills directly and indirectly influence critical ecosystems functioning such as 
+protected areas wildlife wetlands waterbodies marine animals and plants natural vegetation 
+types and arable lands for food production The geovisualised oil spill records overlaid on 
+GoogleEarth images provided geolocational insights and intelligence that aid inferences on the 
+impacts of oil spill incidents using geospatial mapping tools and webservice to support decision
+making purposes in the oil spill management cycle Furthermore geospatial analysis of oil spills 
+data from 2006 to 2019 along the 5000 km of pipelines with the 2017 World Database of 
+Protected Areas revealed numerous perils oil spills pose to the proper functioning and 
+sustainability of terrestrial and marine ecosystems Results showed that 630 verified oil spills 
+occurred in the forest reserves along the pipelines Approximately 120 verified oil spills were 
+recorded in game reserves and 210 verified oil spills occurred in Ramsar sitewetlands of 
+international importance The oil spills that occurred along these pipelines are threats to the 
+existence of intact tropical rain forests savannah forests and protected areas since they intersect 
+critical ecosystems Numerous terrestrial and marine inhabitant were affected by oil spill events 
+including land and underground water pollution loss of human livelihood heavy metal pollution 
+loss of farmland and damage of animal habitat This assessment showed that the fusion of relevant 
+environmental dataset is crucial in evaluating the fate sensitivity and vulnerability of landscapes 
+to oil spills using geomapping and geovisualization concepts In the context of achieving 
+environmental sustainability and smart oil pipeline provisioning in line with the global Sustainable 
+Development Goals SDGs it is essential to use Geoinformation tools such as integrated spatial 
+planning and landuse concepts to evaluate potential perils linked to oil infrastructure 
+development Outcomes from impact assessment research of this kind should be incorporated as 
+strategic tools for developing informed conservation economy policies industry practices and 
+good environmental governance mechanism for robust decisionmaking in the oil and gas sector 
+of Nigeria towards attaining localscale SDGs 
+ 
+Keywords Biodiversity loss Conservation Geoinformation Geovisualization Nigeria oil 
+spill pipeline 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+2 
+ 
+Introduction 
+Petroleum products derived from oil and gas activities are a major contributor to terrestrial and 
+marine economy in Nigeria They are one of the highly demanded and priced commodities in the 
+extractive industry Unfortunately the processes involved in exploration extraction and 
+transportation of oil and gas petroleum products mostly impede on the environment with long
+term impacts and cascading effects Kingston 2002 Consequently oil and gas activities remain 
+one of the human actions that exert numerous direct and indirect impacts on sensitive and 
+important ecological landscapes in Nigeria 
+Extant literature show that environmental pollution emanating from oil and gas activities results 
+in serious ecological damages causing marine organisms to die or flee Lee 2011 LindstedtSiva 
+1980 Moore 2006 This result in environmental and socioeconomic costs which is a major 
+concern to environmental scientists and managers For example oil spillages occur in Nigeria 
+through oil pipelines that is one of the means of conveying refined petroleum products or crude oil 
+from sources such as oil wells to destination mainly refinery Oil spill incidents considered to be 
+damaging to sensitive and vulnerable environment have occurred in oil producing regions of 
+Nigeria The alarming and persistent occurrence of oil spills with negative impacts causes pockets 
+environmental devastation such as contamination of soil land degradation pollution of 
+underground water persistent vegetation cover damage marine ecosystems and public health 
+issues in Nigeria This has been confirmed by the independent assessment of the Ogoniland in 
+2011 UNEP 2011 
+Of particular concern is how oil spillages caused by thirdparty interference are occurring along 
+oil pipelines in the NigerDelta and is gradually spreading along oil pipelines into the hinterland 
+of Nigeria Figure 1 The impacts of the oil spillages on important natural habitat and how the 
+ecological services provided by these environments are under immense attack Here we describe 
+an “oil spill tsunami” along petroleum products pipeline in Nigeria with focus on Nigeria’s Niger
+Delta and the hinterland of Nigeria Figure 1 Locations experiencing oil spillage in these regions 
+have drawn intense scrutiny and concern lately The occurrences of oil spillages contravene 
+environmental laws in Nigeria FGN 2006 and does not meet international standards of 
+environmental protection practices Oil spillages are generally caused by thirdparty interference 
+and has specifically continued because of failure to comply with the National Oil Spill Detection 
+and Response Agency NOSDRA regulations derived from Act 15 establishing NOSDRA in 
+2006 
+Across Nigeria thirdparty oil spillage occurrences are expanding at an unprecedented pace 
+and rate These oil spillages have occurred with high density visible in the NigerDelta as 
+highlighted in white rectangle showing oil spill density in red circles in Figure 1 These reported 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+3 
+ 
+oil spill crisscross much of the NigerDelta’s fragile landscape due to the presence major oil 
+industry operations and infrastructure since the last five decades The tendency of oil spill is 
+beginning to extend to the hinterland as is evident in Figure 1 see linear pattern of red and grey 
+circles moving northward Nigeria The increasing pace of oil spillage in Nigeria threatens the 
+continuity of a safe and healthy environment in Nigeria If balanced environment is needed that 
+does not compromise the standards of living of current and future generations the Nigerian 
+environment must be protected from future occurrences of oil spillages 
+ 
+Figure 1 Geovisualization of oil spill pattern across Nigeria in a webGIS platform 
+It is essential that already impacted sites by oil spills must be well understood and managed in 
+a spatially explicit context using and array of Geospatial Information Technologies GIT 
+comprised of Global Positioning Systems GPS Remote Sensing RS and Geographic 
+Information Systems GIS These tools are useful for pre and post impact analyses of oil spill to 
+enable environmental scientists and managers provide sustainable environmental practices that 
+support response recovery remediation and resilience concepts Consequently reducing the 
+impacts oil spill and land degradation GIT support the delivery of good environmental governance 
+frameworks that are measurable through indicators such as the global targets of the United Nations 
+Sustainable Development Goals SDGs 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+4 
+ 
+The questions addressed in this research work are How does the oil and gas activities threaten 
+the wellbeing of Nigerian What are the risks associated with oil and gas activities imminent to 
+the sensitive and ecologically important landscapes in Nigeria How can NOSDRA effectively 
+manage oil spillages in Nigeria With respect to policies Are there current policies in place to 
+help reduce environmental damage caused by oil and gas activities in Nigeria Furthermore this 
+research aimed to map oil spill pattern in the NigerDelta along the pipeline hinterland and 
+highlight the fate of sensitive environments in Nigeria These questions will be addressed in the 
+following sections This study therefore aims to provide a comprehensive elucidation of the 
+potentials and roles of geospatial technologies in managing oil spills especially using the publicly 
+available archives of Landsat series Sentinel and Google Earth platform using integrated remote 
+sensing GIS and GPS analysis contributing to the understanding of oil spill detection and 
+management in Nigeria 
+ 
+A Threats of oil and gas activities to the wellbeing of Nigeria 
+The enormous quantity of oil and gas deposits is seemingly the most vulnerable natural resource 
+in Nigeria especially in the NigerDelta Ajibade  Awomuti 2009 A similar situation is likely 
+to be experienced with more recent discoveries in the hinterland Between 2008 and 2017 over 
+789 billion barrels of oil were exploited from over 5000 wells NNPC Annual Statistical Bulletin 
+2017 However the wellbeing of Nigeria in terms of diversified economy is threatened by the 
+perils oil and gas activities impose on the Nigerian environment For instance agricultural 
+activities including fishing is threatened in the NigerDelta due to the occurrence of oil spill which 
+is linked to oil and gas activities One of the implications of oil spill to human wellbeing is that 
+agriculture and food production for sustenance which is an indicator to wellbeing is threatened 
+both in quality and quantity or yield Importantly oil spills aggravate degradation of arable land 
+which threatens the continued sustainability of the environments used for food production and 
+food security agenda Overall the wellbeing threats of oil spills destabilizes the socioeconomic 
+status of oil polluted regions and consequently hinders or disenfranchises such locations from the 
+attainments of the SDGs Considering that oil spill is linked with oil and gas activities it remains 
+a major threat to Nigeria’s wellbeing because of the country’s the over reliance on revenues 
+generated from the oil and gas industry Yet despite the huge income from crude oil and gas sales 
+this revenue has so far not helped to alleviate the large majority from chronic poverty as the most 
+densely populated county in Africa Unfortunately the COVID19 pandemic further exposed how 
+Nigeria’s wellbeing is threatened by the fragility of extractive commodity prices such as the drop 
+in crude oil earnings by 90 which affected Nigeria’s 2020 budget and subsequently influenced 
+the proposed federal government spending intents 
+ 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+5 
+ 
+B Environmental and Socioecological risks of oil spill in Nigeria 
+There are numerous socioecological threats prevalent and imminent to sensitive and 
+environmentally important landscapes associated with oil and gas activities in Nigeria The 
+persistent oil spill incidents with hydrocarbons is one of the greatest environmental pollution 
+threats with attendant socioecological risks in Nigeria Although there are numerous causes of oil 
+spills here the focus is on incidents along pipeline which impose negative impacts on landcover 
+such as soils vegetation surface water and aquifers and have damaged substantial portion of 
+forests in the NigerDelta Figure 2 In truth over 15 million barrels of oil have been spilled in 
+the Nigerian environment since 1958 to date based on estimates of reported oil spill incidents  
+ 
+Figure 2 
+Some of the longterm environmental and socioecological risks connected to oil spill incidents 
+is the destruction of endangered flora and fauna loss of biodiversity food chain destabilization 
+and aggravation of human health challenges Bayode  Adewunmi 2011 Moore 2006 Oil spill 
+can lead to longterm ecological impact such as biodiversity loss For instance the physical 
+smothering by tar residues effectively reduces habitat diversity by binding substrata and filling of 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+6 
+ 
+pore spaces which reveals the most conspicuous longterm impacts on biodiversity and 
+productivity Another longterm ecological risk caused by oil spill is the loss of natural forest cover 
+and rapid change in LandUse LandCover LULC Figure 2 Mangroves are one of the 
+threatened forests covers by oil spills in the NigerDelta The decline or extinction of this important 
+vegetation in the NigerDelta is strongly linked with oil spill impact UNEP 2011 If oil spill 
+impacts on mangroves are not halted the combined longterm effects will contribute some other 
+environmental consequences such as flooding prevalent in the NigerDelta This further aggravate 
+oilexploitation related threat and by implications increases floodwater which disperses large 
+amount of sediments into the environment as can be observed in the detail study region Figure 2 
+ 
+C Measures to effectively management of oil spillages in Nigeria 
+The effective management of oil spill requires compelling analysis that help to understand the 
+current and potential effects of oil pollution on sensitive ecosystems and humans For instance the 
+geospatial visualization of oil spill locations on all water bodies along pipelines in the hinterland 
+and NigerDelta can help identify locations of water related contamination Figure 3 In addition 
+the geospatial overlay of oil spill locations on LULC can support impact assessment arguments 
+necessary to effectively identify threatened sensitive and vulnerable landcover that require in
+depthcase management such as remediation actions  
+Despite the hard time NOSDRA is facing to proactively detect oil spills being an Agency 
+saddled with the responsibility of implement the National Oil Spill Contingency Plan NOSCP 
+the Agency has devised innovative and compelling approach to showcase and understand the 
+potential effects oil spill can have on sensitive environments across Nigeria  Beginning from 2009 
+the need to mainstream Geoinformation into oil spill management in NOSDRA for Nigeria was 
+indispensable In 2012 there was the need to conceptualize how the collated oil spillage records 
+can be geovisualized for a spatial overview and further analytical capability to facilitate proactive 
+decisionmaking This focused the collaboration between NOSDRA and Stakeholder Democracy 
+Network to develop the webbased tool now referred to as the oil spill monitor 
+httpsoilspillmonitorng Considering that the Nigerian environment has a tragic record of 
+pollution due to oil spillage yet no systematic geospatial visualization and analysis has been 
+available about the potential impacts of spills on sensitive ecosystems along pipelines in Nigeria 
+This study revealed interesting spatial pattern of oil spill especially from thirdpart interference 
+across Nigeria using RS and GIS analyses Figure 3 
+ 
+ 
+ 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+7 
+ 
+ 
+Figure 3 
+D Strategies to reduce environmental damage caused by oil and gas activities in Nigeria 
+The extant policies enacted to manage environmental damage caused by oil and gas activities 
+in Nigeria may not achieve the set goal as it is Thus the modules of application must change  
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+8 
+ 
+ 
+The Nigerian Oil Spill Pattern and the Fate of Sensitive Environment 
+The mapping of oil spill incidents including those along pipelines is an effective effort to 
+understand oil spill pattern its impact on environment prevent future oil spill incidences and 
+strengthen oil spill response plan Therefore incorporating mapping in the planning and practice 
+of oil spill response such as control containment and cleanup becomes critical to minimize the 
+ecological impacts of oil spills to sensitive environments in Nigeria Clear goals of mapping as a 
+planning and preventive measure are needed in executing oil spill response whether at individual 
+company level oil clean up cooperative or state and federal government agency In addition the 
+mapping of oil spill impacted sites is an effective approach to transparently carry along all group 
+involved in oil field assessment stage to agree on actions to be achieved This is necessary because 
+conflicts of interest arise when transparency and traceability is lacking in site assessment and the 
+investigation teamwork at cross purpose for different goals For instance responding to oil spill 
+incidence along oil pipeline requires the stoppage of oil from source restoration of the pipeline 
+integrity and cleanup of the immediate environment 
+A true gamechanger for Nigeria nature and ecological conservation is the pattern of oil spills 
+occurring along petroleum products pipeline across sensitive environments in Nigeria Figure 4 
+If left in their entirety without cleanup and restoration the spills would collectively have long
+term ecological impacts on sensitive natural ecosystems in Nigeria    
+ 
+Figure 4 Overlay of oil spill pattern on protected areas layer across Nigeria 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
+9 
+ 
+Aligning oil spill management with Sustainable Development Goals in Nigeria 
+To be written 
+Tips of the Iceberg 
+The oil spill pattern along pipeline is part of an expanding network of oil spill incidents in 
+Nigeria In the NigerDelta alone oil spills occur in both terrestrial and marine environments that 
+threatens landuse and landcover biodiversity wildlife and human security At present oil spill 
+in the NigerDelta is a major cause of contaminated land food insecurity surface and groundwater 
+pollution vegetation farming sediment air pollution public health and human wellbeing 
+industry conspiracy and institutional conflicts  Unless environmental monitoring tools developed 
+with geovisualization and geoanalytical capabilities are developed to implement environmental 
+safeguards are developed the spatial impacts of oil spill will not be identified understood and 
+contextualised in a wider framework such the SDGs… 
+ 
+ 
+References  
+Ajibade L T  Awomuti A A 2009 Petrolium exploitation or human exploitation An overview of 
+niger delta oil producing communities in nigeria African Research Review 31 111124  
+Bayode O J A  Adewunmi E A 2011 Environmental implications of oil exploration and 
+exploitation in the coastal region of ondo state nigeria A regional planning appraisal Journal of 
+Geography and Regional Planning 43 110  
+National oil spill detection and response agency nosdra establishment act 2006 15 CFR § 93 2006 
+Kingston P F 2002 Longterm environmental impact of oil spills Spill Science  Technology Bulletin 
+71 5361 doihttpsdoiorg101016S1353256102000518 
+Lee H 2011 Impacts of oil spills Ecological human health and economic Plan II Honors Program 
+The University of Texas at Austin Texas   TC660H 
+LindstedtSiva J 1980 Minimizing the ecological impacts of oil spills Environment International 32 
+185188  
+Moore J 2006 Long term ecological impacts of marine oil spills Paper presented at the Proceedings 
+of the Interspill 2006 conference held at London ExCeL 
+NNPC Annual Statistical Bulletin 2017 2017 annual statistical bulletin Retrieved from Abuja  
+UNEP 2011 Environmental assessment of ogoniland Site factsheets executive summary and full 
+report ISBN 9789280731309 Retrieved from 11022019 Nairobi KENYA 
+wwwuneporgnigeriahttpswwwunenvironmentorgresourcesassessmentenvironmental
+assessmentogonilandsitefactsheetsexecutivesummaryandfull 
+ 
+Downloaded from httpmeridianallenpresscomioscarticlepdf202116298632973901i2169335820211629863pdf by guest on 04 December 2021
