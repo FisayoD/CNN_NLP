@@ -3,6 +3,7 @@ import re
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 
+
 def preprocess_text(text):
     """Remove commas, full stops, and other punctuation."""
     punctuation = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
@@ -10,7 +11,6 @@ def preprocess_text(text):
     return no_punctuation
 
 def read_pdf(file_path):
-    """Read and preprocess text from a PDF file."""
     doc = fitz.open(file_path)
     full_text = ""
     for page in doc:
@@ -18,7 +18,6 @@ def read_pdf(file_path):
     return preprocess_text(full_text)
 
 def write_text_to_pdf(output_pdf_path, input_text):
-    """Write preprocessed text to a new PDF file, handling long texts."""
     c = canvas.Canvas(output_pdf_path, pagesize=letter)
     text_object = c.beginText(40, 750)  
     text_object.setFont("Helvetica", 12)
@@ -30,7 +29,6 @@ def write_text_to_pdf(output_pdf_path, input_text):
 
 
 def write_text_to_file(output_file_path, text):
-    """Write preprocessed text to a text file."""
     with open(output_file_path, 'w', encoding='utf-8') as file:
         file.write(text)
 

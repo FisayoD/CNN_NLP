@@ -31,7 +31,6 @@ output_txt_paths = [
     'articles_text/OIL SPILLS IN THE NIGER DELTA.txt',  
     'articles_text/Press Coverage of Environmental Pollution In The Niger Delta Region of Nigeria.txt',  
     'articles_text/Shell will sell big piece of its Nigeria oil business, but activists want pollution cleaned up first _ AP News.txt'  
-
 ]
 
 
