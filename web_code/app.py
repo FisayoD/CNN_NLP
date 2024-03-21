@@ -3,18 +3,18 @@ from werkzeug.utils import secure_filename
 import os
 import fitz  # PyMuPDF
 import re
-import tensorflow as tf
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+# import tensorflow as tf
+# from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 
 app = Flask(__name__)
 app.secret_key = "super secret key"  # Necessary for flash messages to work
 
-model = tf.keras.models.load_model('/Users/fisayo_ojo/Documents/More_IS/model.h5')
+# model = tf.keras.models.load_model('/Users/fisayo_ojo/Documents/More_IS/model.h5')
 
 
-tokenizer = Tokenizer(num_words=5000)
+# tokenizer = Tokenizer(num_words=5000)
 max_length = 100  
 
 def preprocess_text(text):
@@ -49,15 +49,15 @@ def process_files_and_predict(filepath1, filepath2):
             raise e
     
     print("Preprocessing texts...")
-    new_sequences = tokenizer.texts_to_sequences(new_docs)
-    new_padded_docs = pad_sequences(new_sequences, maxlen=max_length, padding='post')
-    new_pair = np.array([new_padded_docs[0], new_padded_docs[1]]).reshape(1, 2, -1)
+    # new_sequences = tokenizer.texts_to_sequences(new_docs)
+    # new_padded_docs = pad_sequences(new_sequences, maxlen=max_length, padding='post')
+    # new_pair = np.array([new_padded_docs[0], new_padded_docs[1]]).reshape(1, 2, -1)
     
     print("Making prediction...")
-    new_prediction = model.predict([new_pair[:, 0], new_pair[:, 1]])
-    related = new_prediction[0][0] > 0.5
-    print(f"Prediction complete: {'related' if related else 'not related'} with confidence {new_prediction[0][0]:.2f}")
-    return related, new_prediction[0][0]
+    # new_prediction = model.predict([new_pair[:, 0], new_pair[:, 1]])
+    # related = new_prediction[0][0] > 0.5
+    # print(f"Prediction complete: {'related' if related else 'not related'} with confidence {new_prediction[0][0]:.2f}")
+    # return related, new_prediction[0][0]
 
 @app.route('/upload', methods=['POST'])
 def upload_files():

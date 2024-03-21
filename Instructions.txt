@@ -1,2 +1,15 @@
 cd into web_code and run this in terminal to run flask: 
 FLASK_APP=app.py flask run
+
+
+So now we create a conda environment with these commands: conda create -n nlp python=3.12
+
+
+To activate this environment, use
+#
+#     $ conda activate nlp
+
+$ conda deactivate --to deactivate
+
+
+to run in virtual env : python Transformers.py
