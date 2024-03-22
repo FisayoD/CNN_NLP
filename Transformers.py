@@ -50,7 +50,7 @@ for path in output_txt_paths:
         print(f"File {path} not found. Skipping.")
 
 
-# Assuming 'documents' is a list of texts loaded from your file paths
+
 labels = [1 if "oil" in doc.lower() else 0 for doc in documents]
 
 # Tokenization
@@ -72,21 +72,17 @@ test_mask = tf.constant(test_mask)
 
 MAX_SEQUENCE_LENGTH = 512 
 def create_transformer_model():
-    # Define the input layers
-    # input_ids = Input(shape=(None,), dtype='int32', name="input_ids")
-    # attention_mask = Input(shape=(None,), dtype='int32', name="attention_mask")
     input_ids = tf.keras.layers.Input(shape=(MAX_SEQUENCE_LENGTH,), dtype=tf.int32, name='input_ids')
     attention_mask = tf.keras.layers.Input((MAX_SEQUENCE_LENGTH,), dtype=tf.int32, name='attention_mask')   
-    # Load the pre-trained BERT model
+
     bert_model = TFBertModel.from_pretrained('bert-base-uncased')
 
-    # Obtain the sequence of hidden states
+   
     bert_output = bert_model(input_ids, attention_mask=attention_mask)[0]
 
-    # We take the representation of the [CLS] token at position 0
+  
     cls_token = bert_output[:, 0, :]
 
-    # Add a dense layer for classification
     output = Dense(1, activation='sigmoid')(cls_token)
 
     # Construct the final model
@@ -105,6 +101,6 @@ history = model.fit([X_train, train_mask], y_train, validation_data=([X_test, te
 # Save the model
 model.save('transformer_model.h5')
 
-# Evaluate the model
+# Evaluate 
 test_loss, test_accuracy = model.evaluate([X_test, test_mask], y_test)
 print(f"Test Accuracy: {test_accuracy*100:.2f}%")
