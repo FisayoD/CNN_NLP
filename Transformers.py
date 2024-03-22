@@ -55,61 +55,56 @@ labels = [1 if "oil" in doc.lower() else 0 for doc in documents]
 
 # Tokenization
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-tokenized = tokenizer(documents, padding=True, truncation=True, return_tensors="tf")
+tokenized = tokenizer(documents, padding=True, truncation=True, max_length=512, return_tensors="tf")
 
-input_ids_np = tokenized['input_ids'].numpy()
-attention_mask_np = tokenized['attention_mask'].numpy()
+input_ids = tokenized['input_ids']
+attention_mask = tokenized['attention_mask']
 
-# Then, use the numpy arrays with train_test_split
-X_train, X_test, y_train, y_test = train_test_split(input_ids_np, labels, test_size=0.2, random_state=42)
-train_mask, test_mask = train_test_split(attention_mask_np, test_size=0.2, random_state=42)
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(input_ids.numpy(), labels, test_size=0.2, random_state=42)
+train_mask, test_mask = train_test_split(attention_mask.numpy(), test_size=0.2, random_state=42)
 
-# Now you can convert them back to TensorFlow tensors if needed for your model
+# Convert numpy arrays back to TensorFlow tensors
 X_train = tf.constant(X_train)
 X_test = tf.constant(X_test)
 train_mask = tf.constant(train_mask)
 test_mask = tf.constant(test_mask)
 
+MAX_SEQUENCE_LENGTH = 512 
 def create_transformer_model():
-    # Load pre-trained BERT model
-    bert = TFBertModel.from_pretrained('bert-base-uncased')
+    # Define the input layers
+    # input_ids = Input(shape=(None,), dtype='int32', name="input_ids")
+    # attention_mask = Input(shape=(None,), dtype='int32', name="attention_mask")
+    input_ids = tf.keras.layers.Input(shape=(MAX_SEQUENCE_LENGTH,), dtype=tf.int32, name='input_ids')
+    attention_mask = tf.keras.layers.Input((MAX_SEQUENCE_LENGTH,), dtype=tf.int32, name='attention_mask')   
+    # Load the pre-trained BERT model
+    bert_model = TFBertModel.from_pretrained('bert-base-uncased')
 
-    # Inputs
-    input_ids = Input(shape=(None,), dtype=tf.int32, name="input_ids")
-    
-    # Get the embeddings (last hidden states) from BERT
-    bert_output = bert(input_ids)[0]
+    # Obtain the sequence of hidden states
+    bert_output = bert_model(input_ids, attention_mask=attention_mask)[0]
 
-    # We take the representation of the [CLS] token to use for classification.
+    # We take the representation of the [CLS] token at position 0
     cls_token = bert_output[:, 0, :]
 
     # Add a dense layer for classification
-    out = Dense(1, activation='sigmoid')(cls_token)
+    output = Dense(1, activation='sigmoid')(cls_token)
 
-    # Final model
-    model = Model(inputs=input_ids, outputs=out)
+    # Construct the final model
+    model = Model(inputs=[input_ids, attention_mask], outputs=output)
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
     return model
 
-# Model creation and training
+# Create, train, and evaluate the model as you have in your script
 model = create_transformer_model()
-
-# Show the model architecture
 model.summary()
 
-# Now, train the model with the correct tensors
-history = model.fit(
-    {'input_ids': X_train, 'attention_mask': train_mask},
-    y_train,
-    validation_data=({'input_ids': X_test, 'attention_mask': test_mask}, y_test),
-    epochs=3,
-    batch_size=8
-)
+# Training
+history = model.fit([X_train, train_mask], y_train, validation_data=([X_test, test_mask], y_test), epochs=3, batch_size=8)
 
 # Save the model
 model.save('transformer_model.h5')
 
 # Evaluate the model
-test_loss, test_accuracy = model.evaluate({'input_ids': X_test, 'attention_mask': test_mask}, y_test)
+test_loss, test_accuracy = model.evaluate([X_test, test_mask], y_test)
 print(f"Test Accuracy: {test_accuracy*100:.2f}%")
